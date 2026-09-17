@@ -1,0 +1,8 @@
+# Source Data for the top panel of Fig. 3b: reported coherence times and the
+# factor-of-three shaded bands drawn around each of them.
+# Margin annotation: min coherence 1.4e+06 ns / max PQC requirement at 500 m 47600 ns = 29.41, printed as '>29 x margin'
+platform,reported_T2,coherence_ns,band_lower_ns,band_upper_ns
+Trapped ions,1 h,3.6e+12,1.2e+12,1.08e+13
+NV center,1 s,1e+09,3.33333e+08,3e+09
+SC cavity,34 ms,3.4e+07,1.13333e+07,1.02e+08
+Fluxonium,1.4 ms,1.4e+06,466667,4.2e+06
