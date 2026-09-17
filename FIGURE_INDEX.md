@@ -13,11 +13,31 @@ PDFs; the six published files are checksummed in `checksums/published_figures.sh
 | Fig. 3b | `Figure/fig3b_memory_time_long_range.pdf` | `figures/fig3/pqc_plot_fig3b.py` | **Reproduces exactly** |
 | Fig. 4 | inline TikZ in the manuscript | none | Schematic, no computation |
 | Fig. 5 | `Figure/P_joint.pdf` | `figures/fig5/plot_fig5_joint_probability.py` | **Reimplementation**; see below |
-| Fig. 6 | `Holevo/Holevo_AD.jpg`, `Holevo_gamma.jpg` | none | Collaborator's; code held by that author |
-| Fig. 7 | `Holevo/ILM_1.jpg`, `SLM.jpg`, `BLM_1.jpg`, `CLM_1.jpg` | none | Collaborator's; code held by that author |
+| Fig. 6 | `Holevo/Holevo_AD.jpg`, `Holevo_gamma.jpg` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against both panels |
+| Fig. 7 | `Holevo/ILM_1.jpg`, `SLM.jpg`, `BLM_1.jpg`, `CLM_1.jpg` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against all four panels |
 | Supplementary Fig. 1 | `Figure/log2pr_vs_m.pdf` | `figures/supplementary/plot_pade_validation.py` | **Reproduces exactly** |
 | Supplementary Fig. 2 | `Figure/log2Pr_vs_TBKZ.pdf` | `figures/supplementary/plot_pade_validation.py` | **Reproduces to within antialiasing on one gridline** |
-| Supplementary Holevo figures | `Holevo/*.jpg` | none | Collaborator's |
+| Supplementary Holevo figures | `Holevo/*.jpg` | none | Co-author's; their plotting code is still to be obtained |
+
+## Figs. 6 and 7
+
+The co-author's plotting code is not available. `source_data/make_holevo_source_data.py`
+therefore evaluates the closed forms the paper states, at the parameters printed on each
+panel, to produce the Source Data. It is an independent recomputation, not the original
+code. Its agreement with the published panels was checked two ways: against values read off
+the figures (`--verify`), and by drawing the recomputed curves on the same axes and
+comparing them with the published images panel by panel. All five panels agree, including
+the distinctive features that would expose an error:
+
+| Check | Published panel | Recomputed |
+|---|---|---|
+| Fig. 7 E[χ(0)] at γ = 0, 0.1, 0.2, 0.3 | 1.00, 0.89, 0.82, 0.78 | 1.0000, 0.8900, 0.8246, 0.7820 |
+| Fig. 7d E[χ(0)] at γ = 0.5 | 0.745 | 0.7498 |
+| Fig. 6a minima at γ = 0.5, |α|² = 0.1…0.5 | 0.15, 0.28, 0.41, 0.53, 0.65 | same |
+| Eve's fidelity at t = 0, every model | 0.500 | 0.5000 |
+| Sequential-model fidelity curves crossing | near t ≈ 2.7 | reproduced |
+
+Replace these CSVs with the co-author's own numbers when they become available.
 
 "Reproduces exactly" means the regenerated PDF is byte-identical to the published one apart
 from the embedded `/CreationDate`, and the 300 dpi PNG renders are md5-identical.
