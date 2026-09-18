@@ -1,3 +1,7 @@
+# SHA-256 of the six published figure files of "Quantum-Resistant Quantum Teleportation".
+# Paths are relative to the MANUSCRIPT tree (the directory holding Figure/), not to this
+# repository, which does not redistribute the published PDFs. Verify with
+#   cd /path/to/natcomms_revision && sha256sum -c /path/to/qrqt-code/checksums/published_figures.sha256
 5f3602f9555f3a2828799a455a14010a2565d43b08c193062dee7ce1735cb215  Figure/fig3a_memory_time_short_range.pdf
 184a8bacfbf244c88fee547470f285a8ee5d8b13f5249d8845c87eea548497ef  Figure/fig3b_memory_time_long_range.pdf
 587c8ca2863f2ed44a49867466974374a06ae3c32e28867c1e8096a052d5e669  Figure/P_joint.pdf

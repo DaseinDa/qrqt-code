@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const xml = require('C:/Users/DELL/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/xml-js');
+// npm install xml-js (this helper only; build_diagram.cjs has no dependencies)
+const xml = require('xml-js');
 const root = __dirname;
 const out = 'quantum_channel_matched';
 function serializeSafe(value, options) {

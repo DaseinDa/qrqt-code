@@ -1,3 +1,20 @@
+"""The author's working script for the joint-attack figure, as provided.
+
+This is the most recent script the author has for Fig. 5. It is NOT the script
+that produced the submitted `P_joint.pdf`, and it does not regenerate it: it uses
+m = 80 and T_coh = 1 s (the published figure uses m = 30 and T_coh = 20 s), plots
+log2 of the probabilities rather than the probabilities, and models the SWAP
+survival as P_SWAP = exp(-t/T_coh) instead of the published
+(1 + exp(-t/T_coh))/2, which tends to 1/2 rather than to 0. The closed form for
+P_LWE is the same one the paper states.
+
+It is kept here as the author's own artifact. `plot_fig5_joint_probability.py`
+in this directory is the reimplementation that does reproduce the published
+figure's annotations and generates `source_data/SourceData_Fig5.csv`.
+
+Run as provided it calls plt.show() and writes log2Pr_joint_beautiful.pdf/.png
+into the current working directory.
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import erf

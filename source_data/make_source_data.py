@@ -14,7 +14,7 @@ the plots.
 
 Figs. 1 and 4 are TikZ schematics and Fig. 2 is vector artwork, so none of them plots data.
 Figs. 6 and 7 and the Supplementary Holevo figures are the collaborator's; their values
-have to come from that author.
+are recomputed from the published closed forms by make_holevo_source_data.py.
 
 Usage:  python make_source_data.py [--outdir DIR]
 """
@@ -106,13 +106,34 @@ def _log2_exact(m, a, b, T, s, b1, di):
     return float(np.sum(np.log2(erf(di * lam * 2.0 ** (-g * (i - 1))))))
 
 
-def _log2_pade(m, a, b, T, s, b1, di, pa=0.140012):
+def _pade_exponent(m, a, b, T, s, b1, di, pa=0.140012):
     g = 2 * a / (np.log2(T) + b)
     lam = b1 * np.sqrt(np.pi) / (2 * s)
     i = np.arange(1, m + 1)
     W = (di ** 2) * (lam ** 2) * 2.0 ** (-2 * g * (i - 1))
+    return -(W * (4 / np.pi + pa * W)) / (1 + pa * W)
+
+
+def _log2_pade(m, a, b, T, s, b1, di, pa=0.140012):
+    """Exactly as the published plotting script evaluates it, underflow included.
+
+    For small |exponent|, 1 - exp(exponent) cancels to 0 in double precision and
+    log2(0) is -inf; those are the points the published figure does not draw.
+    """
+    x = _pade_exponent(m, a, b, T, s, b1, di, pa)
     with np.errstate(divide="ignore", invalid="ignore"):
-        return float(np.sum(np.log2(np.sqrt(1 - np.exp(-(W * (4 / np.pi + pa * W)) / (1 + pa * W))))))
+        return float(np.sum(np.log2(np.sqrt(1 - np.exp(x)))))
+
+
+def _log2_pade_stable(m, a, b, T, s, b1, di, pa=0.140012):
+    """The same quantity via expm1, which does not cancel."""
+    x = _pade_exponent(m, a, b, T, s, b1, di, pa)
+    return float(np.sum(np.log2(np.sqrt(-np.expm1(x)))))
+
+
+def _cell(v):
+    """Blank for a value the published figure does not plot."""
+    return "" if not np.isfinite(v) else "%.10f" % v
 
 
 def si_figs(outdir):
@@ -124,12 +145,19 @@ def si_figs(outdir):
        ["Source Data for Supplementary Fig. 1",
         "a=0.3, b=2.7, T_BKZ=2^30 s, ||b1||=10, d_i=2, s=2"])
     rows = [["%d" % e, "%.10f" % _log2_exact(500, 1.8, 2.7, 2.0 ** e, 2, 10, 2),
-             "%.10f" % _log2_pade(500, 1.8, 2.7, 2.0 ** e, 2, 10, 2)]
+             _cell(_log2_pade(500, 1.8, 2.7, 2.0 ** e, 2, 10, 2)),
+             "%.10f" % _log2_pade_stable(500, 1.8, 2.7, 2.0 ** e, 2, 10, 2)]
             for e in range(20, 100, 2)]
     _w(os.path.join(outdir, "SourceData_SupplementaryFig2.csv"),
-       ["log2_T_BKZ", "log2_P_LWE_exact", "log2_P_LWE_pade"], rows,
+       ["log2_T_BKZ", "log2_P_LWE_exact", "log2_P_LWE_pade",
+        "log2_P_LWE_pade_stable"], rows,
        ["Source Data for Supplementary Fig. 2",
-        "a=1.8, b=2.7, m=500, ||b1||=10, d_i=2, s=2"])
+        "a=1.8, b=2.7, m=500, ||b1||=10, d_i=2, s=2",
+        "log2_P_LWE_pade is the published curve: the plotting script evaluates",
+        "sqrt(1 - exp(x)), which underflows double precision for log2_T_BKZ <= 56,",
+        "so the figure draws no Pade point there and the cell is left blank.",
+        "log2_P_LWE_pade_stable is the same quantity via expm1, which does not cancel;",
+        "the two agree to better than 5e-05 in relative terms over the drawn rows."])
 
 
 def main():

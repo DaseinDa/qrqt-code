@@ -1,7 +1,8 @@
 (function(){
+ // Set this to the project root before running.
  var base='C:/Users/DELL/Desktop/PQNet/';
  var input=new File(base+'tmp/overview_edit/overview_working_source.ai');
- var output=new File('C:/Users/DELL/Desktop/PQNetigure/final_overview_figure_v3.ai');
+ var output=new File(base+'Figure/final_overview_figure_v3.ai');
  var pdf=new File(base+'output/pdf/final_overview_figure_v3.pdf');
  var logFile=new File(base+'tmp/overview_edit/edit_log.txt');
  var level=app.userInteractionLevel,d=null;

@@ -51,7 +51,10 @@ os.makedirs(FIG_DIR, exist_ok=True)
 def apply_style():
     plt.rcParams.update({
         'font.family': 'serif',
-        'font.serif': ['Times New Roman', 'DejaVu Serif'],
+        # Pinned, not a preference list: the published Fig. 3 PDFs were rendered with
+    # Times New Roman (on Windows). On a machine without it matplotlib falls back
+    # to DejaVu Serif and the output will not be byte-identical.
+    'font.serif': ['Times New Roman'],
         'font.size': 14,
         'font.weight': 'medium',
         'axes.labelsize': 16,

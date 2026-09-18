@@ -1,6 +1,7 @@
 // Import the requested vector and save native Illustrator and PDF copies.
 // This script only edits its newly opened document.
 (function () {
+  // Set this to the project root before running.
   var base = 'C:/Users/DELL/Desktop/PQNet/';
   var source = new File(base + 'drawio_vector/quantum_channel_matched.svg');
   var aiFile = new File(base + 'drawio_vector/quantum_channel_matched.ai');

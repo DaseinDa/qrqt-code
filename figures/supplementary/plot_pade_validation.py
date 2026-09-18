@@ -29,7 +29,11 @@ import matplotlib as mpl
 # ── Professional style ────────────────────────────────────────────
 mpl.rcParams.update({
     'font.family': 'serif',
-    'font.serif': ['Times New Roman', 'DejaVu Serif'],
+    # Pinned, not a preference list: the published supplementary PDFs were
+    # rendered with DejaVu Serif, and Supplementary Fig. 1 reproduces pixel for
+    # pixel only with it. Asking for Times New Roman first silently changes the
+    # page geometry on any machine that has Times.
+    'font.serif': ['DejaVu Serif'],
     'text.usetex': False,
     'mathtext.fontset': 'cm',
     'font.size': 11,
@@ -150,7 +154,7 @@ if len(valid_err) > 0:
 ax2.text(0.02, 0.90, '(b)', transform=ax2.transAxes,
          fontsize=12, fontweight='bold', va='top')
 
-fig.savefig(os.path.join(OUTDIR, 'log2Pr_vs_m.pdf'))
+fig.savefig(os.path.join(OUTDIR, 'log2pr_vs_m.pdf'))
 plt.close(fig)
 
 
