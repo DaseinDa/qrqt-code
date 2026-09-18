@@ -37,9 +37,10 @@ B1_NORM = 10.0    # ||b~_1||, length of the first Gram-Schmidt vector
 D_I = 2.0         # integer search radius of every Nearest-Planes layer
 T_COH = 20.0      # adversary's quantum memory coherence time, seconds
 
-# gamma(t) diverges at t = 2^-b ~ 0.154 s, so the model is only evaluated for t >= 1 s.
-# The upper limit matches the published figure's axis, which runs to 140 s.
-T_MIN, T_MAX, N_T = 1.0, 140.0, 2781
+# gamma(t) diverges at t = 2^-b ~ 0.154 s, so the model is only evaluated well
+# above it. The range matches the drawn curves of the published figure, whose
+# paths span t = 0.50 to 150.00 s when the page is calibrated from its own ticks.
+T_MIN, T_MAX, N_T = 0.5, 150.0, 2991
 
 
 def p_lwe(t, m=M, s=S, a=A, b=B, b1_norm=B1_NORM, d_i=D_I):

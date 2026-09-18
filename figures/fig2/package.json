@@ -1,0 +1,11 @@
+{
+  "name": "qrqt-fig2",
+  "private": true,
+  "description": "Vector drawing for Fig. 2 of Quantum-Resistant Quantum Teleportation. build_diagram.cjs needs no dependencies; match_figure_palette.cjs is a helper that reads an SVG palette and needs xml-js.",
+  "scripts": {
+    "build": "node build_diagram.cjs"
+  },
+  "devDependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
