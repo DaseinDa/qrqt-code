@@ -1,0 +1,6 @@
+# The checksum manifest is read by sha256sum -c, which treats a trailing CR as part
+# of the filename. Keep it LF in the working tree on every platform.
+*.sha256 text eol=lf
+
+# Source Data is published alongside the paper; keep it stable across platforms.
+*.csv text eol=lf
