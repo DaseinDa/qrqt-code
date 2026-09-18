@@ -43,8 +43,8 @@ Each writes into its own `output/` directory. Set `QRQT_OUTDIR` to send them els
 Nothing writes into the manuscript tree.
 
 To check a regenerated file against the submitted one, note that
-`checksums/published_figures.sha256` lists paths **relative to the manuscript's figure
-directory**, not to this repository — this repository does not redistribute the published
+`checksums/published_figures.sha256` lists paths **relative to the manuscript tree**
+(the directory holding `Figure/` and `Holevo/`), not to this repository — this repository does not redistribute the published
 PDFs. Run it from the manuscript tree:
 
 ```bash
@@ -101,6 +101,6 @@ figures/supplementary/   Supplementary Figs. 1 and 2: Pade approximation validat
 figures/fig2/            Fig. 2: overview figure (Node + Illustrator)
 figures/holevo/          Figs. 6 and 7: the co-author's panels, plus a typographic redraw
 source_data/             Source Data generators and the generated CSVs
-checksums/               SHA-256 of the six published figure files, keyed by their
-                         path in the manuscript tree
+checksums/               SHA-256 of the twelve published figure files, keyed by
+                         their path in the manuscript tree
 ```

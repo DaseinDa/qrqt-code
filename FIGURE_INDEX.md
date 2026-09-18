@@ -3,7 +3,7 @@
 One row per graphic in *Quantum-Resistant Quantum Teleportation*, with the code in this
 repository that produces it and how that was verified. Established by a provenance audit on
 2026-09-17, re-verified on 2026-09-18: every candidate script was re-run and its output
-compared against the submitted PDFs. The six published files are checksummed in
+compared against the submitted PDFs. The twelve published figure files are checksummed in
 `checksums/published_figures.sha256`, whose paths are relative to the manuscript tree, not
 to this repository.
 
@@ -82,7 +82,7 @@ Resolution is not the problem - the panels place at 365 dpi (main text) and 320 
 
 `figures/holevo/redraw_holevo_figures.py` redraws all six panels from the Source Data as
 vector PDFs at the placed size with 6-7 pt lettering, keeping the same curves, colours,
-legends and axis ranges and dropping the in-panel titles, which repeat the figure legend.
+legends over the same data ranges and dropping the in-panel titles, which repeat the figure legend.
 **The manuscript now uses these**, at `Holevo/vector/*.pdf`, in both the main text and
 the Supplementary Information; the co-author's original rasters are kept beside them in
 `Holevo/`. See `figures/holevo/README.md`.

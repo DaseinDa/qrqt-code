@@ -64,7 +64,8 @@ def p_joint(t):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--outdir", default="output")
+    ap.add_argument("--outdir", default=os.environ.get(
+        "QRQT_OUTDIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")))
     ap.add_argument("--csv", action="store_true", help="also write the Source Data CSV")
     args = ap.parse_args()
     os.makedirs(args.outdir, exist_ok=True)

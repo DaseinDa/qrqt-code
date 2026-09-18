@@ -1,5 +1,5 @@
-# SHA-256 of the six published figure files of "Quantum-Resistant Quantum Teleportation".
-# Paths are relative to the MANUSCRIPT tree (the directory holding Figure/), not to this
+# SHA-256 of the twelve published figure files of "Quantum-Resistant Quantum Teleportation".
+# Paths are relative to the MANUSCRIPT tree (the directory holding Figure/ and Holevo/), not to this
 # repository, which does not redistribute the published PDFs. Verify with
 #   cd /path/to/natcomms_revision && sha256sum -c /path/to/qrqt-code/checksums/published_figures.sha256
 5f3602f9555f3a2828799a455a14010a2565d43b08c193062dee7ce1735cb215  Figure/fig3a_memory_time_short_range.pdf
@@ -8,3 +8,9 @@
 7db971b0e84cf002fb060aed8a69a81ce24b80d56778fb18de3074c14315ffd5  Figure/log2pr_vs_m.pdf
 1d5814216a62fff024fa8e056acd4e9c318d000b869a7380b7a66a1c57f794d6  Figure/log2Pr_vs_TBKZ.pdf
 cdbe186bb97ac0f5ebb0437fac5d8a729b82850ada380776f9c3ea3aa0170ad6  Figure/fig2_overview.pdf
+df7b73d0d20b5dd104983060d3668cb1c7a199ac3a3e2f967daa37909c8c2902  Holevo/vector/Holevo_AD.pdf
+4cc31521f58c56f0f663d73959c82b2b07deaa86a4e52043e21ab34b4ecfb28e  Holevo/vector/Holevo_gamma.pdf
+f0becda441539d8412fddfb2fd80e9c6de92b44b78a02474e0d9f6a67c1db829  Holevo/vector/ILM_1.pdf
+0ceb96c28882871eaa3ae86517166d208fb547bc00fd8479415b30b6d0059263  Holevo/vector/SLM.pdf
+3e1a12552f7328f5e8bcbdf68f59d83f68a59f79fe9fca283c80da0e0ec1499d  Holevo/vector/BLM_1.pdf
+e40e5ecfb681dc6eede6d95b6b764af4fcb2a03f977d9abcd1318a88993e3618  Holevo/vector/CLM_1.pdf

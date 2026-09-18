@@ -3,28 +3,40 @@
 
 WHY. The co-author's published panels are raster (JPEG, 790 px wide) with the
 in-panel lettering set for a full-page view. Placed at their size in the Nature
-Communications layout the axis tick labels print at about 2.0 pt and the in-panel
-titles at about 3.5 pt, against the 5-7 pt that Nature asks for. The resolution is
-fine (365 dpi); the type is simply too small relative to the plot, which no
+Communications layout the axis tick labels print at about 2.25 pt and the in-panel
+titles at about 4.0 pt, against the 5-7 pt that Nature asks for. The resolution is
+fine (320 dpi); the type is simply too small relative to the plot, which no
 placement change can fix.
 
 WHAT THIS DOES. It redraws the same six panels - same curves, same colours, same
-legends, same axis ranges - from source_data/SourceData_Fig6*.csv and
+legends, over the same data ranges - from source_data/SourceData_Fig6*.csv and
 SourceData_Fig7*.csv, which were themselves recomputed from the closed forms the
-paper states and checked panel by panel against the published images. Two things
-change:
+paper states and checked panel by panel against the published images. Three
+things change:
 
   * output is vector PDF, drawn at exactly the size it is placed at in the
-    manuscript, with 7 pt axis labels and 6 pt ticks and legends, so the lettering
+    manuscript, with 7 pt axis labels and 6 pt ticks and legends (5.5 pt for the
+    three-column legend of Fig. 6a), so the lettering
     prints at the size it is drawn;
+  * the frames are drawn to round limits rather than matplotlib's 5% data
+    padding, and Fig. 6a's y axis is extended to 1.30 so its three-column legend
+    clears the curves instead of overlapping them. That also puts Fig. 7d's top
+    subplot on 0.2 y ticks, the spacing panels (a)-(c) already use, instead of
+    the published 0.1 - which printed at 2.25 pt at placed size either way;
   * the in-panel titles are dropped. Every one of them repeats what the figure
     legend already says ("Holevo information (Independent Leakage Model) where
     k1 = k2 = 1." vs the legend's "(a) independent exponential leakage with rates
     k1 = k2 = 1"), and removing them returns that space to the plots.
 
-THIS IS AN OFFER, NOT A SUBSTITUTION. The manuscript still includes the
-co-author's original JPEGs. These PDFs are written to Holevo/regen/ for the
-co-author to compare and approve.
+THE MANUSCRIPT USES THESE PANELS. The six PDFs this script writes are the
+artwork of main-text Figs. 6 and 7 and of Supplementary Figs. 3-8. In the
+manuscript tree they sit at Holevo/vector/, so pass --outdir to write there; a
+bare run writes to ./output beside this script. The co-author's original JPEGs
+are kept alongside them in the manuscript's Holevo/ directory, though the
+submission bundle ships only the vector PDFs. Reverting to the rasters is six
+includegraphics paths in _nc_work/nc_main_skeleton.tex and six more in
+_nc_work/si/holevo_06_damped_bell_pair.tex and
+_nc_work/si/holevo_07_stochastic_models.tex.
 
 Usage:  python redraw_holevo_figures.py [--outdir DIR] [--compare]
 """
