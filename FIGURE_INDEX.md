@@ -72,6 +72,20 @@ value off a printed panel is worth about ±0.005; the visual overlay, which does
 on eyeball readings, shows no discrepancy. Replace these CSVs with the co-author's own
 numbers when they become available.
 
+### Lettering
+
+The published panels are raster, 790 px wide, with lettering set for a full-page view. At
+the size they are placed in the Nature Communications layout the axis tick labels print at
+about 2.0 pt and the in-panel titles at about 3.5 pt, against the 5-7 pt Nature asks for.
+Resolution is not the problem - the panels place at 365 dpi (main text) and 320 dpi
+(Supplementary Information) - so no placement change fixes it.
+
+`figures/holevo/redraw_holevo_figures.py` redraws all six panels from the Source Data as
+vector PDFs at the placed size with 6-7 pt lettering, keeping the same curves, colours,
+legends and axis ranges and dropping the in-panel titles, which repeat the figure legend.
+**The manuscript still uses the co-author's originals**; the redraw exists for the
+co-author to compare and approve. See `figures/holevo/README.md`.
+
 ## Fig. 2
 
 `figures/fig2/build_diagram.cjs` (Node, no npm dependencies) draws the whole overview

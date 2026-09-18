@@ -82,6 +82,10 @@ retyped rather than imported, so check them against
 `figures/supplementary/plot_pade_validation.py` and `figures/fig3/pqc_plot_fig3b.py` if
 either changes.
 
+`figures/holevo/redraw_holevo_figures.py` redraws those six panels from the same CSVs at
+Nature lettering size, as an option for the co-author to approve; the manuscript still
+uses the co-author's originals. See `figures/holevo/README.md`.
+
 The second writes the CSVs behind Figs. 6 and 7. Those are the collaborator's plots and
 their plotting code is not available; the CSVs are an independent recomputation from the
 closed-form expressions the paper states, at the parameters printed on each panel. See
@@ -95,6 +99,7 @@ figures/fig3/            Fig. 3a and 3b: memory lifetime vs communication distan
 figures/fig5/            Fig. 5: joint classical-quantum attack probability
 figures/supplementary/   Supplementary Figs. 1 and 2: Pade approximation validation
 figures/fig2/            Fig. 2: overview figure (Node + Illustrator)
+figures/holevo/          Figs. 6 and 7: the co-author's panels, plus a typographic redraw
 source_data/             Source Data generators and the generated CSVs
 checksums/               SHA-256 of the six published figure files, keyed by their
                          path in the manuscript tree
