@@ -41,11 +41,12 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "..", "..", "source_data"))
 
-# Placed size in the manuscript: Fig. 6 subfigures at 0.48\textwidth and Fig. 7
-# subfigures at 0.42\textwidth of a 5.15 in text block. Drawing at the placed size
-# is what makes a point on the page a point in the file.
+# Placed size in the manuscript: both Fig. 6 and Fig. 7 subfigures sit at
+# 0.48\textwidth of a 5.15 in text block. Drawing at the placed size is what makes
+# a point on the page a point in the file. Height is chosen independently of width
+# so that two rows of Fig. 7 plus its legend still fit the text block.
 W6, H6 = 2.47, 1.78
-W7, H7 = 2.16, 2.60
+W7, H7 = 2.47, 2.60
 
 # matplotlib's default cycle, which the published panels use.
 C = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
@@ -117,10 +118,13 @@ def fig6(outdir):
     ax.set_xlabel(r"Amplitude damping parameter $\gamma$")
     ax.set_ylabel(r"Holevo quantity $\chi$ (bits)")
     ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1.52)
+    ax.set_ylim(0, 1.30)
     ax.set_yticks([0.0, 0.2, 0.4, 0.6, 0.8, 1.0])
     ax.grid(True, ls=":")
-    ax.legend(ncol=2, loc="upper center", columnspacing=1.0, borderaxespad=0.2)
+    # three columns is two legend rows, so less headroom is needed and the panel
+    # matches the height of Fig. 6b beside it
+    ax.legend(ncol=3, loc="upper center", columnspacing=0.8, handlelength=1.1,
+              handletextpad=0.35, borderaxespad=0.15, fontsize=5.5)
     fig.savefig(os.path.join(outdir, "Holevo_AD.pdf"))
     plt.close(fig)
 
@@ -166,12 +170,15 @@ def fig7(outdir):
         for ax in (ax1, ax2):
             ax.set_xlim(0, 5)
             ax.grid(True, ls=":")
-        ax1.legend(loc="upper right")
+        # panel (d) also carries a zoom inset; a four-row legend would reach down
+        # into it, so that panel gets a two-column, two-row legend instead
+        ax1.legend(loc="upper right", ncol=2 if inset else 1,
+                   columnspacing=0.8 if inset else 2.0)
         ax2.legend(loc="lower right")
         if inset:
             # the published panel (d) carries a zoom on 1.0 <= t <= 1.9
             ax1.set_ylim(top=0.92)
-            axi = ax1.inset_axes([0.40, 0.30, 0.56, 0.36])
+            axi = ax1.inset_axes([0.40, 0.34, 0.56, 0.34])
             for i, (s, x, y) in enumerate(series(d, "time", skey,
                                                  "expected_holevo_bits")):
                 m = (x >= 1.0) & (x <= 1.9)

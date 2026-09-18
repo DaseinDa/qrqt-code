@@ -83,8 +83,8 @@ retyped rather than imported, so check them against
 either changes.
 
 `figures/holevo/redraw_holevo_figures.py` redraws those six panels from the same CSVs at
-Nature lettering size, as an option for the co-author to approve; the manuscript still
-uses the co-author's originals. See `figures/holevo/README.md`.
+Nature lettering size, and the manuscript now uses that vector output; the co-author's
+original rasters are kept beside it. See `figures/holevo/README.md`.
 
 The second writes the CSVs behind Figs. 6 and 7. Those are the collaborator's plots and
 their plotting code is not available; the CSVs are an independent recomputation from the

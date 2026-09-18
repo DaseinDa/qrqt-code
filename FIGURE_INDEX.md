@@ -15,11 +15,11 @@ to this repository.
 | Fig. 3b | `Figure/fig3b_memory_time_long_range.pdf` | `figures/fig3/pqc_plot_fig3b.py` | **Reproduces exactly** |
 | Fig. 4 | inline TikZ in the manuscript | none | Schematic, no computation |
 | Fig. 5 | `Figure/P_joint.pdf` | `figures/fig5/plot_fig5_joint_probability.py` | **Reimplementation**; see below |
-| Fig. 6 | `Holevo/Holevo_AD_300dpi.png`, `Holevo_gamma_300dpi.png` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against both panels |
-| Fig. 7 | `Holevo/ILM_1.jpg`, `SLM.jpg`, `BLM_1.jpg`, `CLM_1.jpg` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against all four panels |
+| Fig. 6 | `Holevo/vector/Holevo_AD.pdf`, `Holevo_gamma.pdf` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against both panels |
+| Fig. 7 | `Holevo/vector/ILM_1.pdf`, `SLM.pdf`, `BLM_1.pdf`, `CLM_1.pdf` | `source_data/make_holevo_source_data.py` | Co-author's plot; curves recomputed from the paper's closed forms and verified against all four panels |
 | Supplementary Fig. 1 | `Figure/log2pr_vs_m.pdf` | `figures/supplementary/plot_pade_validation.py` | **Reproduces exactly** |
 | Supplementary Fig. 2 | `Figure/log2Pr_vs_TBKZ.pdf` | `figures/supplementary/plot_pade_validation.py` | **Reproduces to within antialiasing on one gridline** (49 differing pixels at 300 dpi) |
-| Supplementary Figs. 3-8 | the same six `Holevo/` files as Figs. 6 and 7 | none | The Supplementary Information reproduces the main-text Holevo panels; no separate artwork |
+| Supplementary Figs. 3-8 | the same six `Holevo/vector/` files as Figs. 6 and 7 | none | The Supplementary Information reproduces the main-text Holevo panels; no separate artwork |
 
 "Reproduces exactly" means the regenerated PDF differs from the published one only in the
 embedded `/CreationDate` (6-8 bytes) and the 300 dpi renders are pixel-identical.
@@ -83,8 +83,18 @@ Resolution is not the problem - the panels place at 365 dpi (main text) and 320 
 `figures/holevo/redraw_holevo_figures.py` redraws all six panels from the Source Data as
 vector PDFs at the placed size with 6-7 pt lettering, keeping the same curves, colours,
 legends and axis ranges and dropping the in-panel titles, which repeat the figure legend.
-**The manuscript still uses the co-author's originals**; the redraw exists for the
-co-author to compare and approve. See `figures/holevo/README.md`.
+**The manuscript now uses these**, at `Holevo/vector/*.pdf`, in both the main text and
+the Supplementary Information; the co-author's original rasters are kept beside them in
+`Holevo/`. See `figures/holevo/README.md`.
+
+The substitution was checked by reading both versions back off the page. Each panel was
+rendered, its axes calibrated from its own tick marks (matplotlib pads the data range by
+5%, so the frame is not at the round numbers), and each series extracted as the widest
+connected component of its colour, which excludes legend swatches and the zoom inset.
+Against the same Source Data, the published rasters agree to **0.011** data units worst
+case and the vector panels to **0.020** (the larger figure is Fig. 6a, where the marker
+glyphs sit on the curve). Both are within one drawn line width, so the substitution does
+not move any curve.
 
 ## Fig. 2
 

@@ -39,7 +39,15 @@ Measured with `--compare`, smallest lettering at placed size:
 | Fig. 7c `BLM_1` | 2.0 pt | 6 pt |
 | Fig. 7d `CLM_1` | 2.0 pt | 5 pt (zoom-inset ticks) |
 
-**The manuscript still uses the co-author's original JPEGs.** These PDFs exist so that the
-co-author can compare them at printed size and decide. Nothing swaps automatically: the
-substitution would be six `\includegraphics` paths in `nc_main_skeleton.tex` and
+**The manuscript uses these PDFs**, written to `Holevo/vector/`, for main-text Figs. 6
+and 7 and for Supplementary Figs. 3-8. The co-author's original rasters stay in
+`Holevo/` and the Code availability statement records that the analysis behind the
+panels is the co-author's and that their original plotting code is available on request.
+
+Reverting is six `\includegraphics` paths in `nc_main_skeleton.tex` and
 `_nc_work/si/holevo_0*.tex`.
+
+The curves were checked both ways round: read back off the page with tick-mark axis
+calibration and connected-component extraction, the published rasters agree with the
+Source Data to 0.011 data units worst case, and these vector panels to 0.020 - both
+inside one drawn line width.
