@@ -2,7 +2,7 @@
 // This script only edits its newly opened document.
 (function () {
   // Set this to the project root before running.
-  var base = 'C:/Users/DELL/Desktop/PQNet/';
+  var base = 'C:/path/to/PQNet/';
   var source = new File(base + 'drawio_vector/quantum_channel_matched.svg');
   var aiFile = new File(base + 'drawio_vector/quantum_channel_matched.ai');
   var pdfFolder = new Folder(base + 'output/pdf');

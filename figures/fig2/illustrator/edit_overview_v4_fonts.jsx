@@ -1,6 +1,6 @@
 (function(){
  // Set this to the project root before running.
- var base='C:/Users/DELL/Desktop/PQNet/';
+ var base='C:/path/to/PQNet/';
  var source=new File(base+'tmp/overview_edit/v4_working_source.ai');
  var output=new File(base+'Figure/final_overview_figure_v4.ai');
  var pdf=new File(base+'output/pdf/final_overview_figure_v4.pdf');

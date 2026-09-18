@@ -14,7 +14,7 @@ Supplementary Information had the two a values transposed and gave m = 30, d_i =
 Supplementary Fig. 2 (values copied from a superseded script that produced no published
 figure); the captions were corrected on 2026-09-17 to match this file.
 
-Changes from the original: the two hardcoded /home/xin/... save paths now write to OUTDIR,
+Changes from the original: the two hardcoded absolute save paths now write to OUTDIR,
 and DejaVu Serif is pinned because the published PDFs were rendered with it.
 """
 import os
