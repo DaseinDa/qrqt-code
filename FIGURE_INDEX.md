@@ -109,7 +109,7 @@ The insets are hand-placed schematic icons of each leakage model's event pattern
 of the closed-form expressions, which is what the figure legend says.
 
 `build_diagram.cjs` writes its generated SVG/JSON next to itself rather than into an
-`output/` directory; those generated files are gitignored.
+`output/` directory; those generated files are not committed.
 
 ## Fig. 5
 
