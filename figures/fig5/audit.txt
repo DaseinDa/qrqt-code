@@ -19,7 +19,7 @@ head-start curves at t = 0.5 s: DeltaP = 0.3636 (t0=10 s), 0.4565 (t0=20 s): 0.0
 figure height 9.2 cm, panel C upper limit 1000
 A legend: 3.73 x 1.42 cm, data box x [9.17, 59.2], y [0.0197, 0.473]; clearance 0.85 mm (nearest: _half)
 B legend: 2.19 x 1.01 cm, data box x [29.8, 59.2], y [0.709, 1.03]; clearance 3.46 mm (nearest: $P_{\mathrm{joint}}$)
-C legend: 3.75 x 1.36 cm, data box x [0.8, 891], y [1.56, 755]; clearance 2.73 mm (nearest: _head_start)
+C legend: 3.84 x 1.36 cm, data box x [0.682, 891], y [1.56, 755]; clearance 2.73 mm (nearest: _head_start)
 glyph check: smallest printed glyph (incl. sub/superscripts) = 6.00 pt in '$P_{\\mathrm{LWE}}$ (cryptanalytic clock)' (need >= 6)
 
 scifig audit:

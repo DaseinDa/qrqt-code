@@ -32,7 +32,7 @@ Panels: three, 1.5-column width 12.0 cm, height 9.2 cm (was 8.3 cm; the user's r
      t = 0.5 s and coincide beyond ~20 s, so they cannot be separated at print size; the
      judges' fallback "merge into one grey curve" applies). Legend (upper right): Delta P,
      t0 = 0; head start t0 = 10-20 s with the note "(Delta P > epsilon from t = 0
-     onward)"; epsilon = 2^-32. The y range extends to 10^3 only as the legend's margin;
+     to 430 s)"; epsilon = 2^-32. The y range extends to 10^3 only as the legend's margin;
      the spine and ticks stop at 10^0.
 Encoding table:
   quantity   -> colour (categorical, fixed entity map)  -> 4
@@ -65,7 +65,7 @@ What could be misread, and how the figure prevents it:
     symbols, in the row of the line sample.
   - "the two head-start curves are different things": one grey band with one legend entry
     (band sample) plus the note that with a head start Delta P > epsilon from t = 0
-    onward (no lower endpoint).
+    to 430 s (no lower endpoint; the upper end 429.75 s is set by the memory clock alone).
   - "the legend hides data": each legend sits in a region verified to contain no point of
     any curve or guide; the T_coh^E guide starts at the baseline so it does not run
     through the legend of A.
@@ -357,7 +357,7 @@ band_handle = (Patch(fc=GREY, ec="none", alpha=0.35), Line2D([], [], color=GREY,
 note_handle = Line2D([], [], ls="none")                   # blank handle: the note line has no sample
 legC = legend_at(axC, [l_dpc, band_handle, note_handle, l_eps],
                  [r"$\Delta P$, $t_0$ = 0", "head start $t_0$ = 10–20 s",
-                  r"($\Delta P > \varepsilon$ from $t = 0$ onward)", r"$\varepsilon = 2^{-32}$"],
+                  r"($\Delta P > \varepsilon$ from $t = 0$ to 430 s)", r"$\varepsilon = 2^{-32}$"],
                  "upper right", handleheight=0.6, handler_map={tuple: HandlerTuple(ndivide=1, pad=0.0)})   # ndivide=1: patch and line overlaid
 
 scifig.panel_label(axA, "A"); scifig.panel_label(axB, "B"); scifig.panel_label(axC, "C", x=-0.20, y=1.018)   # same absolute offset as A on a 2x taller axes

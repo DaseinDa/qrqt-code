@@ -7,7 +7,7 @@ Message (one sentence a referee should take away):
   pade_log_prob) reproduces the exact erf product (SI Eq. PLWE_final) over log2 T_BKZ = 58-98
   with a relative error below 5e-5 (down to 4e-7), i.e. in the cryptographically relevant
   regime |log2 P_LWE| ~ 3e3-6e3 the approximation is accurate; below log2 T_BKZ = 58 it is not
-  evaluated because the smallest error-function arguments underflow double precision.
+  evaluated because 1 - exp(-x) rounds to 0 in double precision for the smallest arguments.
 Reader's first glance should land on:
   the dashed vermilion Padé curve lying on the solid blue exact curve in A from log2 T = 58
   onward, and the relative-error curve in B staying under 1e-4.
@@ -196,7 +196,7 @@ axB.set_xlabel(XLAB)
 axB.set_xticks([20, 40, 60, 80])
 axB.xaxis.set_minor_locator(MultipleLocator(10))
 # why the curve starts at 58 (anti-pattern 11: say it on the plot); fits left of log2 T = 56
-axB.text(21.0, 1.1e-4, "not evaluated\nbelow %g: the erf\narguments underflow" % L_FIRST,
+axB.text(21.0, 1.1e-4, "not evaluated\nbelow %g: $1-e^{-x}$\nrounds to 0" % L_FIRST,
          fontsize=ANN, color=NOTE_GREY, ha="left", va="top", linespacing=1.15)
 
 scifig.panel_label(axA, "A", x=-0.2, size=9)

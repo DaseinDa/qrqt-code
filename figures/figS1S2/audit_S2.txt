@@ -13,7 +13,7 @@ palette validation (OKLab dE x100):
   => PASS
 A legend: 3.13 x 0.56 cm; clearance to nearest curve 22.64 mm (Exact (erf product))
 A annotation text: clearance to nearest curve 8.76 mm (Padé approximation)
-B note: clearance to the error curve 5.10 mm (Relative error)
+B note: clearance to the error curve 9.21 mm (Relative error)
 glyph check: smallest printed glyph (incl. sub/superscripts) = 6.00 pt in '$\\log_2 T_{\\mathrm{BKZ}} = 58$' (need >= 6)
 
 scifig audit:
