@@ -1,0 +1,27 @@
+== Supplementary Fig. S2 (fig:attack_time): values read off build_v2/Figure/log2Pr_vs_TBKZ.pdf ==
+exact log2 P_LWE: -18162.15 at log2 T = 20, -2965.96 at 98 (old figure: about -18,000 / -3,000)
+Padé finite from log2 T_BKZ = 58 onward (caption: ~58); -inf below
+relative error: 4.393e-05 at 58, min 3.573e-07 at 62, 6.131e-06 at 98; max 4.393e-05
+palette validation (OKLab dE x100):
+  ok   min pair dE =  18.7  (need >= 15)  ('#0072B2', '#009E73')
+  ok   min pair dE =  13.0  (need >= 8)  ('#D55E00', '#009E73')
+  ok   min pair dE =  11.0  (need >= 8)  ('#D55E00', '#009E73')
+  ok   min pair dE =   8.6  (need >= 8)  ('#0072B2', '#009E73')
+  ok   #0072B2  L=0.53
+  ok   #D55E00  L=0.62
+  ok   #009E73  L=0.62
+  => PASS
+A legend: 3.13 x 0.56 cm; clearance to nearest curve 22.64 mm (Exact (erf product))
+A annotation text: clearance to nearest curve 8.76 mm (Padé approximation)
+B note: clearance to the error curve 5.10 mm (Relative error)
+glyph check: smallest printed glyph (incl. sub/superscripts) = 6.00 pt in '$\\log_2 T_{\\mathrm{BKZ}} = 58$' (need >= 6)
+
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 21 text items >= 6 pt (smallest 7.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 2 curves
+  OK   axes[0]: 2 colours, min dE normal 31.2 (>=15), min dE CVD 21.9 (>=8)
+  OK   axes[1]: 1 curves
+  => 0 FAIL, 0 WARN
+saved <local path>\figures_v2\figS1S2\final\figS2_final.pdf, <local path>\figures_v2\figS1S2\final\figS2_final.png  (8.5 x 7.8 cm)

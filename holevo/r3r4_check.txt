@@ -1,0 +1,423 @@
+==============================================================================
+1. Conditional states, probabilities, averaged state (closed forms written in the proposal)
+==============================================================================
+[PASS] p_m = 1/4 for all outcomes  (max dev 2.2e-16)
+[PASS] rho_m = E_AD(sigma_m psi sigma_m^dag) with entries (a,b,c) and (a',b',c'=c^*)  (max dev 3.3e-16)
+[PASS] det rho_{0 m2} = g(1-g)|beta|^4, det rho_{1 m2} = g(1-g)|alpha|^4  (max dev 1.2e-16)
+[PASS] rho_avg = diag((1+g)/2,(1-g)/2) = E_AD(I/2)  (max dev 6.7e-16)
+[PASS] rho_avg equals Bob's reduced state Tr_CA[(I x E_AD)(psi x Phi+)] (no-signalling)  (max dev 4.4e-16)
+[PASS] submitted assumption rho_10 = X rho_00 X is violated at gamma=0.5, |alpha|^2=0.6  (max entry dev 0.500)
+   rho_00 = [[0.8, 0.3464], [0.3464, 0.2]]  rho_10 = [[0.7, 0.3464], [0.3464, 0.3]]  X rho_00 X = [[0.2, 0.3464], [0.3464, 0.8]]
+
+==============================================================================
+2. chi_K closed forms vs simulation; boundary checks stated in the SI
+==============================================================================
+[PASS] chi_empty = h(g) - [h(d_beta)+h(d_alpha)]/2 ; chi_1, chi_2, chi_12 = 0 vs simulation  (max dev 6.0e-15)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.2, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.2, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.2, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.2, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.2, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.2, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.2, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.2, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.2, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.2, a2=0.6)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.5, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.5, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.5, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.5, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.5, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.5, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.5, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.5, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.5, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.5, a2=0.6)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.8, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.8, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.8, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.8, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.8, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.8, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.8, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.8, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.8, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.8, a2=0.6)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.0)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.0)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.0)  (max 9.6e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.25)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.25)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.25)  (max 8.0e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.6)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.6)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.6)  (max 8.0e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=1.0)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=1.0)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=1.0)  (max 9.6e-16)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.1)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.1)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.3)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.3)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.6)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.6)
+[PASS] chi_empty maximal at |alpha|^2 = 1/2 for every gamma
+[PASS] |0> or |1> input: chi_empty = h(gamma) - h(|1-2gamma|)/2
+[PASS] NO symmetry about gamma=1/2 (chi(0.1) != chi(0.9) at |alpha|^2=0.6)  (chi(0.1)=0.832, chi(0.9)=0.126)
+   max spread between |alpha|^2=0.5 and 0.1 curves over gamma: 0.087 bit (full range 0.5 vs 0.0: 0.145 bit)
+[PASS] Fig. 6a family |alpha|^2 in [0.1,0.5]: spread below 0.1 bit (statement in R3 / SI Note 9)
+
+==============================================================================
+3. Renamed F_K (maximal overlap with Bob's conditional state) and proposed Fbar_K
+==============================================================================
+[PASS] F_K closed forms (1+g)/2, 1/2+(|1-2a|+|1-2a'|)/4, (1+sqrt(g^2+4r^2))/2, 1/2+(d_beta+d_alpha)/4 vs simulation  (max dev 7.8e-16)
+[PASS] Fbar_K closed forms 1/2, 2/3-g/6, 1/2+sqrt(1-g)/6, 2/3-g/6+sqrt(1-g)/3 vs exact Haar (2-design) simulation  (max dev 8.9e-16)
+   Monte-Carlo Haar average at gamma=0.3 (2000 inputs): {'empty': 0.5, '1': 0.6131, '2': 0.6392, '12': 0.8963}  closed: {'empty': 0.5, '1': 0.6167, '2': 0.6394, '12': 0.8956}
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.0)
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.3)
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.7)
+[PASS] Fbar_1 = Fbar_2 = 2/3 at gamma=0
+[PASS] all Fbar_K -> 1/2 at gamma=1
+[PASS] Fbar_K decreasing in gamma for K = {1},{2},{1,2}
+[PASS] gamma=1: F_12 = 1 while the fidelity with |psi> after Pauli correction is |alpha|^2 (m1=0), |beta|^2 (m1=1), 1/2 on average  (F_12=1.000, overlaps={(0, 0): 0.6, (0, 1): 0.6, (1, 0): 0.4, (1, 1): 0.4}, avg=0.500)
+[PASS] F_empty = (1+gamma)/2 > 1/2 for gamma>0 (guessing |0>)
+[PASS] F_empty = largest eigenvalue of rho_avg
+
+==============================================================================
+4. Numbers quoted in the R3 text (|alpha|^2 = 0.6)
+==============================================================================
+gamma  chi_empty chi_1  chi_2  | subm: chi_empty chi_1 chi_2 | F_empty F_1   F_2   F_12  | Fbar_1 Fbar_2 Fbar_12
+ 0.0   1.000     0.971  0.081  |       1.000     0.971 0.081 | 0.500   0.600 0.990 1.000 | 0.667  0.667  1.000
+ 0.1   0.832     0.808  0.046  |       0.890     0.833 0.110 | 0.550   0.590 0.967 0.976 | 0.650  0.658  0.966
+ 0.2   0.717     0.697  0.035  |       0.825     0.729 0.159 | 0.600   0.600 0.949 0.956 | 0.633  0.649  0.931
+ 0.3   0.620     0.604  0.027  |       0.782     0.637 0.219 | 0.650   0.650 0.936 0.941 | 0.617  0.639  0.896
+ 0.5   0.452     0.442  0.017  |       0.750     0.472 0.369 | 0.750   0.750 0.927 0.929 | 0.583  0.618  0.819
+ 0.9   0.126     0.124  0.003  |       0.890     0.132 0.820 | 0.950   0.950 0.976 0.976 | 0.517  0.553  0.622
+ 1.0   0.000     0.000  0.000  |       1.000     0.000 1.000 | 1.000   1.000 1.000 1.000 | 0.500  0.500  0.500
+
+==============================================================================
+5. Fig. 7 curve descriptions (|alpha|^2 = 0.6, k1 = k2 = k = 1): E[chi(t)], F(t) = sum_K P_K F_K (renamed F_K), Fbar(t)
+==============================================================================
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_independent_prototype.csv  (max dev 5.0e-11)
+-- independent
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.380 E[chi](5)=0.0071 dec=True | F(0)=0.500 F(1)=0.837 F(5)=0.997 inc=True | Fbar(1)=0.777 Fbar(5)=0.996
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.311 E[chi](5)=0.0058 dec=True | F(0)=0.550 F(1)=0.827 F(5)=0.973 inc=True | Fbar(1)=0.758 Fbar(5)=0.962
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.267 E[chi](5)=0.0049 dec=True | F(0)=0.600 F(1)=0.824 F(5)=0.954 inc=True | Fbar(1)=0.738 Fbar(5)=0.928
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.231 E[chi](5)=0.0043 dec=True | F(0)=0.650 F(1)=0.833 F(5)=0.939 inc=True | Fbar(1)=0.718 Fbar(5)=0.892
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 0.65
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 0.75
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 0.94
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 0.87
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 1.15
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 1.49
+[PASS] independent: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] independent: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] independent: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_sequential_prototype.csv  (max dev 5.0e-11)
+-- sequential
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.725 E[chi](5)=0.0394 dec=True | F(0)=0.500 F(1)=0.669 F(5)=0.983 inc=True | Fbar(1)=0.693 Fbar(5)=0.985
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.603 E[chi](5)=0.0328 dec=True | F(0)=0.550 F(1)=0.677 F(5)=0.960 inc=True | Fbar(1)=0.678 Fbar(5)=0.952
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.520 E[chi](5)=0.0283 dec=True | F(0)=0.600 F(1)=0.694 F(5)=0.942 inc=True | Fbar(1)=0.663 Fbar(5)=0.919
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.450 E[chi](5)=0.0245 dec=True | F(0)=0.650 F(1)=0.727 F(5)=0.930 inc=True | Fbar(1)=0.647 Fbar(5)=0.883
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 1.35
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 1.58
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 1.97
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 1.84
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 2.32
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 2.81
+[PASS] sequential: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] sequential: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] sequential: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_burst_prototype.csv  (max dev 5.0e-11)
+-- burst
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.368 E[chi](5)=0.0067 dec=True | F(0)=0.500 F(1)=0.816 F(5)=0.997 inc=True | Fbar(1)=0.816 Fbar(5)=0.997
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.306 E[chi](5)=0.0056 dec=True | F(0)=0.550 F(1)=0.819 F(5)=0.973 inc=True | Fbar(1)=0.795 Fbar(5)=0.963
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.264 E[chi](5)=0.0048 dec=True | F(0)=0.600 F(1)=0.825 F(5)=0.954 inc=True | Fbar(1)=0.773 Fbar(5)=0.929
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.228 E[chi](5)=0.0042 dec=True | F(0)=0.650 F(1)=0.834 F(5)=0.939 inc=True | Fbar(1)=0.750 Fbar(5)=0.893
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 1.12
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 1.18
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 1.26
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 1.26
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 1.35
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 1.47
+[PASS] burst: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] burst: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] burst: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_correlated_prototype.csv  (max dev 5.0e-11)
+-- correlated
+   mu=0.0 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.168 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.674 Fbar(5)=0.816
+   mu=0.3 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.167 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.680 Fbar(5)=0.816
+   mu=0.6 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.167 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.687 Fbar(5)=0.816
+   mu=0.9 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.166 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.698 Fbar(5)=0.817
+   t=0.5: E[chi] = 0.2756, 0.2752, 0.2747, 0.2742  (mu = 0, 0.3, 0.6, 0.9)
+   t=0.5: F     = 0.8200, 0.8201, 0.8203, 0.8204
+   t=0.5: Fbar  = 0.5974, 0.6044, 0.6126, 0.6220
+   t=1.0: E[chi] = 0.1678, 0.1675, 0.1670, 0.1664  (mu = 0, 0.3, 0.6, 0.9)
+   t=1.0: F     = 0.8628, 0.8629, 0.8630, 0.8632
+   t=1.0: Fbar  = 0.6743, 0.6798, 0.6874, 0.6975
+   t=2.0: E[chi] = 0.0619, 0.0618, 0.0616, 0.0613  (mu = 0, 0.3, 0.6, 0.9)
+   t=2.0: F     = 0.9047, 0.9047, 0.9047, 0.9048
+   t=2.0: Fbar  = 0.7621, 0.7638, 0.7671, 0.7730
+   t=5.0: E[chi] = 0.0031, 0.0031, 0.0031, 0.0031  (mu = 0, 0.3, 0.6, 0.9)
+   t=5.0: F     = 0.9279, 0.9279, 0.9279, 0.9279
+   t=5.0: Fbar  = 0.8161, 0.8161, 0.8162, 0.8166
+[PASS] correlated: larger mu gives faster decay of E[chi(t)] (ordering holds for all t)
+[PASS] correlated: submitted sentence 'larger mu gives a slower early rise of F(t)' is FALSE with the renamed F_K
+[PASS] correlated: F(t) curves differ by less than 1e-3 across mu (statement written in R4)  (max spread 4.2e-04)
+[PASS] correlated: E[chi(t)] curves differ by at most 0.002 bit across mu (statement written in R4)  (max spread 1.5e-03)
+[PASS] correlated: larger mu gives a FASTER early rise of Fbar(t) [proposed quantity]
+   long-time F(5) spread across mu: 7.79e-06; F_12 at gamma=0.5 = 0.9291; F_empty = 0.7500
+   max |difference| between mu-curves over t in [0,5]: E[chi] 0.0015 bit, F 0.0004
+[PASS] burst: E[chi(t)] = e^{-kt} chi_empty
+[PASS] burst: F(t) = e^{-kt} F_empty + (1-e^{-kt}) F_12
+-- per-class values vs gamma (|alpha|^2 = 0.6), used for the sequential-model sentence
+   gamma=0.0: chi_empty=1.0000 chi_1=0.9710 chi_2=0.0815 | F_empty=0.5000 F_1=0.6000 F_2=0.9899 F_12=1.0000
+   gamma=0.1: chi_empty=0.8319 chi_1=0.8081 chi_2=0.0462 | F_empty=0.5500 F_1=0.5900 F_2=0.9674 F_12=0.9759
+   gamma=0.2: chi_empty=0.7168 chi_1=0.6975 chi_2=0.0346 | F_empty=0.6000 F_1=0.6000 F_2=0.9494 F_12=0.9562
+   gamma=0.3: chi_empty=0.6198 chi_1=0.6042 chi_2=0.0271 | F_empty=0.6500 F_1=0.6500 F_2=0.9365 F_12=0.9414
+   gamma=0.4: chi_empty=0.5328 chi_1=0.5204 chi_2=0.0214 | F_empty=0.7000 F_1=0.7000 F_2=0.9290 F_12=0.9322
+   gamma=0.5: chi_empty=0.4517 chi_1=0.4420 chi_2=0.0167 | F_empty=0.7500 F_1=0.7500 F_2=0.9272 F_12=0.9291
+
+==============================================================================
+SUMMARY: ALL CHECKS PASSED
+==============================================================================
+
+
+##############################################################################
+# Round 3 re-run (2026-10-21, after DECISIONS_round3 Sec. B edits to r3/r4 proposals and
+# SI Notes 9-12 proposals). Full re-run of r3r4_check.py; Sec. 6 is new and verifies the
+# Bloch-vector optimality proof of Fbar_K written into appendix_holevo_proposal.tex.
+##############################################################################
+==============================================================================
+1. Conditional states, probabilities, averaged state (closed forms written in the proposal)
+==============================================================================
+[PASS] p_m = 1/4 for all outcomes  (max dev 2.2e-16)
+[PASS] rho_m = E_AD(sigma_m psi sigma_m^dag) with entries (a,b,c) and (a',b',c'=c^*)  (max dev 3.3e-16)
+[PASS] det rho_{0 m2} = g(1-g)|beta|^4, det rho_{1 m2} = g(1-g)|alpha|^4  (max dev 1.2e-16)
+[PASS] rho_avg = diag((1+g)/2,(1-g)/2) = E_AD(I/2)  (max dev 6.7e-16)
+[PASS] rho_avg equals Bob's reduced state Tr_CA[(I x E_AD)(psi x Phi+)] (no-signalling)  (max dev 4.4e-16)
+[PASS] submitted assumption rho_10 = X rho_00 X is violated at gamma=0.5, |alpha|^2=0.6  (max entry dev 0.500)
+   rho_00 = [[0.8, 0.3464], [0.3464, 0.2]]  rho_10 = [[0.7, 0.3464], [0.3464, 0.3]]  X rho_00 X = [[0.2, 0.3464], [0.3464, 0.8]]
+
+==============================================================================
+2. chi_K closed forms vs simulation; boundary checks stated in the SI
+==============================================================================
+[PASS] chi_empty = h(g) - [h(d_beta)+h(d_alpha)]/2 ; chi_1, chi_2, chi_12 = 0 vs simulation  (max dev 6.0e-15)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.2, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.2, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.2, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.2, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.2, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.2, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.2, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.2, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.2, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.2, a2=0.6)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.5, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.5, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.5, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.5, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.5, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.5, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.5, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.5, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.5, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.5, a2=0.6)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.8, a2=0.25)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.8, a2=0.25)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.8, a2=0.25)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.8, a2=0.25)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.8, a2=0.25)
+[PASS] 1-2a = |beta|^2(1-2g)-|alpha|^2 (g=0.8, a2=0.6)
+[PASS] 1-2a' = |alpha|^2(1-2g)-|beta|^2 (g=0.8, a2=0.6)
+[PASS] K={2}: (rho_00+rho_10)/2 = [[(1+g)/2, r],[r,(1-g)/2]], m2=1 with r -> -r (g=0.8, a2=0.6)
+[PASS] K={2}: eigenvalue gap = sqrt(g^2+4r^2) (g=0.8, a2=0.6)
+[PASS] K={1}: averaged states diag(a,b) for m1=0 and diag(a',b') for m1=1 (g=0.8, a2=0.6)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.0)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.0)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.0)  (max 9.6e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.25)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.25)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.25)  (max 8.0e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=0.6)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=0.6)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=0.6)  (max 8.0e-16)
+[PASS] gamma=0: chi_empty = 1 bit (|alpha|^2=1.0)  (1.000000000000)
+[PASS] gamma=1: all four conditional states = |0><0| (|alpha|^2=1.0)
+[PASS] gamma=1: chi_K = 0 for all K (|alpha|^2=1.0)  (max 9.6e-16)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.1)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.1)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.3)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.3)
+[PASS] chi_empty symmetric under |alpha|^2 <-> |beta|^2 (a2=0.6)
+[PASS] chi_empty monotonically non-increasing in gamma (a2=0.6)
+[PASS] chi_empty maximal at |alpha|^2 = 1/2 for every gamma
+[PASS] |0> or |1> input: chi_empty = h(gamma) - h(|1-2gamma|)/2
+[PASS] NO symmetry about gamma=1/2 (chi(0.1) != chi(0.9) at |alpha|^2=0.6)  (chi(0.1)=0.832, chi(0.9)=0.126)
+   max spread between |alpha|^2=0.5 and 0.1 curves over gamma: 0.087 bit (full range 0.5 vs 0.0: 0.145 bit)
+[PASS] Fig. 6a family |alpha|^2 in [0.1,0.5]: spread below 0.1 bit (statement in R3 / SI Note 9)
+
+==============================================================================
+3. Renamed F_K (maximal overlap with Bob's conditional state) and proposed Fbar_K
+==============================================================================
+[PASS] F_K closed forms (1+g)/2, 1/2+(|1-2a|+|1-2a'|)/4, (1+sqrt(g^2+4r^2))/2, 1/2+(d_beta+d_alpha)/4 vs simulation  (max dev 7.8e-16)
+[PASS] Fbar_K closed forms 1/2, 2/3-g/6, 1/2+sqrt(1-g)/6, 2/3-g/6+sqrt(1-g)/3 vs exact Haar (2-design) simulation  (max dev 8.9e-16)
+   Monte-Carlo Haar average at gamma=0.3 (2000 inputs): {'empty': 0.5, '1': 0.6131, '2': 0.6392, '12': 0.8963}  closed: {'empty': 0.5, '1': 0.6167, '2': 0.6394, '12': 0.8956}
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.0)
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.3)
+[PASS] Fbar_12 = (2 F_e + 1)/3 with F_e = (1+sqrt(1-g))^2/4 (g=0.7)
+[PASS] Fbar_1 = Fbar_2 = 2/3 at gamma=0
+[PASS] all Fbar_K -> 1/2 at gamma=1
+[PASS] Fbar_K decreasing in gamma for K = {1},{2},{1,2}
+[PASS] gamma=1: F_12 = 1 while the fidelity with |psi> after Pauli correction is |alpha|^2 (m1=0), |beta|^2 (m1=1), 1/2 on average  (F_12=1.000, overlaps={(0, 0): 0.6, (0, 1): 0.6, (1, 0): 0.4, (1, 1): 0.4}, avg=0.500)
+[PASS] F_empty = (1+gamma)/2 > 1/2 for gamma>0 (guessing |0>)
+[PASS] F_empty = largest eigenvalue of rho_avg
+
+==============================================================================
+4. Numbers quoted in the R3 text (|alpha|^2 = 0.6)
+==============================================================================
+gamma  chi_empty chi_1  chi_2  | subm: chi_empty chi_1 chi_2 | F_empty F_1   F_2   F_12  | Fbar_1 Fbar_2 Fbar_12
+ 0.0   1.000     0.971  0.081  |       1.000     0.971 0.081 | 0.500   0.600 0.990 1.000 | 0.667  0.667  1.000
+ 0.1   0.832     0.808  0.046  |       0.890     0.833 0.110 | 0.550   0.590 0.967 0.976 | 0.650  0.658  0.966
+ 0.2   0.717     0.697  0.035  |       0.825     0.729 0.159 | 0.600   0.600 0.949 0.956 | 0.633  0.649  0.931
+ 0.3   0.620     0.604  0.027  |       0.782     0.637 0.219 | 0.650   0.650 0.936 0.941 | 0.617  0.639  0.896
+ 0.5   0.452     0.442  0.017  |       0.750     0.472 0.369 | 0.750   0.750 0.927 0.929 | 0.583  0.618  0.819
+ 0.9   0.126     0.124  0.003  |       0.890     0.132 0.820 | 0.950   0.950 0.976 0.976 | 0.517  0.553  0.622
+ 1.0   0.000     0.000  0.000  |       1.000     0.000 1.000 | 1.000   1.000 1.000 1.000 | 0.500  0.500  0.500
+
+==============================================================================
+5. Fig. 7 curve descriptions (|alpha|^2 = 0.6, k1 = k2 = k = 1): E[chi(t)], F(t) = sum_K P_K F_K (renamed F_K), Fbar(t)
+==============================================================================
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: sum_K P_K(t) = 1
+[PASS] independent: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_independent_prototype.csv  (max dev 5.0e-11)
+-- independent
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.380 E[chi](5)=0.0071 dec=True | F(0)=0.500 F(1)=0.837 F(5)=0.997 inc=True | Fbar(1)=0.777 Fbar(5)=0.996
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.311 E[chi](5)=0.0058 dec=True | F(0)=0.550 F(1)=0.827 F(5)=0.973 inc=True | Fbar(1)=0.758 Fbar(5)=0.962
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.267 E[chi](5)=0.0049 dec=True | F(0)=0.600 F(1)=0.824 F(5)=0.954 inc=True | Fbar(1)=0.738 Fbar(5)=0.928
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.231 E[chi](5)=0.0043 dec=True | F(0)=0.650 F(1)=0.833 F(5)=0.939 inc=True | Fbar(1)=0.718 Fbar(5)=0.892
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 0.65
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 0.75
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 0.94
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 0.87
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 1.15
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 1.49
+[PASS] independent: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] independent: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] independent: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: sum_K P_K(t) = 1
+[PASS] sequential: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_sequential_prototype.csv  (max dev 5.0e-11)
+-- sequential
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.725 E[chi](5)=0.0394 dec=True | F(0)=0.500 F(1)=0.669 F(5)=0.983 inc=True | Fbar(1)=0.693 Fbar(5)=0.985
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.603 E[chi](5)=0.0328 dec=True | F(0)=0.550 F(1)=0.677 F(5)=0.960 inc=True | Fbar(1)=0.678 Fbar(5)=0.952
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.520 E[chi](5)=0.0283 dec=True | F(0)=0.600 F(1)=0.694 F(5)=0.942 inc=True | Fbar(1)=0.663 Fbar(5)=0.919
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.450 E[chi](5)=0.0245 dec=True | F(0)=0.650 F(1)=0.727 F(5)=0.930 inc=True | Fbar(1)=0.647 Fbar(5)=0.883
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 1.35
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 1.58
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 1.97
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 1.84
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 2.32
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 2.81
+[PASS] sequential: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] sequential: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] sequential: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: sum_K P_K(t) = 1
+[PASS] burst: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_burst_prototype.csv  (max dev 5.0e-11)
+-- burst
+   gamma=0.0            E[chi](0)=1.000 E[chi](1)=0.368 E[chi](5)=0.0067 dec=True | F(0)=0.500 F(1)=0.816 F(5)=0.997 inc=True | Fbar(1)=0.816 Fbar(5)=0.997
+   gamma=0.1            E[chi](0)=0.832 E[chi](1)=0.306 E[chi](5)=0.0056 dec=True | F(0)=0.550 F(1)=0.819 F(5)=0.973 inc=True | Fbar(1)=0.795 Fbar(5)=0.963
+   gamma=0.2            E[chi](0)=0.717 E[chi](1)=0.264 E[chi](5)=0.0048 dec=True | F(0)=0.600 F(1)=0.825 F(5)=0.954 inc=True | Fbar(1)=0.773 Fbar(5)=0.929
+   gamma=0.3            E[chi](0)=0.620 E[chi](1)=0.228 E[chi](5)=0.0042 dec=True | F(0)=0.650 F(1)=0.834 F(5)=0.939 inc=True | Fbar(1)=0.750 Fbar(5)=0.893
+   F(t) crossing gamma=0.0 vs gamma=0.1 at t ~ 1.12
+   F(t) crossing gamma=0.0 vs gamma=0.2 at t ~ 1.18
+   F(t) crossing gamma=0.0 vs gamma=0.3 at t ~ 1.26
+   F(t) crossing gamma=0.1 vs gamma=0.2 at t ~ 1.26
+   F(t) crossing gamma=0.1 vs gamma=0.3 at t ~ 1.35
+   F(t) crossing gamma=0.2 vs gamma=0.3 at t ~ 1.47
+[PASS] burst: E[chi(t)] curves keep their ordering in gamma (no crossing)
+[PASS] burst: F(t) starts increasing in gamma ((1+gamma)/2) and ends decreasing in gamma (F_12): curves cross
+[PASS] burst: Fbar(t) curves keep their ordering in gamma (no crossing) [proposed quantity, not plotted]
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: sum_K P_K(t) = 1
+[PASS] correlated: recomputed E[chi], F (renamed F_K), Fbar agree with fig7_correlated_prototype.csv  (max dev 5.0e-11)
+-- correlated
+   mu=0.0 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.168 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.674 Fbar(5)=0.816
+   mu=0.3 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.167 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.680 Fbar(5)=0.816
+   mu=0.6 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.167 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.687 Fbar(5)=0.816
+   mu=0.9 (gamma=0.5)   E[chi](0)=0.452 E[chi](1)=0.166 E[chi](5)=0.0031 dec=True | F(0)=0.750 F(1)=0.863 F(5)=0.928 inc=True | Fbar(1)=0.698 Fbar(5)=0.817
+   t=0.5: E[chi] = 0.2756, 0.2752, 0.2747, 0.2742  (mu = 0, 0.3, 0.6, 0.9)
+   t=0.5: F     = 0.8200, 0.8201, 0.8203, 0.8204
+   t=0.5: Fbar  = 0.5974, 0.6044, 0.6126, 0.6220
+   t=1.0: E[chi] = 0.1678, 0.1675, 0.1670, 0.1664  (mu = 0, 0.3, 0.6, 0.9)
+   t=1.0: F     = 0.8628, 0.8629, 0.8630, 0.8632
+   t=1.0: Fbar  = 0.6743, 0.6798, 0.6874, 0.6975
+   t=2.0: E[chi] = 0.0619, 0.0618, 0.0616, 0.0613  (mu = 0, 0.3, 0.6, 0.9)
+   t=2.0: F     = 0.9047, 0.9047, 0.9047, 0.9048
+   t=2.0: Fbar  = 0.7621, 0.7638, 0.7671, 0.7730
+   t=5.0: E[chi] = 0.0031, 0.0031, 0.0031, 0.0031  (mu = 0, 0.3, 0.6, 0.9)
+   t=5.0: F     = 0.9279, 0.9279, 0.9279, 0.9279
+   t=5.0: Fbar  = 0.8161, 0.8161, 0.8162, 0.8166
+[PASS] correlated: larger mu gives faster decay of E[chi(t)] (ordering holds for all t)
+[PASS] correlated: submitted sentence 'larger mu gives a slower early rise of F(t)' is FALSE with the renamed F_K
+[PASS] correlated: F(t) curves differ by less than 1e-3 across mu (statement written in R4)  (max spread 4.2e-04)
+[PASS] correlated: E[chi(t)] curves differ by at most 0.002 bit across mu (statement written in R4)  (max spread 1.5e-03)
+[PASS] correlated: larger mu gives a FASTER early rise of Fbar(t) [proposed quantity]
+   long-time F(5) spread across mu: 7.79e-06; F_12 at gamma=0.5 = 0.9291; F_empty = 0.7500
+   max |difference| between mu-curves over t in [0,5]: E[chi] 0.0015 bit, F 0.0004
+[PASS] burst: E[chi(t)] = e^{-kt} chi_empty
+[PASS] burst: F(t) = e^{-kt} F_empty + (1-e^{-kt}) F_12
+-- per-class values vs gamma (|alpha|^2 = 0.6), used for the sequential-model sentence
+   gamma=0.0: chi_empty=1.0000 chi_1=0.9710 chi_2=0.0815 | F_empty=0.5000 F_1=0.6000 F_2=0.9899 F_12=1.0000
+   gamma=0.1: chi_empty=0.8319 chi_1=0.8081 chi_2=0.0462 | F_empty=0.5500 F_1=0.5900 F_2=0.9674 F_12=0.9759
+   gamma=0.2: chi_empty=0.7168 chi_1=0.6975 chi_2=0.0346 | F_empty=0.6000 F_1=0.6000 F_2=0.9494 F_12=0.9562
+   gamma=0.3: chi_empty=0.6198 chi_1=0.6042 chi_2=0.0271 | F_empty=0.6500 F_1=0.6500 F_2=0.9365 F_12=0.9414
+   gamma=0.4: chi_empty=0.5328 chi_1=0.5204 chi_2=0.0214 | F_empty=0.7000 F_1=0.7000 F_2=0.9290 F_12=0.9322
+   gamma=0.5: chi_empty=0.4517 chi_1=0.4420 chi_2=0.0167 | F_empty=0.7500 F_1=0.7500 F_2=0.9272 F_12=0.9291
+
+==============================================================================
+6. Bloch-vector optimality proof of Fbar_K (round 3, decisions file Sec. B): A_K, translations,
+   Fbar(Lambda) = 1/2 + Tr(R A_K)/6, contraction R_ii <= 1, identity attains the bound
+==============================================================================
+[PASS] Bloch-linear parts after correcting the known bits: A_empty = 0, A_1 = diag(0,0,1-g), A_2 = diag(sqrt(1-g),0,0), A_12 = diag(sqrt(1-g),sqrt(1-g),1-g)  (max dev 8.9e-16)
+[PASS] translation term is +gamma e_z when the known X bit is 0 and -gamma e_z when it is 1 (sign flip only; linear part unchanged)  (max dev 7.8e-16)
+[PASS] conjugate channel X E_AD(X . X) X: same Bloch-linear part diag(sqrt(1-g),sqrt(1-g),1-g), translation -gamma e_z instead of +gamma e_z (g=0.4)
+[PASS] E_AD commutes with Z conjugation (Z-covariance): the known Z bit leaves the channel unchanged (g=0.4)
+[PASS] Fbar_K = 1/2 + Tr(A_K)/6 reproduces the four closed forms for all K on a gamma grid
+[PASS] Haar-average fidelity of an arbitrary CPTP recovery applied after Eve's correction equals 1/2 + Tr(R A_K)/6 (translation terms drop out), 560 random maps  (max dev 1.0e-15)
+[PASS] Bloch-linear part of every random CPTP map satisfies R_ii <= 1  (max R_ii = 0.996771)
+[PASS] no random CPTP recovery exceeds Fbar_K = 1/2 + Tr(A_K)/6; the identity attains it  (max excess -3.3e-16)
+[PASS] |R n + t| <= 1 and |R n| <= 1 on the Bloch sphere for 200 random CPTP maps (contraction argument behind R_ii <= 1)
+[PASS] K={1}, g=0.3: identity recovery gives 1/2 + Tr(A_K)/6 for every value of the known bits, so the average over them is the same
+[PASS] K={2}, g=0.3: identity recovery gives 1/2 + Tr(A_K)/6 for every value of the known bits, so the average over them is the same
+[PASS] K={12}, g=0.3: identity recovery gives 1/2 + Tr(A_K)/6 for every value of the known bits, so the average over them is the same
+   Fbar_K = 1/2 + Tr(A_K)/6 at gamma = 0.1 / 0.3 / 0.5: {'empty': [0.5, 0.5, 0.5], '1': [0.65, 0.6167, 0.5833], '2': [0.6581, 0.6394, 0.6179], '12': [0.9662, 0.8956, 0.819]}
+
+==============================================================================
+SUMMARY: ALL CHECKS PASSED
+==============================================================================

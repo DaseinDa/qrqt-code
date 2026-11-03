@@ -1,0 +1,35 @@
+== checks against security/fig5a_deltaP.csv and the decided numbers ==
+formula reproduces all five CSV columns (0.5-150 s)
+t0=   0 s: max P_joint 0.644984 at 16.3920 s | max DeltaP 0.221148 at 11.1140 s
+t0=  10 s: max P_joint 0.777467 at 4.5415 s | max DeltaP 0.364612 at 1.1140 s
+t0=  20 s: max P_joint 0.932513 at 0.0000 s | max DeltaP 0.466257 at 0.0000 s
+window DeltaP > 2^-32 for t0 = 0: [0.8730, 429.7508] s
+head start t0 = 10 s / 20 s: DeltaP(t=0) = 0.3612 / 0.4663 > epsilon
+palette validation (OKLab dE x100):
+  ok   min pair dE =  15.6  (need >= 15)  ('#D55E00', '#E69F00')
+  ok   min pair dE =   9.6  (need >= 8)  ('#0072B2', '#CC79A7')
+  ok   min pair dE =  13.1  (need >= 8)  ('#D55E00', '#E69F00')
+  ok   min pair dE =   8.5  (need >= 8)  ('#E69F00', '#CC79A7')
+  ok   #0072B2  L=0.53
+  ok   #D55E00  L=0.62
+  ok   #E69F00  L=0.75
+  ok   #CC79A7  L=0.68
+  => PASS
+head-start curves at t = 0.5 s: DeltaP = 0.3636 (t0=10 s), 0.4565 (t0=20 s): 0.099 decade apart
+figure height 9.2 cm, panel C upper limit 1000
+A legend: 3.73 x 1.42 cm, data box x [9.17, 59.2], y [0.0197, 0.473]; clearance 0.85 mm (nearest: _half)
+B legend: 2.19 x 1.01 cm, data box x [29.8, 59.2], y [0.709, 1.03]; clearance 3.46 mm (nearest: $P_{\mathrm{joint}}$)
+C legend: 3.75 x 1.36 cm, data box x [0.8, 891], y [1.56, 755]; clearance 2.73 mm (nearest: _head_start)
+glyph check: smallest printed glyph (incl. sub/superscripts) = 6.00 pt in '$P_{\\mathrm{LWE}}$ (cryptanalytic clock)' (need >= 6)
+
+scifig audit:
+  OK   figure width 12.0 cm (target 12.0)
+  OK   all 49 text items >= 6 pt (smallest 7.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 2 colours, min dE normal 31.2 (>=15), min dE CVD 21.9 (>=8)
+  OK   axes[1]: 3 curves
+  OK   axes[1]: 2 colours, min dE normal 21.1 (>=15), min dE CVD 8.5 (>=8)
+  OK   axes[2]: 3 curves
+  => 0 FAIL, 0 WARN
+saved <local path>\figures_v2\fig5\final\fig5_final.pdf, <local path>\figures_v2\fig5\final\fig5_final.png  (12.0 x 9.2 cm)

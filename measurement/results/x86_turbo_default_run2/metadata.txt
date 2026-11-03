@@ -1,0 +1,20 @@
+label=x86_turbo_default_run2 quick= utc=2026-11-02T17:53:29Z
+Linux DESKTOP-QC3DFOT 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Ubuntu 24.04.4 LTS
+model name	: 12th Gen Intel(R) Core(TM) i9-12950HX
+24
+aes avx2 
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+liboqs commit 5a1a854b0dc9f2141bdc771c555ee60c37950183 Thu Jul 9 10:28:37 2026 -0400
+set(OQS_VERSION_TEXT "${OQS_VERSION_MAJOR}.${OQS_VERSION_MINOR}.${OQS_VERSION_PATCH}${OQS_VERSION_PRE_RELEASE}")
+--- CMakeCache native ---
+OQS_DIST_BUILD:BOOL=OFF
+OQS_OPT_TARGET:STRING=auto
+OQS_USE_OPENSSL:BOOL=ON
+--- CMakeCache generic ---
+OQS_DIST_BUILD:BOOL=OFF
+OQS_OPT_TARGET:STRING=generic
+OQS_USE_OPENSSL:BOOL=ON
+pin=taskset -c 2 chrt -f 50  frequency state: not controlled (default Windows power plan, turbo enabled); not observable from WSL
+--- algorithm sizes (bytes: pk sk ct ss) ---

@@ -1,6 +1,8 @@
 __pycache__/
 *.pyc
 .venv/
-output/
-*.aux
-*.log
+# LaTeX by-products of the TikZ sources (the figure PDFs are built into the manuscript, not kept here)
+figures/tikz/*.aux
+figures/tikz/*.log
+figures/tikz/*.pdf
+# NOTE: no blanket "*.log" rule -- measurement/results/**/*.log are raw data of the campaigns and are tracked.

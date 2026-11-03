@@ -1,0 +1,33 @@
+data assertions passed: chi(0)=1, chi(1)=0, monotone in gamma, symmetric about 1/2,
+  quoted values at |alpha|^2=0.6 reproduced (0.832/0.620/0.452 bit),
+  closed form == holevo_correct.chi_K_closed (1e-12) == chi_K_sim 3-qubit simulation (1e-9),
+  max |chi(0.5) - chi(0.3)| = 0.0204 bit (< 0.03, caption statement)
+palette: panel A (|alpha|^2 = 0.1/0.3/0.5) = ['#0072B2', '#D55E00', '#009E73']
+palette: panel B (gamma = 0.1/0.3/0.5)     = ['#AA3377', '#E6AB02', '#33BBEE']
+--- all six hues of both panels together ---
+palette validation (OKLab dE x100):
+  ok   min pair dE =  18.5  (need >= 15)  ('#009E73', '#33BBEE')
+  ok   min pair dE =  12.2  (need >= 8)  ('#0072B2', '#AA3377')
+  ok   min pair dE =  10.3  (need >= 8)  ('#009E73', '#AA3377')
+  ok   min pair dE =   8.6  (need >= 8)  ('#0072B2', '#009E73')
+  ok   #0072B2  L=0.53
+  ok   #D55E00  L=0.62
+  ok   #009E73  L=0.62
+  ok   #AA3377  L=0.52
+  ok   #E6AB02  L=0.78
+  ok   #33BBEE  L=0.74
+  => PASS
+cross-panel pairs only: min dE normal 18.5 (>=15), min dE CVD 10.3 (>=8)
+panel A: legend box x = [0.61, 1.00], chi = [0.65, 0.92]; nearest curve 0.277 bit away
+panel B: legend box x = [0.57, 0.91], chi = [0.02, 0.29]; nearest curve 0.074 bit away
+scifig audit:
+  OK   figure width 12.0 cm (target 12.0)
+  OK   all 28 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 3 curves
+  OK   axes[0]: 3 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 3 curves
+  OK   axes[1]: 3 colours, min dE normal 28.1 (>=15), min dE CVD 22.7 (>=8)
+  => 0 FAIL, 0 WARN
+saved <local path>\figures_v2\fig6\final\fig6_final.pdf, <local path>\figures_v2\fig6\final\fig6_final.png  (12.0 x 5.5 cm)
+source data written: fig6_final_panelA.csv, fig6_final_panelB.csv

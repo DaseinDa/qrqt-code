@@ -1,0 +1,27 @@
+== Supplementary Fig. S1 (fig:pade_comparison): values read off build_v2/Figure/log2pr_vs_m.pdf ==
+log2 P_LWE at m = 60: exact -1.2301e-08, Padé -1.1754e-08 (old figure: -1.24e-8 / -1.18e-8)
+double-precision floor: exact is 0 for m <= 32, Padé is 0 for m <= 31; |log2 P| <= 1e-15 for m <= 34
+relative error (drawn): first at m = 35 (0.143); minimum 1.663e-03 at m = 44; 4.449e-02 at m = 60
+40-digit reference: true relative error 0.278 at m = 5, 4.276e-02 at 35, 1.378e-03 at 44, 4.449e-02 at 60; drawn and true agree to < 5% for m >= 46
+palette validation (OKLab dE x100):
+  ok   min pair dE =  18.7  (need >= 15)  ('#0072B2', '#009E73')
+  ok   min pair dE =  13.0  (need >= 8)  ('#D55E00', '#009E73')
+  ok   min pair dE =  11.0  (need >= 8)  ('#D55E00', '#009E73')
+  ok   min pair dE =   8.6  (need >= 8)  ('#0072B2', '#009E73')
+  ok   #0072B2  L=0.53
+  ok   #D55E00  L=0.62
+  ok   #009E73  L=0.62
+  => PASS
+A legend: 3.13 x 0.56 cm; clearance to nearest curve 28.91 mm (Padé approximation)
+B note: clearance to the error curve 5.76 mm (Relative error)
+glyph check: smallest printed glyph (incl. sub/superscripts) = 6.00 pt in '$|\\log_2 P_{\\mathrm{LWE}}| < 10^{-15}$' (need >= 6)
+
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 21 text items >= 6 pt (smallest 7.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 2 curves
+  OK   axes[0]: 2 colours, min dE normal 31.2 (>=15), min dE CVD 21.9 (>=8)
+  OK   axes[1]: 1 curves
+  => 0 FAIL, 0 WARN
+saved <local path>\figures_v2\figS1S2\final\figS1_final.pdf, <local path>\figures_v2\figS1S2\final\figS1_final.png  (8.5 x 7.8 cm)

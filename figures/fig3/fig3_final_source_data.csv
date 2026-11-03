@@ -1,0 +1,1464 @@
+"# Fig. 3 (final) source data. Panel A: tau_m(d) = T_fixed + d/v, v = 0.2 km/us (2e5 km/s), latency model B_avx2, serial (on-path) schedule, 1 Gb/s link. Panels B (hard cutoff, f = 1) and C (F* = 0.90, f = ln(1/(2F*-1)) = 0.223144): d_max = v [f T_coh - T_fixed]; negative = infeasible; knee = T_coh at which d_max = 0 (triangles)."
+panel,quantity,x,x_unit,scheme,criterion,T_fixed_us,value,value_unit
+A,tau_m,0,km,ML-KEM-512,,33.5667,33.5667,us
+A,tau_m,5,km,ML-KEM-512,,33.5667,58.5667,us
+A,tau_m,10,km,ML-KEM-512,,33.5667,83.5667,us
+A,tau_m,15,km,ML-KEM-512,,33.5667,108.5667,us
+A,tau_m,20,km,ML-KEM-512,,33.5667,133.5667,us
+A,tau_m,25,km,ML-KEM-512,,33.5667,158.5667,us
+A,tau_m,30,km,ML-KEM-512,,33.5667,183.5667,us
+A,tau_m,35,km,ML-KEM-512,,33.5667,208.5667,us
+A,tau_m,40,km,ML-KEM-512,,33.5667,233.5667,us
+A,tau_m,45,km,ML-KEM-512,,33.5667,258.5667,us
+A,tau_m,50,km,ML-KEM-512,,33.5667,283.5667,us
+A,tau_m,55,km,ML-KEM-512,,33.5667,308.5667,us
+A,tau_m,60,km,ML-KEM-512,,33.5667,333.5667,us
+A,tau_m,65,km,ML-KEM-512,,33.5667,358.5667,us
+A,tau_m,70,km,ML-KEM-512,,33.5667,383.5667,us
+A,tau_m,75,km,ML-KEM-512,,33.5667,408.5667,us
+A,tau_m,80,km,ML-KEM-512,,33.5667,433.5667,us
+A,tau_m,85,km,ML-KEM-512,,33.5667,458.5667,us
+A,tau_m,90,km,ML-KEM-512,,33.5667,483.5667,us
+A,tau_m,95,km,ML-KEM-512,,33.5667,508.5667,us
+A,tau_m,100,km,ML-KEM-512,,33.5667,533.5667,us
+A,tau_m,105,km,ML-KEM-512,,33.5667,558.5667,us
+A,tau_m,110,km,ML-KEM-512,,33.5667,583.5667,us
+A,tau_m,115,km,ML-KEM-512,,33.5667,608.5667,us
+A,tau_m,120,km,ML-KEM-512,,33.5667,633.5667,us
+A,tau_m,125,km,ML-KEM-512,,33.5667,658.5667,us
+A,tau_m,130,km,ML-KEM-512,,33.5667,683.5667,us
+A,tau_m,135,km,ML-KEM-512,,33.5667,708.5667,us
+A,tau_m,140,km,ML-KEM-512,,33.5667,733.5667,us
+A,tau_m,145,km,ML-KEM-512,,33.5667,758.5667,us
+A,tau_m,150,km,ML-KEM-512,,33.5667,783.5667,us
+A,tau_m,155,km,ML-KEM-512,,33.5667,808.5667,us
+A,tau_m,160,km,ML-KEM-512,,33.5667,833.5667,us
+A,tau_m,165,km,ML-KEM-512,,33.5667,858.5667,us
+A,tau_m,170,km,ML-KEM-512,,33.5667,883.5667,us
+A,tau_m,175,km,ML-KEM-512,,33.5667,908.5667,us
+A,tau_m,180,km,ML-KEM-512,,33.5667,933.5667,us
+A,tau_m,185,km,ML-KEM-512,,33.5667,958.5667,us
+A,tau_m,190,km,ML-KEM-512,,33.5667,983.5667,us
+A,tau_m,195,km,ML-KEM-512,,33.5667,1008.5667,us
+A,tau_m,200,km,ML-KEM-512,,33.5667,1033.5667,us
+A,tau_m,205,km,ML-KEM-512,,33.5667,1058.5667,us
+A,tau_m,210,km,ML-KEM-512,,33.5667,1083.5667,us
+A,tau_m,215,km,ML-KEM-512,,33.5667,1108.5667,us
+A,tau_m,220,km,ML-KEM-512,,33.5667,1133.5667,us
+A,tau_m,225,km,ML-KEM-512,,33.5667,1158.5667,us
+A,tau_m,230,km,ML-KEM-512,,33.5667,1183.5667,us
+A,tau_m,235,km,ML-KEM-512,,33.5667,1208.5667,us
+A,tau_m,240,km,ML-KEM-512,,33.5667,1233.5667,us
+A,tau_m,245,km,ML-KEM-512,,33.5667,1258.5667,us
+A,tau_m,250,km,ML-KEM-512,,33.5667,1283.5667,us
+A,tau_m,0,km,ML-KEM-768,,49.7960,49.7960,us
+A,tau_m,5,km,ML-KEM-768,,49.7960,74.7960,us
+A,tau_m,10,km,ML-KEM-768,,49.7960,99.7960,us
+A,tau_m,15,km,ML-KEM-768,,49.7960,124.7960,us
+A,tau_m,20,km,ML-KEM-768,,49.7960,149.7960,us
+A,tau_m,25,km,ML-KEM-768,,49.7960,174.7960,us
+A,tau_m,30,km,ML-KEM-768,,49.7960,199.7960,us
+A,tau_m,35,km,ML-KEM-768,,49.7960,224.7960,us
+A,tau_m,40,km,ML-KEM-768,,49.7960,249.7960,us
+A,tau_m,45,km,ML-KEM-768,,49.7960,274.7960,us
+A,tau_m,50,km,ML-KEM-768,,49.7960,299.7960,us
+A,tau_m,55,km,ML-KEM-768,,49.7960,324.7960,us
+A,tau_m,60,km,ML-KEM-768,,49.7960,349.7960,us
+A,tau_m,65,km,ML-KEM-768,,49.7960,374.7960,us
+A,tau_m,70,km,ML-KEM-768,,49.7960,399.7960,us
+A,tau_m,75,km,ML-KEM-768,,49.7960,424.7960,us
+A,tau_m,80,km,ML-KEM-768,,49.7960,449.7960,us
+A,tau_m,85,km,ML-KEM-768,,49.7960,474.7960,us
+A,tau_m,90,km,ML-KEM-768,,49.7960,499.7960,us
+A,tau_m,95,km,ML-KEM-768,,49.7960,524.7960,us
+A,tau_m,100,km,ML-KEM-768,,49.7960,549.7960,us
+A,tau_m,105,km,ML-KEM-768,,49.7960,574.7960,us
+A,tau_m,110,km,ML-KEM-768,,49.7960,599.7960,us
+A,tau_m,115,km,ML-KEM-768,,49.7960,624.7960,us
+A,tau_m,120,km,ML-KEM-768,,49.7960,649.7960,us
+A,tau_m,125,km,ML-KEM-768,,49.7960,674.7960,us
+A,tau_m,130,km,ML-KEM-768,,49.7960,699.7960,us
+A,tau_m,135,km,ML-KEM-768,,49.7960,724.7960,us
+A,tau_m,140,km,ML-KEM-768,,49.7960,749.7960,us
+A,tau_m,145,km,ML-KEM-768,,49.7960,774.7960,us
+A,tau_m,150,km,ML-KEM-768,,49.7960,799.7960,us
+A,tau_m,155,km,ML-KEM-768,,49.7960,824.7960,us
+A,tau_m,160,km,ML-KEM-768,,49.7960,849.7960,us
+A,tau_m,165,km,ML-KEM-768,,49.7960,874.7960,us
+A,tau_m,170,km,ML-KEM-768,,49.7960,899.7960,us
+A,tau_m,175,km,ML-KEM-768,,49.7960,924.7960,us
+A,tau_m,180,km,ML-KEM-768,,49.7960,949.7960,us
+A,tau_m,185,km,ML-KEM-768,,49.7960,974.7960,us
+A,tau_m,190,km,ML-KEM-768,,49.7960,999.7960,us
+A,tau_m,195,km,ML-KEM-768,,49.7960,1024.7960,us
+A,tau_m,200,km,ML-KEM-768,,49.7960,1049.7960,us
+A,tau_m,205,km,ML-KEM-768,,49.7960,1074.7960,us
+A,tau_m,210,km,ML-KEM-768,,49.7960,1099.7960,us
+A,tau_m,215,km,ML-KEM-768,,49.7960,1124.7960,us
+A,tau_m,220,km,ML-KEM-768,,49.7960,1149.7960,us
+A,tau_m,225,km,ML-KEM-768,,49.7960,1174.7960,us
+A,tau_m,230,km,ML-KEM-768,,49.7960,1199.7960,us
+A,tau_m,235,km,ML-KEM-768,,49.7960,1224.7960,us
+A,tau_m,240,km,ML-KEM-768,,49.7960,1249.7960,us
+A,tau_m,245,km,ML-KEM-768,,49.7960,1274.7960,us
+A,tau_m,250,km,ML-KEM-768,,49.7960,1299.7960,us
+A,tau_m,0,km,ML-KEM-1024,,72.1933,72.1933,us
+A,tau_m,5,km,ML-KEM-1024,,72.1933,97.1933,us
+A,tau_m,10,km,ML-KEM-1024,,72.1933,122.1933,us
+A,tau_m,15,km,ML-KEM-1024,,72.1933,147.1933,us
+A,tau_m,20,km,ML-KEM-1024,,72.1933,172.1933,us
+A,tau_m,25,km,ML-KEM-1024,,72.1933,197.1933,us
+A,tau_m,30,km,ML-KEM-1024,,72.1933,222.1933,us
+A,tau_m,35,km,ML-KEM-1024,,72.1933,247.1933,us
+A,tau_m,40,km,ML-KEM-1024,,72.1933,272.1933,us
+A,tau_m,45,km,ML-KEM-1024,,72.1933,297.1933,us
+A,tau_m,50,km,ML-KEM-1024,,72.1933,322.1933,us
+A,tau_m,55,km,ML-KEM-1024,,72.1933,347.1933,us
+A,tau_m,60,km,ML-KEM-1024,,72.1933,372.1933,us
+A,tau_m,65,km,ML-KEM-1024,,72.1933,397.1933,us
+A,tau_m,70,km,ML-KEM-1024,,72.1933,422.1933,us
+A,tau_m,75,km,ML-KEM-1024,,72.1933,447.1933,us
+A,tau_m,80,km,ML-KEM-1024,,72.1933,472.1933,us
+A,tau_m,85,km,ML-KEM-1024,,72.1933,497.1933,us
+A,tau_m,90,km,ML-KEM-1024,,72.1933,522.1933,us
+A,tau_m,95,km,ML-KEM-1024,,72.1933,547.1933,us
+A,tau_m,100,km,ML-KEM-1024,,72.1933,572.1933,us
+A,tau_m,105,km,ML-KEM-1024,,72.1933,597.1933,us
+A,tau_m,110,km,ML-KEM-1024,,72.1933,622.1933,us
+A,tau_m,115,km,ML-KEM-1024,,72.1933,647.1933,us
+A,tau_m,120,km,ML-KEM-1024,,72.1933,672.1933,us
+A,tau_m,125,km,ML-KEM-1024,,72.1933,697.1933,us
+A,tau_m,130,km,ML-KEM-1024,,72.1933,722.1933,us
+A,tau_m,135,km,ML-KEM-1024,,72.1933,747.1933,us
+A,tau_m,140,km,ML-KEM-1024,,72.1933,772.1933,us
+A,tau_m,145,km,ML-KEM-1024,,72.1933,797.1933,us
+A,tau_m,150,km,ML-KEM-1024,,72.1933,822.1933,us
+A,tau_m,155,km,ML-KEM-1024,,72.1933,847.1933,us
+A,tau_m,160,km,ML-KEM-1024,,72.1933,872.1933,us
+A,tau_m,165,km,ML-KEM-1024,,72.1933,897.1933,us
+A,tau_m,170,km,ML-KEM-1024,,72.1933,922.1933,us
+A,tau_m,175,km,ML-KEM-1024,,72.1933,947.1933,us
+A,tau_m,180,km,ML-KEM-1024,,72.1933,972.1933,us
+A,tau_m,185,km,ML-KEM-1024,,72.1933,997.1933,us
+A,tau_m,190,km,ML-KEM-1024,,72.1933,1022.1933,us
+A,tau_m,195,km,ML-KEM-1024,,72.1933,1047.1933,us
+A,tau_m,200,km,ML-KEM-1024,,72.1933,1072.1933,us
+A,tau_m,205,km,ML-KEM-1024,,72.1933,1097.1933,us
+A,tau_m,210,km,ML-KEM-1024,,72.1933,1122.1933,us
+A,tau_m,215,km,ML-KEM-1024,,72.1933,1147.1933,us
+A,tau_m,220,km,ML-KEM-1024,,72.1933,1172.1933,us
+A,tau_m,225,km,ML-KEM-1024,,72.1933,1197.1933,us
+A,tau_m,230,km,ML-KEM-1024,,72.1933,1222.1933,us
+A,tau_m,235,km,ML-KEM-1024,,72.1933,1247.1933,us
+A,tau_m,240,km,ML-KEM-1024,,72.1933,1272.1933,us
+A,tau_m,245,km,ML-KEM-1024,,72.1933,1297.1933,us
+A,tau_m,250,km,ML-KEM-1024,,72.1933,1322.1933,us
+A,tau_m,0,km,FrodoKEM-640,,1135.5920,1135.5920,us
+A,tau_m,5,km,FrodoKEM-640,,1135.5920,1160.5920,us
+A,tau_m,10,km,FrodoKEM-640,,1135.5920,1185.5920,us
+A,tau_m,15,km,FrodoKEM-640,,1135.5920,1210.5920,us
+A,tau_m,20,km,FrodoKEM-640,,1135.5920,1235.5920,us
+A,tau_m,25,km,FrodoKEM-640,,1135.5920,1260.5920,us
+A,tau_m,30,km,FrodoKEM-640,,1135.5920,1285.5920,us
+A,tau_m,35,km,FrodoKEM-640,,1135.5920,1310.5920,us
+A,tau_m,40,km,FrodoKEM-640,,1135.5920,1335.5920,us
+A,tau_m,45,km,FrodoKEM-640,,1135.5920,1360.5920,us
+A,tau_m,50,km,FrodoKEM-640,,1135.5920,1385.5920,us
+A,tau_m,55,km,FrodoKEM-640,,1135.5920,1410.5920,us
+A,tau_m,60,km,FrodoKEM-640,,1135.5920,1435.5920,us
+A,tau_m,65,km,FrodoKEM-640,,1135.5920,1460.5920,us
+A,tau_m,70,km,FrodoKEM-640,,1135.5920,1485.5920,us
+A,tau_m,75,km,FrodoKEM-640,,1135.5920,1510.5920,us
+A,tau_m,80,km,FrodoKEM-640,,1135.5920,1535.5920,us
+A,tau_m,85,km,FrodoKEM-640,,1135.5920,1560.5920,us
+A,tau_m,90,km,FrodoKEM-640,,1135.5920,1585.5920,us
+A,tau_m,95,km,FrodoKEM-640,,1135.5920,1610.5920,us
+A,tau_m,100,km,FrodoKEM-640,,1135.5920,1635.5920,us
+A,tau_m,105,km,FrodoKEM-640,,1135.5920,1660.5920,us
+A,tau_m,110,km,FrodoKEM-640,,1135.5920,1685.5920,us
+A,tau_m,115,km,FrodoKEM-640,,1135.5920,1710.5920,us
+A,tau_m,120,km,FrodoKEM-640,,1135.5920,1735.5920,us
+A,tau_m,125,km,FrodoKEM-640,,1135.5920,1760.5920,us
+A,tau_m,130,km,FrodoKEM-640,,1135.5920,1785.5920,us
+A,tau_m,135,km,FrodoKEM-640,,1135.5920,1810.5920,us
+A,tau_m,140,km,FrodoKEM-640,,1135.5920,1835.5920,us
+A,tau_m,145,km,FrodoKEM-640,,1135.5920,1860.5920,us
+A,tau_m,150,km,FrodoKEM-640,,1135.5920,1885.5920,us
+A,tau_m,155,km,FrodoKEM-640,,1135.5920,1910.5920,us
+A,tau_m,160,km,FrodoKEM-640,,1135.5920,1935.5920,us
+A,tau_m,165,km,FrodoKEM-640,,1135.5920,1960.5920,us
+A,tau_m,170,km,FrodoKEM-640,,1135.5920,1985.5920,us
+A,tau_m,175,km,FrodoKEM-640,,1135.5920,2010.5920,us
+A,tau_m,180,km,FrodoKEM-640,,1135.5920,2035.5920,us
+A,tau_m,185,km,FrodoKEM-640,,1135.5920,2060.5920,us
+A,tau_m,190,km,FrodoKEM-640,,1135.5920,2085.5920,us
+A,tau_m,195,km,FrodoKEM-640,,1135.5920,2110.5920,us
+A,tau_m,200,km,FrodoKEM-640,,1135.5920,2135.5920,us
+A,tau_m,205,km,FrodoKEM-640,,1135.5920,2160.5920,us
+A,tau_m,210,km,FrodoKEM-640,,1135.5920,2185.5920,us
+A,tau_m,215,km,FrodoKEM-640,,1135.5920,2210.5920,us
+A,tau_m,220,km,FrodoKEM-640,,1135.5920,2235.5920,us
+A,tau_m,225,km,FrodoKEM-640,,1135.5920,2260.5920,us
+A,tau_m,230,km,FrodoKEM-640,,1135.5920,2285.5920,us
+A,tau_m,235,km,FrodoKEM-640,,1135.5920,2310.5920,us
+A,tau_m,240,km,FrodoKEM-640,,1135.5920,2335.5920,us
+A,tau_m,245,km,FrodoKEM-640,,1135.5920,2360.5920,us
+A,tau_m,250,km,FrodoKEM-640,,1135.5920,2385.5920,us
+A,tau_m,0,km,FrodoKEM-976,,2110.4507,2110.4507,us
+A,tau_m,5,km,FrodoKEM-976,,2110.4507,2135.4507,us
+A,tau_m,10,km,FrodoKEM-976,,2110.4507,2160.4507,us
+A,tau_m,15,km,FrodoKEM-976,,2110.4507,2185.4507,us
+A,tau_m,20,km,FrodoKEM-976,,2110.4507,2210.4507,us
+A,tau_m,25,km,FrodoKEM-976,,2110.4507,2235.4507,us
+A,tau_m,30,km,FrodoKEM-976,,2110.4507,2260.4507,us
+A,tau_m,35,km,FrodoKEM-976,,2110.4507,2285.4507,us
+A,tau_m,40,km,FrodoKEM-976,,2110.4507,2310.4507,us
+A,tau_m,45,km,FrodoKEM-976,,2110.4507,2335.4507,us
+A,tau_m,50,km,FrodoKEM-976,,2110.4507,2360.4507,us
+A,tau_m,55,km,FrodoKEM-976,,2110.4507,2385.4507,us
+A,tau_m,60,km,FrodoKEM-976,,2110.4507,2410.4507,us
+A,tau_m,65,km,FrodoKEM-976,,2110.4507,2435.4507,us
+A,tau_m,70,km,FrodoKEM-976,,2110.4507,2460.4507,us
+A,tau_m,75,km,FrodoKEM-976,,2110.4507,2485.4507,us
+A,tau_m,80,km,FrodoKEM-976,,2110.4507,2510.4507,us
+A,tau_m,85,km,FrodoKEM-976,,2110.4507,2535.4507,us
+A,tau_m,90,km,FrodoKEM-976,,2110.4507,2560.4507,us
+A,tau_m,95,km,FrodoKEM-976,,2110.4507,2585.4507,us
+A,tau_m,100,km,FrodoKEM-976,,2110.4507,2610.4507,us
+A,tau_m,105,km,FrodoKEM-976,,2110.4507,2635.4507,us
+A,tau_m,110,km,FrodoKEM-976,,2110.4507,2660.4507,us
+A,tau_m,115,km,FrodoKEM-976,,2110.4507,2685.4507,us
+A,tau_m,120,km,FrodoKEM-976,,2110.4507,2710.4507,us
+A,tau_m,125,km,FrodoKEM-976,,2110.4507,2735.4507,us
+A,tau_m,130,km,FrodoKEM-976,,2110.4507,2760.4507,us
+A,tau_m,135,km,FrodoKEM-976,,2110.4507,2785.4507,us
+A,tau_m,140,km,FrodoKEM-976,,2110.4507,2810.4507,us
+A,tau_m,145,km,FrodoKEM-976,,2110.4507,2835.4507,us
+A,tau_m,150,km,FrodoKEM-976,,2110.4507,2860.4507,us
+A,tau_m,155,km,FrodoKEM-976,,2110.4507,2885.4507,us
+A,tau_m,160,km,FrodoKEM-976,,2110.4507,2910.4507,us
+A,tau_m,165,km,FrodoKEM-976,,2110.4507,2935.4507,us
+A,tau_m,170,km,FrodoKEM-976,,2110.4507,2960.4507,us
+A,tau_m,175,km,FrodoKEM-976,,2110.4507,2985.4507,us
+A,tau_m,180,km,FrodoKEM-976,,2110.4507,3010.4507,us
+A,tau_m,185,km,FrodoKEM-976,,2110.4507,3035.4507,us
+A,tau_m,190,km,FrodoKEM-976,,2110.4507,3060.4507,us
+A,tau_m,195,km,FrodoKEM-976,,2110.4507,3085.4507,us
+A,tau_m,200,km,FrodoKEM-976,,2110.4507,3110.4507,us
+A,tau_m,205,km,FrodoKEM-976,,2110.4507,3135.4507,us
+A,tau_m,210,km,FrodoKEM-976,,2110.4507,3160.4507,us
+A,tau_m,215,km,FrodoKEM-976,,2110.4507,3185.4507,us
+A,tau_m,220,km,FrodoKEM-976,,2110.4507,3210.4507,us
+A,tau_m,225,km,FrodoKEM-976,,2110.4507,3235.4507,us
+A,tau_m,230,km,FrodoKEM-976,,2110.4507,3260.4507,us
+A,tau_m,235,km,FrodoKEM-976,,2110.4507,3285.4507,us
+A,tau_m,240,km,FrodoKEM-976,,2110.4507,3310.4507,us
+A,tau_m,245,km,FrodoKEM-976,,2110.4507,3335.4507,us
+A,tau_m,250,km,FrodoKEM-976,,2110.4507,3360.4507,us
+A,tau_m,0,km,FrodoKEM-1344,,3474.8880,3474.8880,us
+A,tau_m,5,km,FrodoKEM-1344,,3474.8880,3499.8880,us
+A,tau_m,10,km,FrodoKEM-1344,,3474.8880,3524.8880,us
+A,tau_m,15,km,FrodoKEM-1344,,3474.8880,3549.8880,us
+A,tau_m,20,km,FrodoKEM-1344,,3474.8880,3574.8880,us
+A,tau_m,25,km,FrodoKEM-1344,,3474.8880,3599.8880,us
+A,tau_m,30,km,FrodoKEM-1344,,3474.8880,3624.8880,us
+A,tau_m,35,km,FrodoKEM-1344,,3474.8880,3649.8880,us
+A,tau_m,40,km,FrodoKEM-1344,,3474.8880,3674.8880,us
+A,tau_m,45,km,FrodoKEM-1344,,3474.8880,3699.8880,us
+A,tau_m,50,km,FrodoKEM-1344,,3474.8880,3724.8880,us
+A,tau_m,55,km,FrodoKEM-1344,,3474.8880,3749.8880,us
+A,tau_m,60,km,FrodoKEM-1344,,3474.8880,3774.8880,us
+A,tau_m,65,km,FrodoKEM-1344,,3474.8880,3799.8880,us
+A,tau_m,70,km,FrodoKEM-1344,,3474.8880,3824.8880,us
+A,tau_m,75,km,FrodoKEM-1344,,3474.8880,3849.8880,us
+A,tau_m,80,km,FrodoKEM-1344,,3474.8880,3874.8880,us
+A,tau_m,85,km,FrodoKEM-1344,,3474.8880,3899.8880,us
+A,tau_m,90,km,FrodoKEM-1344,,3474.8880,3924.8880,us
+A,tau_m,95,km,FrodoKEM-1344,,3474.8880,3949.8880,us
+A,tau_m,100,km,FrodoKEM-1344,,3474.8880,3974.8880,us
+A,tau_m,105,km,FrodoKEM-1344,,3474.8880,3999.8880,us
+A,tau_m,110,km,FrodoKEM-1344,,3474.8880,4024.8880,us
+A,tau_m,115,km,FrodoKEM-1344,,3474.8880,4049.8880,us
+A,tau_m,120,km,FrodoKEM-1344,,3474.8880,4074.8880,us
+A,tau_m,125,km,FrodoKEM-1344,,3474.8880,4099.8880,us
+A,tau_m,130,km,FrodoKEM-1344,,3474.8880,4124.8880,us
+A,tau_m,135,km,FrodoKEM-1344,,3474.8880,4149.8880,us
+A,tau_m,140,km,FrodoKEM-1344,,3474.8880,4174.8880,us
+A,tau_m,145,km,FrodoKEM-1344,,3474.8880,4199.8880,us
+A,tau_m,150,km,FrodoKEM-1344,,3474.8880,4224.8880,us
+A,tau_m,155,km,FrodoKEM-1344,,3474.8880,4249.8880,us
+A,tau_m,160,km,FrodoKEM-1344,,3474.8880,4274.8880,us
+A,tau_m,165,km,FrodoKEM-1344,,3474.8880,4299.8880,us
+A,tau_m,170,km,FrodoKEM-1344,,3474.8880,4324.8880,us
+A,tau_m,175,km,FrodoKEM-1344,,3474.8880,4349.8880,us
+A,tau_m,180,km,FrodoKEM-1344,,3474.8880,4374.8880,us
+A,tau_m,185,km,FrodoKEM-1344,,3474.8880,4399.8880,us
+A,tau_m,190,km,FrodoKEM-1344,,3474.8880,4424.8880,us
+A,tau_m,195,km,FrodoKEM-1344,,3474.8880,4449.8880,us
+A,tau_m,200,km,FrodoKEM-1344,,3474.8880,4474.8880,us
+A,tau_m,205,km,FrodoKEM-1344,,3474.8880,4499.8880,us
+A,tau_m,210,km,FrodoKEM-1344,,3474.8880,4524.8880,us
+A,tau_m,215,km,FrodoKEM-1344,,3474.8880,4549.8880,us
+A,tau_m,220,km,FrodoKEM-1344,,3474.8880,4574.8880,us
+A,tau_m,225,km,FrodoKEM-1344,,3474.8880,4599.8880,us
+A,tau_m,230,km,FrodoKEM-1344,,3474.8880,4624.8880,us
+A,tau_m,235,km,FrodoKEM-1344,,3474.8880,4649.8880,us
+A,tau_m,240,km,FrodoKEM-1344,,3474.8880,4674.8880,us
+A,tau_m,245,km,FrodoKEM-1344,,3474.8880,4699.8880,us
+A,tau_m,250,km,FrodoKEM-1344,,3474.8880,4724.8880,us
+A,d_max_marked,193.29,km,ML-KEM-512,hard,33.5667,1000.0,us
+A,d_max_marked,37.91,km,ML-KEM-512,0.9,33.5667,1000.0,us
+A,d_max_marked,190.04,km,ML-KEM-768,hard,49.7960,1000.0,us
+A,d_max_marked,34.67,km,ML-KEM-768,0.9,49.7960,1000.0,us
+A,d_max_marked,185.56,km,ML-KEM-1024,hard,72.1933,1000.0,us
+A,d_max_marked,30.19,km,ML-KEM-1024,0.9,72.1933,1000.0,us
+B,d_max,10,us,ML-KEM-512,hard,33.5667,-4.7133,km
+B,d_max,11.2202,us,ML-KEM-512,hard,33.5667,-4.4693,km
+B,d_max,12.5893,us,ML-KEM-512,hard,33.5667,-4.1955,km
+B,d_max,14.1254,us,ML-KEM-512,hard,33.5667,-3.8883,km
+B,d_max,15.8489,us,ML-KEM-512,hard,33.5667,-3.5436,km
+B,d_max,17.7828,us,ML-KEM-512,hard,33.5667,-3.1568,km
+B,d_max,19.9526,us,ML-KEM-512,hard,33.5667,-2.7228,km
+B,d_max,22.3872,us,ML-KEM-512,hard,33.5667,-2.2359,km
+B,d_max,25.1189,us,ML-KEM-512,hard,33.5667,-1.6896,km
+B,d_max,28.1838,us,ML-KEM-512,hard,33.5667,-1.0766,km
+B,d_max,31.6228,us,ML-KEM-512,hard,33.5667,-0.3888,km
+B,d_max,35.4813,us,ML-KEM-512,hard,33.5667,0.3829,km
+B,d_max,39.8107,us,ML-KEM-512,hard,33.5667,1.2488,km
+B,d_max,44.6684,us,ML-KEM-512,hard,33.5667,2.2203,km
+B,d_max,50.1187,us,ML-KEM-512,hard,33.5667,3.3104,km
+B,d_max,56.2341,us,ML-KEM-512,hard,33.5667,4.5335,km
+B,d_max,63.0957,us,ML-KEM-512,hard,33.5667,5.9058,km
+B,d_max,70.7946,us,ML-KEM-512,hard,33.5667,7.4456,km
+B,d_max,79.4328,us,ML-KEM-512,hard,33.5667,9.1732,km
+B,d_max,89.1251,us,ML-KEM-512,hard,33.5667,11.1117,km
+B,d_max,100,us,ML-KEM-512,hard,33.5667,13.2867,km
+B,d_max,112.202,us,ML-KEM-512,hard,33.5667,15.7270,km
+B,d_max,125.893,us,ML-KEM-512,hard,33.5667,18.4652,km
+B,d_max,141.254,us,ML-KEM-512,hard,33.5667,21.5374,km
+B,d_max,158.489,us,ML-KEM-512,hard,33.5667,24.9845,km
+B,d_max,177.828,us,ML-KEM-512,hard,33.5667,28.8522,km
+B,d_max,199.526,us,ML-KEM-512,hard,33.5667,33.1919,km
+B,d_max,223.872,us,ML-KEM-512,hard,33.5667,38.0611,km
+B,d_max,251.189,us,ML-KEM-512,hard,33.5667,43.5244,km
+B,d_max,281.838,us,ML-KEM-512,hard,33.5667,49.6543,km
+B,d_max,316.228,us,ML-KEM-512,hard,33.5667,56.5322,km
+B,d_max,354.813,us,ML-KEM-512,hard,33.5667,64.2493,km
+B,d_max,398.107,us,ML-KEM-512,hard,33.5667,72.9081,km
+B,d_max,446.684,us,ML-KEM-512,hard,33.5667,82.6234,km
+B,d_max,501.187,us,ML-KEM-512,hard,33.5667,93.5241,km
+B,d_max,562.341,us,ML-KEM-512,hard,33.5667,105.7549,km
+B,d_max,630.957,us,ML-KEM-512,hard,33.5667,119.4781,km
+B,d_max,707.946,us,ML-KEM-512,hard,33.5667,134.8758,km
+B,d_max,794.328,us,ML-KEM-512,hard,33.5667,152.1523,km
+B,d_max,891.251,us,ML-KEM-512,hard,33.5667,171.5368,km
+B,d_max,1000,us,ML-KEM-512,hard,33.5667,193.2867,km
+B,d_max,1122.02,us,ML-KEM-512,hard,33.5667,217.6904,km
+B,d_max,1258.93,us,ML-KEM-512,hard,33.5667,245.0717,km
+B,d_max,1412.54,us,ML-KEM-512,hard,33.5667,275.7942,km
+B,d_max,1584.89,us,ML-KEM-512,hard,33.5667,310.2653,km
+B,d_max,1778.28,us,ML-KEM-512,hard,33.5667,348.9425,km
+B,d_max,1995.26,us,ML-KEM-512,hard,33.5667,392.3391,km
+B,d_max,2238.72,us,ML-KEM-512,hard,33.5667,441.0309,km
+B,d_max,2511.89,us,ML-KEM-512,hard,33.5667,495.6639,km
+B,d_max,2818.38,us,ML-KEM-512,hard,33.5667,556.9632,km
+B,d_max,3162.28,us,ML-KEM-512,hard,33.5667,625.7422,km
+B,d_max,3548.13,us,ML-KEM-512,hard,33.5667,702.9134,km
+B,d_max,3981.07,us,ML-KEM-512,hard,33.5667,789.5010,km
+B,d_max,4466.84,us,ML-KEM-512,hard,33.5667,886.6538,km
+B,d_max,5011.87,us,ML-KEM-512,hard,33.5667,995.6611,km
+B,d_max,5623.41,us,ML-KEM-512,hard,33.5667,1117.9693,km
+B,d_max,6309.57,us,ML-KEM-512,hard,33.5667,1255.2013,km
+B,d_max,7079.46,us,ML-KEM-512,hard,33.5667,1409.1782,km
+B,d_max,7943.28,us,ML-KEM-512,hard,33.5667,1581.9431,km
+B,d_max,8912.51,us,ML-KEM-512,hard,33.5667,1775.7885,km
+B,d_max,10000,us,ML-KEM-512,hard,33.5667,1993.2867,km
+B,d_max,11220.2,us,ML-KEM-512,hard,33.5667,2237.3236,km
+B,d_max,12589.3,us,ML-KEM-512,hard,33.5667,2511.1375,km
+B,d_max,14125.4,us,ML-KEM-512,hard,33.5667,2818.3617,km
+B,d_max,15848.9,us,ML-KEM-512,hard,33.5667,3163.0730,km
+B,d_max,17782.8,us,ML-KEM-512,hard,33.5667,3549.8455,km
+B,d_max,19952.6,us,ML-KEM-512,hard,33.5667,3983.8113,km
+B,d_max,22387.2,us,ML-KEM-512,hard,33.5667,4470.7289,km
+B,d_max,25118.9,us,ML-KEM-512,hard,33.5667,5017.0595,km
+B,d_max,28183.8,us,ML-KEM-512,hard,33.5667,5630.0525,km
+B,d_max,31622.8,us,ML-KEM-512,hard,33.5667,6317.8420,km
+B,d_max,35481.3,us,ML-KEM-512,hard,33.5667,7089.5544,km
+B,d_max,39810.7,us,ML-KEM-512,hard,33.5667,7955.4301,km
+B,d_max,44668.4,us,ML-KEM-512,hard,33.5667,8926.9585,km
+B,d_max,50118.7,us,ML-KEM-512,hard,33.5667,10017.0313,km
+B,d_max,56234.1,us,ML-KEM-512,hard,33.5667,11240.1132,km
+B,d_max,63095.7,us,ML-KEM-512,hard,33.5667,12612.4335,km
+B,d_max,70794.6,us,ML-KEM-512,hard,33.5667,14152.2023,km
+B,d_max,79432.8,us,ML-KEM-512,hard,33.5667,15879.8514,km
+B,d_max,89125.1,us,ML-KEM-512,hard,33.5667,17818.3054,km
+B,d_max,100000,us,ML-KEM-512,hard,33.5667,19993.2867,km
+B,d_max,10,us,ML-KEM-768,hard,49.7960,-7.9592,km
+B,d_max,11.2202,us,ML-KEM-768,hard,49.7960,-7.7152,km
+B,d_max,12.5893,us,ML-KEM-768,hard,49.7960,-7.4413,km
+B,d_max,14.1254,us,ML-KEM-768,hard,49.7960,-7.1341,km
+B,d_max,15.8489,us,ML-KEM-768,hard,49.7960,-6.7894,km
+B,d_max,17.7828,us,ML-KEM-768,hard,49.7960,-6.4026,km
+B,d_max,19.9526,us,ML-KEM-768,hard,49.7960,-5.9687,km
+B,d_max,22.3872,us,ML-KEM-768,hard,49.7960,-5.4818,km
+B,d_max,25.1189,us,ML-KEM-768,hard,49.7960,-4.9354,km
+B,d_max,28.1838,us,ML-KEM-768,hard,49.7960,-4.3224,km
+B,d_max,31.6228,us,ML-KEM-768,hard,49.7960,-3.6346,km
+B,d_max,35.4813,us,ML-KEM-768,hard,49.7960,-2.8629,km
+B,d_max,39.8107,us,ML-KEM-768,hard,49.7960,-1.9971,km
+B,d_max,44.6684,us,ML-KEM-768,hard,49.7960,-1.0255,km
+B,d_max,50.1187,us,ML-KEM-768,hard,49.7960,0.0645,km
+B,d_max,56.2341,us,ML-KEM-768,hard,49.7960,1.2876,km
+B,d_max,63.0957,us,ML-KEM-768,hard,49.7960,2.6599,km
+B,d_max,70.7946,us,ML-KEM-768,hard,49.7960,4.1997,km
+B,d_max,79.4328,us,ML-KEM-768,hard,49.7960,5.9274,km
+B,d_max,89.1251,us,ML-KEM-768,hard,49.7960,7.8658,km
+B,d_max,100,us,ML-KEM-768,hard,49.7960,10.0408,km
+B,d_max,112.202,us,ML-KEM-768,hard,49.7960,12.4812,km
+B,d_max,125.893,us,ML-KEM-768,hard,49.7960,15.2193,km
+B,d_max,141.254,us,ML-KEM-768,hard,49.7960,18.2916,km
+B,d_max,158.489,us,ML-KEM-768,hard,49.7960,21.7387,km
+B,d_max,177.828,us,ML-KEM-768,hard,49.7960,25.6064,km
+B,d_max,199.526,us,ML-KEM-768,hard,49.7960,29.9460,km
+B,d_max,223.872,us,ML-KEM-768,hard,49.7960,34.8152,km
+B,d_max,251.189,us,ML-KEM-768,hard,49.7960,40.2785,km
+B,d_max,281.838,us,ML-KEM-768,hard,49.7960,46.4085,km
+B,d_max,316.228,us,ML-KEM-768,hard,49.7960,53.2864,km
+B,d_max,354.813,us,ML-KEM-768,hard,49.7960,61.0035,km
+B,d_max,398.107,us,ML-KEM-768,hard,49.7960,69.6622,km
+B,d_max,446.684,us,ML-KEM-768,hard,49.7960,79.3775,km
+B,d_max,501.187,us,ML-KEM-768,hard,49.7960,90.2782,km
+B,d_max,562.341,us,ML-KEM-768,hard,49.7960,102.5091,km
+B,d_max,630.957,us,ML-KEM-768,hard,49.7960,116.2323,km
+B,d_max,707.946,us,ML-KEM-768,hard,49.7960,131.6300,km
+B,d_max,794.328,us,ML-KEM-768,hard,49.7960,148.9064,km
+B,d_max,891.251,us,ML-KEM-768,hard,49.7960,168.2910,km
+B,d_max,1000,us,ML-KEM-768,hard,49.7960,190.0408,km
+B,d_max,1122.02,us,ML-KEM-768,hard,49.7960,214.4445,km
+B,d_max,1258.93,us,ML-KEM-768,hard,49.7960,241.8259,km
+B,d_max,1412.54,us,ML-KEM-768,hard,49.7960,272.5483,km
+B,d_max,1584.89,us,ML-KEM-768,hard,49.7960,307.0194,km
+B,d_max,1778.28,us,ML-KEM-768,hard,49.7960,345.6967,km
+B,d_max,1995.26,us,ML-KEM-768,hard,49.7960,389.0933,km
+B,d_max,2238.72,us,ML-KEM-768,hard,49.7960,437.7850,km
+B,d_max,2511.89,us,ML-KEM-768,hard,49.7960,492.4181,km
+B,d_max,2818.38,us,ML-KEM-768,hard,49.7960,553.7174,km
+B,d_max,3162.28,us,ML-KEM-768,hard,49.7960,622.4963,km
+B,d_max,3548.13,us,ML-KEM-768,hard,49.7960,699.6676,km
+B,d_max,3981.07,us,ML-KEM-768,hard,49.7960,786.2551,km
+B,d_max,4466.84,us,ML-KEM-768,hard,49.7960,883.4080,km
+B,d_max,5011.87,us,ML-KEM-768,hard,49.7960,992.4153,km
+B,d_max,5623.41,us,ML-KEM-768,hard,49.7960,1114.7235,km
+B,d_max,6309.57,us,ML-KEM-768,hard,49.7960,1251.9555,km
+B,d_max,7079.46,us,ML-KEM-768,hard,49.7960,1405.9324,km
+B,d_max,7943.28,us,ML-KEM-768,hard,49.7960,1578.6973,km
+B,d_max,8912.51,us,ML-KEM-768,hard,49.7960,1772.5427,km
+B,d_max,10000,us,ML-KEM-768,hard,49.7960,1990.0408,km
+B,d_max,11220.2,us,ML-KEM-768,hard,49.7960,2234.0777,km
+B,d_max,12589.3,us,ML-KEM-768,hard,49.7960,2507.8916,km
+B,d_max,14125.4,us,ML-KEM-768,hard,49.7960,2815.1159,km
+B,d_max,15848.9,us,ML-KEM-768,hard,49.7960,3159.8272,km
+B,d_max,17782.8,us,ML-KEM-768,hard,49.7960,3546.5996,km
+B,d_max,19952.6,us,ML-KEM-768,hard,49.7960,3980.5654,km
+B,d_max,22387.2,us,ML-KEM-768,hard,49.7960,4467.4831,km
+B,d_max,25118.9,us,ML-KEM-768,hard,49.7960,5013.8137,km
+B,d_max,28183.8,us,ML-KEM-768,hard,49.7960,5626.8067,km
+B,d_max,31622.8,us,ML-KEM-768,hard,49.7960,6314.5961,km
+B,d_max,35481.3,us,ML-KEM-768,hard,49.7960,7086.3086,km
+B,d_max,39810.7,us,ML-KEM-768,hard,49.7960,7952.1842,km
+B,d_max,44668.4,us,ML-KEM-768,hard,49.7960,8923.7126,km
+B,d_max,50118.7,us,ML-KEM-768,hard,49.7960,10013.7855,km
+B,d_max,56234.1,us,ML-KEM-768,hard,49.7960,11236.8673,km
+B,d_max,63095.7,us,ML-KEM-768,hard,49.7960,12609.1877,km
+B,d_max,70794.6,us,ML-KEM-768,hard,49.7960,14148.9565,km
+B,d_max,79432.8,us,ML-KEM-768,hard,49.7960,15876.6055,km
+B,d_max,89125.1,us,ML-KEM-768,hard,49.7960,17815.0596,km
+B,d_max,100000,us,ML-KEM-768,hard,49.7960,19990.0408,km
+B,d_max,10,us,ML-KEM-1024,hard,72.1933,-12.4387,km
+B,d_max,11.2202,us,ML-KEM-1024,hard,72.1933,-12.1946,km
+B,d_max,12.5893,us,ML-KEM-1024,hard,72.1933,-11.9208,km
+B,d_max,14.1254,us,ML-KEM-1024,hard,72.1933,-11.6136,km
+B,d_max,15.8489,us,ML-KEM-1024,hard,72.1933,-11.2689,km
+B,d_max,17.7828,us,ML-KEM-1024,hard,72.1933,-10.8821,km
+B,d_max,19.9526,us,ML-KEM-1024,hard,72.1933,-10.4481,km
+B,d_max,22.3872,us,ML-KEM-1024,hard,72.1933,-9.9612,km
+B,d_max,25.1189,us,ML-KEM-1024,hard,72.1933,-9.4149,km
+B,d_max,28.1838,us,ML-KEM-1024,hard,72.1933,-8.8019,km
+B,d_max,31.6228,us,ML-KEM-1024,hard,72.1933,-8.1141,km
+B,d_max,35.4813,us,ML-KEM-1024,hard,72.1933,-7.3424,km
+B,d_max,39.8107,us,ML-KEM-1024,hard,72.1933,-6.4765,km
+B,d_max,44.6684,us,ML-KEM-1024,hard,72.1933,-5.5050,km
+B,d_max,50.1187,us,ML-KEM-1024,hard,72.1933,-4.4149,km
+B,d_max,56.2341,us,ML-KEM-1024,hard,72.1933,-3.1918,km
+B,d_max,63.0957,us,ML-KEM-1024,hard,72.1933,-1.8195,km
+B,d_max,70.7946,us,ML-KEM-1024,hard,72.1933,-0.2797,km
+B,d_max,79.4328,us,ML-KEM-1024,hard,72.1933,1.4479,km
+B,d_max,89.1251,us,ML-KEM-1024,hard,72.1933,3.3864,km
+B,d_max,100,us,ML-KEM-1024,hard,72.1933,5.5613,km
+B,d_max,112.202,us,ML-KEM-1024,hard,72.1933,8.0017,km
+B,d_max,125.893,us,ML-KEM-1024,hard,72.1933,10.7398,km
+B,d_max,141.254,us,ML-KEM-1024,hard,72.1933,13.8121,km
+B,d_max,158.489,us,ML-KEM-1024,hard,72.1933,17.2592,km
+B,d_max,177.828,us,ML-KEM-1024,hard,72.1933,21.1269,km
+B,d_max,199.526,us,ML-KEM-1024,hard,72.1933,25.4666,km
+B,d_max,223.872,us,ML-KEM-1024,hard,72.1933,30.3358,km
+B,d_max,251.189,us,ML-KEM-1024,hard,72.1933,35.7991,km
+B,d_max,281.838,us,ML-KEM-1024,hard,72.1933,41.9290,km
+B,d_max,316.228,us,ML-KEM-1024,hard,72.1933,48.8069,km
+B,d_max,354.813,us,ML-KEM-1024,hard,72.1933,56.5240,km
+B,d_max,398.107,us,ML-KEM-1024,hard,72.1933,65.1828,km
+B,d_max,446.684,us,ML-KEM-1024,hard,72.1933,74.8981,km
+B,d_max,501.187,us,ML-KEM-1024,hard,72.1933,85.7988,km
+B,d_max,562.341,us,ML-KEM-1024,hard,72.1933,98.0296,km
+B,d_max,630.957,us,ML-KEM-1024,hard,72.1933,111.7528,km
+B,d_max,707.946,us,ML-KEM-1024,hard,72.1933,127.1505,km
+B,d_max,794.328,us,ML-KEM-1024,hard,72.1933,144.4270,km
+B,d_max,891.251,us,ML-KEM-1024,hard,72.1933,163.8115,km
+B,d_max,1000,us,ML-KEM-1024,hard,72.1933,185.5613,km
+B,d_max,1122.02,us,ML-KEM-1024,hard,72.1933,209.9650,km
+B,d_max,1258.93,us,ML-KEM-1024,hard,72.1933,237.3464,km
+B,d_max,1412.54,us,ML-KEM-1024,hard,72.1933,268.0688,km
+B,d_max,1584.89,us,ML-KEM-1024,hard,72.1933,302.5400,km
+B,d_max,1778.28,us,ML-KEM-1024,hard,72.1933,341.2172,km
+B,d_max,1995.26,us,ML-KEM-1024,hard,72.1933,384.6138,km
+B,d_max,2238.72,us,ML-KEM-1024,hard,72.1933,433.3056,km
+B,d_max,2511.89,us,ML-KEM-1024,hard,72.1933,487.9386,km
+B,d_max,2818.38,us,ML-KEM-1024,hard,72.1933,549.2379,km
+B,d_max,3162.28,us,ML-KEM-1024,hard,72.1933,618.0169,km
+B,d_max,3548.13,us,ML-KEM-1024,hard,72.1933,695.1881,km
+B,d_max,3981.07,us,ML-KEM-1024,hard,72.1933,781.7757,km
+B,d_max,4466.84,us,ML-KEM-1024,hard,72.1933,878.9285,km
+B,d_max,5011.87,us,ML-KEM-1024,hard,72.1933,987.9358,km
+B,d_max,5623.41,us,ML-KEM-1024,hard,72.1933,1110.2440,km
+B,d_max,6309.57,us,ML-KEM-1024,hard,72.1933,1247.4760,km
+B,d_max,7079.46,us,ML-KEM-1024,hard,72.1933,1401.4529,km
+B,d_max,7943.28,us,ML-KEM-1024,hard,72.1933,1574.2178,km
+B,d_max,8912.51,us,ML-KEM-1024,hard,72.1933,1768.0632,km
+B,d_max,10000,us,ML-KEM-1024,hard,72.1933,1985.5613,km
+B,d_max,11220.2,us,ML-KEM-1024,hard,72.1933,2229.5982,km
+B,d_max,12589.3,us,ML-KEM-1024,hard,72.1933,2503.4122,km
+B,d_max,14125.4,us,ML-KEM-1024,hard,72.1933,2810.6364,km
+B,d_max,15848.9,us,ML-KEM-1024,hard,72.1933,3155.3477,km
+B,d_max,17782.8,us,ML-KEM-1024,hard,72.1933,3542.1202,km
+B,d_max,19952.6,us,ML-KEM-1024,hard,72.1933,3976.0860,km
+B,d_max,22387.2,us,ML-KEM-1024,hard,72.1933,4463.0036,km
+B,d_max,25118.9,us,ML-KEM-1024,hard,72.1933,5009.3342,km
+B,d_max,28183.8,us,ML-KEM-1024,hard,72.1933,5622.3272,km
+B,d_max,31622.8,us,ML-KEM-1024,hard,72.1933,6310.1167,km
+B,d_max,35481.3,us,ML-KEM-1024,hard,72.1933,7081.8291,km
+B,d_max,39810.7,us,ML-KEM-1024,hard,72.1933,7947.7048,km
+B,d_max,44668.4,us,ML-KEM-1024,hard,72.1933,8919.2332,km
+B,d_max,50118.7,us,ML-KEM-1024,hard,72.1933,10009.3060,km
+B,d_max,56234.1,us,ML-KEM-1024,hard,72.1933,11232.3878,km
+B,d_max,63095.7,us,ML-KEM-1024,hard,72.1933,12604.7082,km
+B,d_max,70794.6,us,ML-KEM-1024,hard,72.1933,14144.4770,km
+B,d_max,79432.8,us,ML-KEM-1024,hard,72.1933,15872.1260,km
+B,d_max,89125.1,us,ML-KEM-1024,hard,72.1933,17810.5801,km
+B,d_max,100000,us,ML-KEM-1024,hard,72.1933,19985.5613,km
+B,d_max,10,us,FrodoKEM-640,hard,1135.5920,-225.1184,km
+B,d_max,11.2202,us,FrodoKEM-640,hard,1135.5920,-224.8744,km
+B,d_max,12.5893,us,FrodoKEM-640,hard,1135.5920,-224.6005,km
+B,d_max,14.1254,us,FrodoKEM-640,hard,1135.5920,-224.2933,km
+B,d_max,15.8489,us,FrodoKEM-640,hard,1135.5920,-223.9486,km
+B,d_max,17.7828,us,FrodoKEM-640,hard,1135.5920,-223.5618,km
+B,d_max,19.9526,us,FrodoKEM-640,hard,1135.5920,-223.1279,km
+B,d_max,22.3872,us,FrodoKEM-640,hard,1135.5920,-222.6410,km
+B,d_max,25.1189,us,FrodoKEM-640,hard,1135.5920,-222.0946,km
+B,d_max,28.1838,us,FrodoKEM-640,hard,1135.5920,-221.4816,km
+B,d_max,31.6228,us,FrodoKEM-640,hard,1135.5920,-220.7938,km
+B,d_max,35.4813,us,FrodoKEM-640,hard,1135.5920,-220.0221,km
+B,d_max,39.8107,us,FrodoKEM-640,hard,1135.5920,-219.1563,km
+B,d_max,44.6684,us,FrodoKEM-640,hard,1135.5920,-218.1847,km
+B,d_max,50.1187,us,FrodoKEM-640,hard,1135.5920,-217.0947,km
+B,d_max,56.2341,us,FrodoKEM-640,hard,1135.5920,-215.8716,km
+B,d_max,63.0957,us,FrodoKEM-640,hard,1135.5920,-214.4993,km
+B,d_max,70.7946,us,FrodoKEM-640,hard,1135.5920,-212.9595,km
+B,d_max,79.4328,us,FrodoKEM-640,hard,1135.5920,-211.2318,km
+B,d_max,89.1251,us,FrodoKEM-640,hard,1135.5920,-209.2934,km
+B,d_max,100,us,FrodoKEM-640,hard,1135.5920,-207.1184,km
+B,d_max,112.202,us,FrodoKEM-640,hard,1135.5920,-204.6780,km
+B,d_max,125.893,us,FrodoKEM-640,hard,1135.5920,-201.9399,km
+B,d_max,141.254,us,FrodoKEM-640,hard,1135.5920,-198.8676,km
+B,d_max,158.489,us,FrodoKEM-640,hard,1135.5920,-195.4205,km
+B,d_max,177.828,us,FrodoKEM-640,hard,1135.5920,-191.5528,km
+B,d_max,199.526,us,FrodoKEM-640,hard,1135.5920,-187.2132,km
+B,d_max,223.872,us,FrodoKEM-640,hard,1135.5920,-182.3440,km
+B,d_max,251.189,us,FrodoKEM-640,hard,1135.5920,-176.8807,km
+B,d_max,281.838,us,FrodoKEM-640,hard,1135.5920,-170.7507,km
+B,d_max,316.228,us,FrodoKEM-640,hard,1135.5920,-163.8728,km
+B,d_max,354.813,us,FrodoKEM-640,hard,1135.5920,-156.1557,km
+B,d_max,398.107,us,FrodoKEM-640,hard,1135.5920,-147.4970,km
+B,d_max,446.684,us,FrodoKEM-640,hard,1135.5920,-137.7817,km
+B,d_max,501.187,us,FrodoKEM-640,hard,1135.5920,-126.8810,km
+B,d_max,562.341,us,FrodoKEM-640,hard,1135.5920,-114.6501,km
+B,d_max,630.957,us,FrodoKEM-640,hard,1135.5920,-100.9269,km
+B,d_max,707.946,us,FrodoKEM-640,hard,1135.5920,-85.5292,km
+B,d_max,794.328,us,FrodoKEM-640,hard,1135.5920,-68.2528,km
+B,d_max,891.251,us,FrodoKEM-640,hard,1135.5920,-48.8682,km
+B,d_max,1000,us,FrodoKEM-640,hard,1135.5920,-27.1184,km
+B,d_max,1122.02,us,FrodoKEM-640,hard,1135.5920,-2.7147,km
+B,d_max,1258.93,us,FrodoKEM-640,hard,1135.5920,24.6667,km
+B,d_max,1412.54,us,FrodoKEM-640,hard,1135.5920,55.3891,km
+B,d_max,1584.89,us,FrodoKEM-640,hard,1135.5920,89.8602,km
+B,d_max,1778.28,us,FrodoKEM-640,hard,1135.5920,128.5375,km
+B,d_max,1995.26,us,FrodoKEM-640,hard,1135.5920,171.9341,km
+B,d_max,2238.72,us,FrodoKEM-640,hard,1135.5920,220.6258,km
+B,d_max,2511.89,us,FrodoKEM-640,hard,1135.5920,275.2589,km
+B,d_max,2818.38,us,FrodoKEM-640,hard,1135.5920,336.5582,km
+B,d_max,3162.28,us,FrodoKEM-640,hard,1135.5920,405.3371,km
+B,d_max,3548.13,us,FrodoKEM-640,hard,1135.5920,482.5084,km
+B,d_max,3981.07,us,FrodoKEM-640,hard,1135.5920,569.0959,km
+B,d_max,4466.84,us,FrodoKEM-640,hard,1135.5920,666.2488,km
+B,d_max,5011.87,us,FrodoKEM-640,hard,1135.5920,775.2561,km
+B,d_max,5623.41,us,FrodoKEM-640,hard,1135.5920,897.5643,km
+B,d_max,6309.57,us,FrodoKEM-640,hard,1135.5920,1034.7963,km
+B,d_max,7079.46,us,FrodoKEM-640,hard,1135.5920,1188.7732,km
+B,d_max,7943.28,us,FrodoKEM-640,hard,1135.5920,1361.5381,km
+B,d_max,8912.51,us,FrodoKEM-640,hard,1135.5920,1555.3835,km
+B,d_max,10000,us,FrodoKEM-640,hard,1135.5920,1772.8816,km
+B,d_max,11220.2,us,FrodoKEM-640,hard,1135.5920,2016.9185,km
+B,d_max,12589.3,us,FrodoKEM-640,hard,1135.5920,2290.7324,km
+B,d_max,14125.4,us,FrodoKEM-640,hard,1135.5920,2597.9567,km
+B,d_max,15848.9,us,FrodoKEM-640,hard,1135.5920,2942.6680,km
+B,d_max,17782.8,us,FrodoKEM-640,hard,1135.5920,3329.4404,km
+B,d_max,19952.6,us,FrodoKEM-640,hard,1135.5920,3763.4062,km
+B,d_max,22387.2,us,FrodoKEM-640,hard,1135.5920,4250.3239,km
+B,d_max,25118.9,us,FrodoKEM-640,hard,1135.5920,4796.6545,km
+B,d_max,28183.8,us,FrodoKEM-640,hard,1135.5920,5409.6475,km
+B,d_max,31622.8,us,FrodoKEM-640,hard,1135.5920,6097.4369,km
+B,d_max,35481.3,us,FrodoKEM-640,hard,1135.5920,6869.1494,km
+B,d_max,39810.7,us,FrodoKEM-640,hard,1135.5920,7735.0250,km
+B,d_max,44668.4,us,FrodoKEM-640,hard,1135.5920,8706.5534,km
+B,d_max,50118.7,us,FrodoKEM-640,hard,1135.5920,9796.6263,km
+B,d_max,56234.1,us,FrodoKEM-640,hard,1135.5920,11019.7081,km
+B,d_max,63095.7,us,FrodoKEM-640,hard,1135.5920,12392.0285,km
+B,d_max,70794.6,us,FrodoKEM-640,hard,1135.5920,13931.7973,km
+B,d_max,79432.8,us,FrodoKEM-640,hard,1135.5920,15659.4463,km
+B,d_max,89125.1,us,FrodoKEM-640,hard,1135.5920,17597.9004,km
+B,d_max,100000,us,FrodoKEM-640,hard,1135.5920,19772.8816,km
+B,d_max,10,us,FrodoKEM-976,hard,2110.4507,-420.0901,km
+B,d_max,11.2202,us,FrodoKEM-976,hard,2110.4507,-419.8461,km
+B,d_max,12.5893,us,FrodoKEM-976,hard,2110.4507,-419.5723,km
+B,d_max,14.1254,us,FrodoKEM-976,hard,2110.4507,-419.2651,km
+B,d_max,15.8489,us,FrodoKEM-976,hard,2110.4507,-418.9204,km
+B,d_max,17.7828,us,FrodoKEM-976,hard,2110.4507,-418.5336,km
+B,d_max,19.9526,us,FrodoKEM-976,hard,2110.4507,-418.0996,km
+B,d_max,22.3872,us,FrodoKEM-976,hard,2110.4507,-417.6127,km
+B,d_max,25.1189,us,FrodoKEM-976,hard,2110.4507,-417.0664,km
+B,d_max,28.1838,us,FrodoKEM-976,hard,2110.4507,-416.4534,km
+B,d_max,31.6228,us,FrodoKEM-976,hard,2110.4507,-415.7656,km
+B,d_max,35.4813,us,FrodoKEM-976,hard,2110.4507,-414.9939,km
+B,d_max,39.8107,us,FrodoKEM-976,hard,2110.4507,-414.1280,km
+B,d_max,44.6684,us,FrodoKEM-976,hard,2110.4507,-413.1565,km
+B,d_max,50.1187,us,FrodoKEM-976,hard,2110.4507,-412.0664,km
+B,d_max,56.2341,us,FrodoKEM-976,hard,2110.4507,-410.8433,km
+B,d_max,63.0957,us,FrodoKEM-976,hard,2110.4507,-409.4710,km
+B,d_max,70.7946,us,FrodoKEM-976,hard,2110.4507,-407.9312,km
+B,d_max,79.4328,us,FrodoKEM-976,hard,2110.4507,-406.2036,km
+B,d_max,89.1251,us,FrodoKEM-976,hard,2110.4507,-404.2651,km
+B,d_max,100,us,FrodoKEM-976,hard,2110.4507,-402.0901,km
+B,d_max,112.202,us,FrodoKEM-976,hard,2110.4507,-399.6498,km
+B,d_max,125.893,us,FrodoKEM-976,hard,2110.4507,-396.9116,km
+B,d_max,141.254,us,FrodoKEM-976,hard,2110.4507,-393.8394,km
+B,d_max,158.489,us,FrodoKEM-976,hard,2110.4507,-390.3923,km
+B,d_max,177.828,us,FrodoKEM-976,hard,2110.4507,-386.5246,km
+B,d_max,199.526,us,FrodoKEM-976,hard,2110.4507,-382.1849,km
+B,d_max,223.872,us,FrodoKEM-976,hard,2110.4507,-377.3157,km
+B,d_max,251.189,us,FrodoKEM-976,hard,2110.4507,-371.8524,km
+B,d_max,281.838,us,FrodoKEM-976,hard,2110.4507,-365.7225,km
+B,d_max,316.228,us,FrodoKEM-976,hard,2110.4507,-358.8446,km
+B,d_max,354.813,us,FrodoKEM-976,hard,2110.4507,-351.1275,km
+B,d_max,398.107,us,FrodoKEM-976,hard,2110.4507,-342.4687,km
+B,d_max,446.684,us,FrodoKEM-976,hard,2110.4507,-332.7534,km
+B,d_max,501.187,us,FrodoKEM-976,hard,2110.4507,-321.8527,km
+B,d_max,562.341,us,FrodoKEM-976,hard,2110.4507,-309.6219,km
+B,d_max,630.957,us,FrodoKEM-976,hard,2110.4507,-295.8987,km
+B,d_max,707.946,us,FrodoKEM-976,hard,2110.4507,-280.5010,km
+B,d_max,794.328,us,FrodoKEM-976,hard,2110.4507,-263.2245,km
+B,d_max,891.251,us,FrodoKEM-976,hard,2110.4507,-243.8400,km
+B,d_max,1000,us,FrodoKEM-976,hard,2110.4507,-222.0901,km
+B,d_max,1122.02,us,FrodoKEM-976,hard,2110.4507,-197.6864,km
+B,d_max,1258.93,us,FrodoKEM-976,hard,2110.4507,-170.3051,km
+B,d_max,1412.54,us,FrodoKEM-976,hard,2110.4507,-139.5826,km
+B,d_max,1584.89,us,FrodoKEM-976,hard,2110.4507,-105.1115,km
+B,d_max,1778.28,us,FrodoKEM-976,hard,2110.4507,-66.4343,km
+B,d_max,1995.26,us,FrodoKEM-976,hard,2110.4507,-23.0377,km
+B,d_max,2238.72,us,FrodoKEM-976,hard,2110.4507,25.6541,km
+B,d_max,2511.89,us,FrodoKEM-976,hard,2110.4507,80.2871,km
+B,d_max,2818.38,us,FrodoKEM-976,hard,2110.4507,141.5864,km
+B,d_max,3162.28,us,FrodoKEM-976,hard,2110.4507,210.3654,km
+B,d_max,3548.13,us,FrodoKEM-976,hard,2110.4507,287.5366,km
+B,d_max,3981.07,us,FrodoKEM-976,hard,2110.4507,374.1242,km
+B,d_max,4466.84,us,FrodoKEM-976,hard,2110.4507,471.2770,km
+B,d_max,5011.87,us,FrodoKEM-976,hard,2110.4507,580.2843,km
+B,d_max,5623.41,us,FrodoKEM-976,hard,2110.4507,702.5925,km
+B,d_max,6309.57,us,FrodoKEM-976,hard,2110.4507,839.8245,km
+B,d_max,7079.46,us,FrodoKEM-976,hard,2110.4507,993.8014,km
+B,d_max,7943.28,us,FrodoKEM-976,hard,2110.4507,1166.5663,km
+B,d_max,8912.51,us,FrodoKEM-976,hard,2110.4507,1360.4117,km
+B,d_max,10000,us,FrodoKEM-976,hard,2110.4507,1577.9099,km
+B,d_max,11220.2,us,FrodoKEM-976,hard,2110.4507,1821.9468,km
+B,d_max,12589.3,us,FrodoKEM-976,hard,2110.4507,2095.7607,km
+B,d_max,14125.4,us,FrodoKEM-976,hard,2110.4507,2402.9849,km
+B,d_max,15848.9,us,FrodoKEM-976,hard,2110.4507,2747.6962,km
+B,d_max,17782.8,us,FrodoKEM-976,hard,2110.4507,3134.4687,km
+B,d_max,19952.6,us,FrodoKEM-976,hard,2110.4507,3568.4345,km
+B,d_max,22387.2,us,FrodoKEM-976,hard,2110.4507,4055.3521,km
+B,d_max,25118.9,us,FrodoKEM-976,hard,2110.4507,4601.6827,km
+B,d_max,28183.8,us,FrodoKEM-976,hard,2110.4507,5214.6757,km
+B,d_max,31622.8,us,FrodoKEM-976,hard,2110.4507,5902.4652,km
+B,d_max,35481.3,us,FrodoKEM-976,hard,2110.4507,6674.1776,km
+B,d_max,39810.7,us,FrodoKEM-976,hard,2110.4507,7540.0533,km
+B,d_max,44668.4,us,FrodoKEM-976,hard,2110.4507,8511.5817,km
+B,d_max,50118.7,us,FrodoKEM-976,hard,2110.4507,9601.6545,km
+B,d_max,56234.1,us,FrodoKEM-976,hard,2110.4507,10824.7364,km
+B,d_max,63095.7,us,FrodoKEM-976,hard,2110.4507,12197.0567,km
+B,d_max,70794.6,us,FrodoKEM-976,hard,2110.4507,13736.8255,km
+B,d_max,79432.8,us,FrodoKEM-976,hard,2110.4507,15464.4746,km
+B,d_max,89125.1,us,FrodoKEM-976,hard,2110.4507,17402.9286,km
+B,d_max,100000,us,FrodoKEM-976,hard,2110.4507,19577.9099,km
+B,d_max,10,us,FrodoKEM-1344,hard,3474.8880,-692.9776,km
+B,d_max,11.2202,us,FrodoKEM-1344,hard,3474.8880,-692.7336,km
+B,d_max,12.5893,us,FrodoKEM-1344,hard,3474.8880,-692.4597,km
+B,d_max,14.1254,us,FrodoKEM-1344,hard,3474.8880,-692.1525,km
+B,d_max,15.8489,us,FrodoKEM-1344,hard,3474.8880,-691.8078,km
+B,d_max,17.7828,us,FrodoKEM-1344,hard,3474.8880,-691.4210,km
+B,d_max,19.9526,us,FrodoKEM-1344,hard,3474.8880,-690.9871,km
+B,d_max,22.3872,us,FrodoKEM-1344,hard,3474.8880,-690.5002,km
+B,d_max,25.1189,us,FrodoKEM-1344,hard,3474.8880,-689.9538,km
+B,d_max,28.1838,us,FrodoKEM-1344,hard,3474.8880,-689.3408,km
+B,d_max,31.6228,us,FrodoKEM-1344,hard,3474.8880,-688.6530,km
+B,d_max,35.4813,us,FrodoKEM-1344,hard,3474.8880,-687.8813,km
+B,d_max,39.8107,us,FrodoKEM-1344,hard,3474.8880,-687.0155,km
+B,d_max,44.6684,us,FrodoKEM-1344,hard,3474.8880,-686.0439,km
+B,d_max,50.1187,us,FrodoKEM-1344,hard,3474.8880,-684.9539,km
+B,d_max,56.2341,us,FrodoKEM-1344,hard,3474.8880,-683.7308,km
+B,d_max,63.0957,us,FrodoKEM-1344,hard,3474.8880,-682.3585,km
+B,d_max,70.7946,us,FrodoKEM-1344,hard,3474.8880,-680.8187,km
+B,d_max,79.4328,us,FrodoKEM-1344,hard,3474.8880,-679.0910,km
+B,d_max,89.1251,us,FrodoKEM-1344,hard,3474.8880,-677.1526,km
+B,d_max,100,us,FrodoKEM-1344,hard,3474.8880,-674.9776,km
+B,d_max,112.202,us,FrodoKEM-1344,hard,3474.8880,-672.5372,km
+B,d_max,125.893,us,FrodoKEM-1344,hard,3474.8880,-669.7991,km
+B,d_max,141.254,us,FrodoKEM-1344,hard,3474.8880,-666.7268,km
+B,d_max,158.489,us,FrodoKEM-1344,hard,3474.8880,-663.2797,km
+B,d_max,177.828,us,FrodoKEM-1344,hard,3474.8880,-659.4120,km
+B,d_max,199.526,us,FrodoKEM-1344,hard,3474.8880,-655.0724,km
+B,d_max,223.872,us,FrodoKEM-1344,hard,3474.8880,-650.2032,km
+B,d_max,251.189,us,FrodoKEM-1344,hard,3474.8880,-644.7399,km
+B,d_max,281.838,us,FrodoKEM-1344,hard,3474.8880,-638.6099,km
+B,d_max,316.228,us,FrodoKEM-1344,hard,3474.8880,-631.7320,km
+B,d_max,354.813,us,FrodoKEM-1344,hard,3474.8880,-624.0149,km
+B,d_max,398.107,us,FrodoKEM-1344,hard,3474.8880,-615.3562,km
+B,d_max,446.684,us,FrodoKEM-1344,hard,3474.8880,-605.6409,km
+B,d_max,501.187,us,FrodoKEM-1344,hard,3474.8880,-594.7402,km
+B,d_max,562.341,us,FrodoKEM-1344,hard,3474.8880,-582.5093,km
+B,d_max,630.957,us,FrodoKEM-1344,hard,3474.8880,-568.7861,km
+B,d_max,707.946,us,FrodoKEM-1344,hard,3474.8880,-553.3884,km
+B,d_max,794.328,us,FrodoKEM-1344,hard,3474.8880,-536.1120,km
+B,d_max,891.251,us,FrodoKEM-1344,hard,3474.8880,-516.7274,km
+B,d_max,1000,us,FrodoKEM-1344,hard,3474.8880,-494.9776,km
+B,d_max,1122.02,us,FrodoKEM-1344,hard,3474.8880,-470.5739,km
+B,d_max,1258.93,us,FrodoKEM-1344,hard,3474.8880,-443.1925,km
+B,d_max,1412.54,us,FrodoKEM-1344,hard,3474.8880,-412.4701,km
+B,d_max,1584.89,us,FrodoKEM-1344,hard,3474.8880,-377.9990,km
+B,d_max,1778.28,us,FrodoKEM-1344,hard,3474.8880,-339.3217,km
+B,d_max,1995.26,us,FrodoKEM-1344,hard,3474.8880,-295.9251,km
+B,d_max,2238.72,us,FrodoKEM-1344,hard,3474.8880,-247.2334,km
+B,d_max,2511.89,us,FrodoKEM-1344,hard,3474.8880,-192.6003,km
+B,d_max,2818.38,us,FrodoKEM-1344,hard,3474.8880,-131.3010,km
+B,d_max,3162.28,us,FrodoKEM-1344,hard,3474.8880,-62.5221,km
+B,d_max,3548.13,us,FrodoKEM-1344,hard,3474.8880,14.6492,km
+B,d_max,3981.07,us,FrodoKEM-1344,hard,3474.8880,101.2367,km
+B,d_max,4466.84,us,FrodoKEM-1344,hard,3474.8880,198.3896,km
+B,d_max,5011.87,us,FrodoKEM-1344,hard,3474.8880,307.3969,km
+B,d_max,5623.41,us,FrodoKEM-1344,hard,3474.8880,429.7051,km
+B,d_max,6309.57,us,FrodoKEM-1344,hard,3474.8880,566.9371,km
+B,d_max,7079.46,us,FrodoKEM-1344,hard,3474.8880,720.9140,km
+B,d_max,7943.28,us,FrodoKEM-1344,hard,3474.8880,893.6789,km
+B,d_max,8912.51,us,FrodoKEM-1344,hard,3474.8880,1087.5243,km
+B,d_max,10000,us,FrodoKEM-1344,hard,3474.8880,1305.0224,km
+B,d_max,11220.2,us,FrodoKEM-1344,hard,3474.8880,1549.0593,km
+B,d_max,12589.3,us,FrodoKEM-1344,hard,3474.8880,1822.8732,km
+B,d_max,14125.4,us,FrodoKEM-1344,hard,3474.8880,2130.0975,km
+B,d_max,15848.9,us,FrodoKEM-1344,hard,3474.8880,2474.8088,km
+B,d_max,17782.8,us,FrodoKEM-1344,hard,3474.8880,2861.5812,km
+B,d_max,19952.6,us,FrodoKEM-1344,hard,3474.8880,3295.5470,km
+B,d_max,22387.2,us,FrodoKEM-1344,hard,3474.8880,3782.4647,km
+B,d_max,25118.9,us,FrodoKEM-1344,hard,3474.8880,4328.7953,km
+B,d_max,28183.8,us,FrodoKEM-1344,hard,3474.8880,4941.7883,km
+B,d_max,31622.8,us,FrodoKEM-1344,hard,3474.8880,5629.5777,km
+B,d_max,35481.3,us,FrodoKEM-1344,hard,3474.8880,6401.2902,km
+B,d_max,39810.7,us,FrodoKEM-1344,hard,3474.8880,7267.1658,km
+B,d_max,44668.4,us,FrodoKEM-1344,hard,3474.8880,8238.6942,km
+B,d_max,50118.7,us,FrodoKEM-1344,hard,3474.8880,9328.7671,km
+B,d_max,56234.1,us,FrodoKEM-1344,hard,3474.8880,10551.8489,km
+B,d_max,63095.7,us,FrodoKEM-1344,hard,3474.8880,11924.1693,km
+B,d_max,70794.6,us,FrodoKEM-1344,hard,3474.8880,13463.9381,km
+B,d_max,79432.8,us,FrodoKEM-1344,hard,3474.8880,15191.5871,km
+B,d_max,89125.1,us,FrodoKEM-1344,hard,3474.8880,17130.0412,km
+B,d_max,100000,us,FrodoKEM-1344,hard,3474.8880,19305.0224,km
+B,d_max,10,us,no-PQC reference,hard,0.1080,1.9784,km
+B,d_max,11.2202,us,no-PQC reference,hard,0.1080,2.2224,km
+B,d_max,12.5893,us,no-PQC reference,hard,0.1080,2.4963,km
+B,d_max,14.1254,us,no-PQC reference,hard,0.1080,2.8035,km
+B,d_max,15.8489,us,no-PQC reference,hard,0.1080,3.1482,km
+B,d_max,17.7828,us,no-PQC reference,hard,0.1080,3.5350,km
+B,d_max,19.9526,us,no-PQC reference,hard,0.1080,3.9689,km
+B,d_max,22.3872,us,no-PQC reference,hard,0.1080,4.4558,km
+B,d_max,25.1189,us,no-PQC reference,hard,0.1080,5.0022,km
+B,d_max,28.1838,us,no-PQC reference,hard,0.1080,5.6152,km
+B,d_max,31.6228,us,no-PQC reference,hard,0.1080,6.3030,km
+B,d_max,35.4813,us,no-PQC reference,hard,0.1080,7.0747,km
+B,d_max,39.8107,us,no-PQC reference,hard,0.1080,7.9405,km
+B,d_max,44.6684,us,no-PQC reference,hard,0.1080,8.9121,km
+B,d_max,50.1187,us,no-PQC reference,hard,0.1080,10.0021,km
+B,d_max,56.2341,us,no-PQC reference,hard,0.1080,11.2252,km
+B,d_max,63.0957,us,no-PQC reference,hard,0.1080,12.5975,km
+B,d_max,70.7946,us,no-PQC reference,hard,0.1080,14.1373,km
+B,d_max,79.4328,us,no-PQC reference,hard,0.1080,15.8650,km
+B,d_max,89.1251,us,no-PQC reference,hard,0.1080,17.8034,km
+B,d_max,100,us,no-PQC reference,hard,0.1080,19.9784,km
+B,d_max,112.202,us,no-PQC reference,hard,0.1080,22.4188,km
+B,d_max,125.893,us,no-PQC reference,hard,0.1080,25.1569,km
+B,d_max,141.254,us,no-PQC reference,hard,0.1080,28.2292,km
+B,d_max,158.489,us,no-PQC reference,hard,0.1080,31.6763,km
+B,d_max,177.828,us,no-PQC reference,hard,0.1080,35.5440,km
+B,d_max,199.526,us,no-PQC reference,hard,0.1080,39.8836,km
+B,d_max,223.872,us,no-PQC reference,hard,0.1080,44.7528,km
+B,d_max,251.189,us,no-PQC reference,hard,0.1080,50.2161,km
+B,d_max,281.838,us,no-PQC reference,hard,0.1080,56.3461,km
+B,d_max,316.228,us,no-PQC reference,hard,0.1080,63.2240,km
+B,d_max,354.813,us,no-PQC reference,hard,0.1080,70.9411,km
+B,d_max,398.107,us,no-PQC reference,hard,0.1080,79.5998,km
+B,d_max,446.684,us,no-PQC reference,hard,0.1080,89.3151,km
+B,d_max,501.187,us,no-PQC reference,hard,0.1080,100.2158,km
+B,d_max,562.341,us,no-PQC reference,hard,0.1080,112.4467,km
+B,d_max,630.957,us,no-PQC reference,hard,0.1080,126.1699,km
+B,d_max,707.946,us,no-PQC reference,hard,0.1080,141.5676,km
+B,d_max,794.328,us,no-PQC reference,hard,0.1080,158.8440,km
+B,d_max,891.251,us,no-PQC reference,hard,0.1080,178.2286,km
+B,d_max,1000,us,no-PQC reference,hard,0.1080,199.9784,km
+B,d_max,1122.02,us,no-PQC reference,hard,0.1080,224.3821,km
+B,d_max,1258.93,us,no-PQC reference,hard,0.1080,251.7635,km
+B,d_max,1412.54,us,no-PQC reference,hard,0.1080,282.4859,km
+B,d_max,1584.89,us,no-PQC reference,hard,0.1080,316.9570,km
+B,d_max,1778.28,us,no-PQC reference,hard,0.1080,355.6343,km
+B,d_max,1995.26,us,no-PQC reference,hard,0.1080,399.0309,km
+B,d_max,2238.72,us,no-PQC reference,hard,0.1080,447.7226,km
+B,d_max,2511.89,us,no-PQC reference,hard,0.1080,502.3557,km
+B,d_max,2818.38,us,no-PQC reference,hard,0.1080,563.6550,km
+B,d_max,3162.28,us,no-PQC reference,hard,0.1080,632.4339,km
+B,d_max,3548.13,us,no-PQC reference,hard,0.1080,709.6052,km
+B,d_max,3981.07,us,no-PQC reference,hard,0.1080,796.1927,km
+B,d_max,4466.84,us,no-PQC reference,hard,0.1080,893.3456,km
+B,d_max,5011.87,us,no-PQC reference,hard,0.1080,1002.3529,km
+B,d_max,5623.41,us,no-PQC reference,hard,0.1080,1124.6611,km
+B,d_max,6309.57,us,no-PQC reference,hard,0.1080,1261.8931,km
+B,d_max,7079.46,us,no-PQC reference,hard,0.1080,1415.8700,km
+B,d_max,7943.28,us,no-PQC reference,hard,0.1080,1588.6349,km
+B,d_max,8912.51,us,no-PQC reference,hard,0.1080,1782.4803,km
+B,d_max,10000,us,no-PQC reference,hard,0.1080,1999.9784,km
+B,d_max,11220.2,us,no-PQC reference,hard,0.1080,2244.0153,km
+B,d_max,12589.3,us,no-PQC reference,hard,0.1080,2517.8292,km
+B,d_max,14125.4,us,no-PQC reference,hard,0.1080,2825.0535,km
+B,d_max,15848.9,us,no-PQC reference,hard,0.1080,3169.7648,km
+B,d_max,17782.8,us,no-PQC reference,hard,0.1080,3556.5372,km
+B,d_max,19952.6,us,no-PQC reference,hard,0.1080,3990.5030,km
+B,d_max,22387.2,us,no-PQC reference,hard,0.1080,4477.4207,km
+B,d_max,25118.9,us,no-PQC reference,hard,0.1080,5023.7513,km
+B,d_max,28183.8,us,no-PQC reference,hard,0.1080,5636.7443,km
+B,d_max,31622.8,us,no-PQC reference,hard,0.1080,6324.5337,km
+B,d_max,35481.3,us,no-PQC reference,hard,0.1080,7096.2462,km
+B,d_max,39810.7,us,no-PQC reference,hard,0.1080,7962.1218,km
+B,d_max,44668.4,us,no-PQC reference,hard,0.1080,8933.6502,km
+B,d_max,50118.7,us,no-PQC reference,hard,0.1080,10023.7231,km
+B,d_max,56234.1,us,no-PQC reference,hard,0.1080,11246.8049,km
+B,d_max,63095.7,us,no-PQC reference,hard,0.1080,12619.1253,km
+B,d_max,70794.6,us,no-PQC reference,hard,0.1080,14158.8941,km
+B,d_max,79432.8,us,no-PQC reference,hard,0.1080,15886.5431,km
+B,d_max,89125.1,us,no-PQC reference,hard,0.1080,17824.9972,km
+B,d_max,100000,us,no-PQC reference,hard,0.1080,19999.9784,km
+B,knee,33.5667,us,ML-KEM-512,hard,33.5667,0,km
+B,knee,49.7960,us,ML-KEM-768,hard,49.7960,0,km
+B,knee,72.1933,us,ML-KEM-1024,hard,72.1933,0,km
+B,knee,1135.5920,us,FrodoKEM-640,hard,1135.5920,0,km
+B,knee,2110.4507,us,FrodoKEM-976,hard,2110.4507,0,km
+B,knee,3474.8880,us,FrodoKEM-1344,hard,3474.8880,0,km
+B,d_max_marked,1000,us,ML-KEM-768,hard,49.7960,190.04,km
+B,d_max_marked,10000,us,ML-KEM-768,hard,49.7960,1990.04,km
+C,d_max,10,us,ML-KEM-512,0.9,33.5667,-6.2671,km
+C,d_max,11.2202,us,ML-KEM-512,0.9,33.5667,-6.2126,km
+C,d_max,12.5893,us,ML-KEM-512,0.9,33.5667,-6.1515,km
+C,d_max,14.1254,us,ML-KEM-512,0.9,33.5667,-6.0829,km
+C,d_max,15.8489,us,ML-KEM-512,0.9,33.5667,-6.0060,km
+C,d_max,17.7828,us,ML-KEM-512,0.9,33.5667,-5.9197,km
+C,d_max,19.9526,us,ML-KEM-512,0.9,33.5667,-5.8229,km
+C,d_max,22.3872,us,ML-KEM-512,0.9,33.5667,-5.7142,km
+C,d_max,25.1189,us,ML-KEM-512,0.9,33.5667,-5.5923,km
+C,d_max,28.1838,us,ML-KEM-512,0.9,33.5667,-5.4555,km
+C,d_max,31.6228,us,ML-KEM-512,0.9,33.5667,-5.3021,km
+C,d_max,35.4813,us,ML-KEM-512,0.9,33.5667,-5.1299,km
+C,d_max,39.8107,us,ML-KEM-512,0.9,33.5667,-4.9366,km
+C,d_max,44.6684,us,ML-KEM-512,0.9,33.5667,-4.7198,km
+C,d_max,50.1187,us,ML-KEM-512,0.9,33.5667,-4.4766,km
+C,d_max,56.2341,us,ML-KEM-512,0.9,33.5667,-4.2037,km
+C,d_max,63.0957,us,ML-KEM-512,0.9,33.5667,-3.8975,km
+C,d_max,70.7946,us,ML-KEM-512,0.9,33.5667,-3.5539,km
+C,d_max,79.4328,us,ML-KEM-512,0.9,33.5667,-3.1684,km
+C,d_max,89.1251,us,ML-KEM-512,0.9,33.5667,-2.7358,km
+C,d_max,100,us,ML-KEM-512,0.9,33.5667,-2.2505,km
+C,d_max,112.202,us,ML-KEM-512,0.9,33.5667,-1.7059,km
+C,d_max,125.893,us,ML-KEM-512,0.9,33.5667,-1.0949,km
+C,d_max,141.254,us,ML-KEM-512,0.9,33.5667,-0.4094,km
+C,d_max,158.489,us,ML-KEM-512,0.9,33.5667,0.3598,km
+C,d_max,177.828,us,ML-KEM-512,0.9,33.5667,1.2229,km
+C,d_max,199.526,us,ML-KEM-512,0.9,33.5667,2.1913,km
+C,d_max,223.872,us,ML-KEM-512,0.9,33.5667,3.2778,km
+C,d_max,251.189,us,ML-KEM-512,0.9,33.5667,4.4969,km
+C,d_max,281.838,us,ML-KEM-512,0.9,33.5667,5.8647,km
+C,d_max,316.228,us,ML-KEM-512,0.9,33.5667,7.3995,km
+C,d_max,354.813,us,ML-KEM-512,0.9,33.5667,9.1215,km
+C,d_max,398.107,us,ML-KEM-512,0.9,33.5667,11.0537,km
+C,d_max,446.684,us,ML-KEM-512,0.9,33.5667,13.2216,km
+C,d_max,501.187,us,ML-KEM-512,0.9,33.5667,15.6540,km
+C,d_max,562.341,us,ML-KEM-512,0.9,33.5667,18.3832,km
+C,d_max,630.957,us,ML-KEM-512,0.9,33.5667,21.4455,km
+C,d_max,707.946,us,ML-KEM-512,0.9,33.5667,24.8814,km
+C,d_max,794.328,us,ML-KEM-512,0.9,33.5667,28.7365,km
+C,d_max,891.251,us,ML-KEM-512,0.9,33.5667,33.0620,km
+C,d_max,1000,us,ML-KEM-512,0.9,33.5667,37.9154,km
+C,d_max,1122.02,us,ML-KEM-512,0.9,33.5667,43.3609,km
+C,d_max,1258.93,us,ML-KEM-512,0.9,33.5667,49.4709,km
+C,d_max,1412.54,us,ML-KEM-512,0.9,33.5667,56.3264,km
+C,d_max,1584.89,us,ML-KEM-512,0.9,33.5667,64.0184,km
+C,d_max,1778.28,us,ML-KEM-512,0.9,33.5667,72.6490,km
+C,d_max,1995.26,us,ML-KEM-512,0.9,33.5667,82.3326,km
+C,d_max,2238.72,us,ML-KEM-512,0.9,33.5667,93.1979,km
+C,d_max,2511.89,us,ML-KEM-512,0.9,33.5667,105.3889,km
+C,d_max,2818.38,us,ML-KEM-512,0.9,33.5667,119.0675,km
+C,d_max,3162.28,us,ML-KEM-512,0.9,33.5667,134.4150,km
+C,d_max,3548.13,us,ML-KEM-512,0.9,33.5667,151.6353,km
+C,d_max,3981.07,us,ML-KEM-512,0.9,33.5667,170.9568,km
+C,d_max,4466.84,us,ML-KEM-512,0.9,33.5667,192.6358,km
+C,d_max,5011.87,us,ML-KEM-512,0.9,33.5667,216.9601,km
+C,d_max,5623.41,us,ML-KEM-512,0.9,33.5667,244.2523,km
+C,d_max,6309.57,us,ML-KEM-512,0.9,33.5667,274.8748,km
+C,d_max,7079.46,us,ML-KEM-512,0.9,33.5667,309.2337,km
+C,d_max,7943.28,us,ML-KEM-512,0.9,33.5667,347.7851,km
+C,d_max,8912.51,us,ML-KEM-512,0.9,33.5667,391.0405,km
+C,d_max,10000,us,ML-KEM-512,0.9,33.5667,439.5738,km
+C,d_max,11220.2,us,ML-KEM-512,0.9,33.5667,494.0290,km
+C,d_max,12589.3,us,ML-KEM-512,0.9,33.5667,555.1288,km
+C,d_max,14125.4,us,ML-KEM-512,0.9,33.5667,623.6839,km
+C,d_max,15848.9,us,ML-KEM-512,0.9,33.5667,700.6041,km
+C,d_max,17782.8,us,ML-KEM-512,0.9,33.5667,786.9098,km
+C,d_max,19952.6,us,ML-KEM-512,0.9,33.5667,883.7465,km
+C,d_max,22387.2,us,ML-KEM-512,0.9,33.5667,992.3990,km
+C,d_max,25118.9,us,ML-KEM-512,0.9,33.5667,1114.3092,km
+C,d_max,28183.8,us,ML-KEM-512,0.9,33.5667,1251.0946,km
+C,d_max,31622.8,us,ML-KEM-512,0.9,33.5667,1404.5704,km
+C,d_max,35481.3,us,ML-KEM-512,0.9,33.5667,1576.7731,km
+C,d_max,39810.7,us,ML-KEM-512,0.9,33.5667,1769.9876,km
+C,d_max,44668.4,us,ML-KEM-512,0.9,33.5667,1986.7779,km
+C,d_max,50118.7,us,ML-KEM-512,0.9,33.5667,2230.0206,km
+C,d_max,56234.1,us,ML-KEM-512,0.9,33.5667,2502.9435,km
+C,d_max,63095.7,us,ML-KEM-512,0.9,33.5667,2809.1679,km
+C,d_max,70794.6,us,ML-KEM-512,0.9,33.5667,3152.7574,km
+C,d_max,79432.8,us,ML-KEM-512,0.9,33.5667,3538.2711,km
+C,d_max,89125.1,us,ML-KEM-512,0.9,33.5667,3970.8246,km
+C,d_max,100000,us,ML-KEM-512,0.9,33.5667,4456.1577,km
+C,d_max,10,us,ML-KEM-768,0.9,49.7960,-9.5129,km
+C,d_max,11.2202,us,ML-KEM-768,0.9,49.7960,-9.4585,km
+C,d_max,12.5893,us,ML-KEM-768,0.9,49.7960,-9.3974,km
+C,d_max,14.1254,us,ML-KEM-768,0.9,49.7960,-9.3288,km
+C,d_max,15.8489,us,ML-KEM-768,0.9,49.7960,-9.2519,km
+C,d_max,17.7828,us,ML-KEM-768,0.9,49.7960,-9.1656,km
+C,d_max,19.9526,us,ML-KEM-768,0.9,49.7960,-9.0687,km
+C,d_max,22.3872,us,ML-KEM-768,0.9,49.7960,-8.9601,km
+C,d_max,25.1189,us,ML-KEM-768,0.9,49.7960,-8.8382,km
+C,d_max,28.1838,us,ML-KEM-768,0.9,49.7960,-8.7014,km
+C,d_max,31.6228,us,ML-KEM-768,0.9,49.7960,-8.5479,km
+C,d_max,35.4813,us,ML-KEM-768,0.9,49.7960,-8.3757,km
+C,d_max,39.8107,us,ML-KEM-768,0.9,49.7960,-8.1825,km
+C,d_max,44.6684,us,ML-KEM-768,0.9,49.7960,-7.9657,km
+C,d_max,50.1187,us,ML-KEM-768,0.9,49.7960,-7.7225,km
+C,d_max,56.2341,us,ML-KEM-768,0.9,49.7960,-7.4495,km
+C,d_max,63.0957,us,ML-KEM-768,0.9,49.7960,-7.1433,km
+C,d_max,70.7946,us,ML-KEM-768,0.9,49.7960,-6.7997,km
+C,d_max,79.4328,us,ML-KEM-768,0.9,49.7960,-6.4142,km
+C,d_max,89.1251,us,ML-KEM-768,0.9,49.7960,-5.9817,km
+C,d_max,100,us,ML-KEM-768,0.9,49.7960,-5.4963,km
+C,d_max,112.202,us,ML-KEM-768,0.9,49.7960,-4.9518,km
+C,d_max,125.893,us,ML-KEM-768,0.9,49.7960,-4.3408,km
+C,d_max,141.254,us,ML-KEM-768,0.9,49.7960,-3.6552,km
+C,d_max,158.489,us,ML-KEM-768,0.9,49.7960,-2.8860,km
+C,d_max,177.828,us,ML-KEM-768,0.9,49.7960,-2.0230,km
+C,d_max,199.526,us,ML-KEM-768,0.9,49.7960,-1.0546,km
+C,d_max,223.872,us,ML-KEM-768,0.9,49.7960,0.0319,km
+C,d_max,251.189,us,ML-KEM-768,0.9,49.7960,1.2510,km
+C,d_max,281.838,us,ML-KEM-768,0.9,49.7960,2.6189,km
+C,d_max,316.228,us,ML-KEM-768,0.9,49.7960,4.1536,km
+C,d_max,354.813,us,ML-KEM-768,0.9,49.7960,5.8757,km
+C,d_max,398.107,us,ML-KEM-768,0.9,49.7960,7.8078,km
+C,d_max,446.684,us,ML-KEM-768,0.9,49.7960,9.9757,km
+C,d_max,501.187,us,ML-KEM-768,0.9,49.7960,12.4081,km
+C,d_max,562.341,us,ML-KEM-768,0.9,49.7960,15.1374,km
+C,d_max,630.957,us,ML-KEM-768,0.9,49.7960,18.1996,km
+C,d_max,707.946,us,ML-KEM-768,0.9,49.7960,21.6355,km
+C,d_max,794.328,us,ML-KEM-768,0.9,49.7960,25.4906,km
+C,d_max,891.251,us,ML-KEM-768,0.9,49.7960,29.8162,km
+C,d_max,1000,us,ML-KEM-768,0.9,49.7960,34.6695,km
+C,d_max,1122.02,us,ML-KEM-768,0.9,49.7960,40.1150,km
+C,d_max,1258.93,us,ML-KEM-768,0.9,49.7960,46.2250,km
+C,d_max,1412.54,us,ML-KEM-768,0.9,49.7960,53.0805,km
+C,d_max,1584.89,us,ML-KEM-768,0.9,49.7960,60.7725,km
+C,d_max,1778.28,us,ML-KEM-768,0.9,49.7960,69.4031,km
+C,d_max,1995.26,us,ML-KEM-768,0.9,49.7960,79.0868,km
+C,d_max,2238.72,us,ML-KEM-768,0.9,49.7960,89.9520,km
+C,d_max,2511.89,us,ML-KEM-768,0.9,49.7960,102.1431,km
+C,d_max,2818.38,us,ML-KEM-768,0.9,49.7960,115.8216,km
+C,d_max,3162.28,us,ML-KEM-768,0.9,49.7960,131.1692,km
+C,d_max,3548.13,us,ML-KEM-768,0.9,49.7960,148.3894,km
+C,d_max,3981.07,us,ML-KEM-768,0.9,49.7960,167.7109,km
+C,d_max,4466.84,us,ML-KEM-768,0.9,49.7960,189.3899,km
+C,d_max,5011.87,us,ML-KEM-768,0.9,49.7960,213.7142,km
+C,d_max,5623.41,us,ML-KEM-768,0.9,49.7960,241.0065,km
+C,d_max,6309.57,us,ML-KEM-768,0.9,49.7960,271.6289,km
+C,d_max,7079.46,us,ML-KEM-768,0.9,49.7960,305.9879,km
+C,d_max,7943.28,us,ML-KEM-768,0.9,49.7960,344.5392,km
+C,d_max,8912.51,us,ML-KEM-768,0.9,49.7960,387.7946,km
+C,d_max,10000,us,ML-KEM-768,0.9,49.7960,436.3279,km
+C,d_max,11220.2,us,ML-KEM-768,0.9,49.7960,490.7832,km
+C,d_max,12589.3,us,ML-KEM-768,0.9,49.7960,551.8830,km
+C,d_max,14125.4,us,ML-KEM-768,0.9,49.7960,620.4381,km
+C,d_max,15848.9,us,ML-KEM-768,0.9,49.7960,697.3582,km
+C,d_max,17782.8,us,ML-KEM-768,0.9,49.7960,783.6640,km
+C,d_max,19952.6,us,ML-KEM-768,0.9,49.7960,880.5006,km
+C,d_max,22387.2,us,ML-KEM-768,0.9,49.7960,989.1532,km
+C,d_max,25118.9,us,ML-KEM-768,0.9,49.7960,1111.0633,km
+C,d_max,28183.8,us,ML-KEM-768,0.9,49.7960,1247.8488,km
+C,d_max,31622.8,us,ML-KEM-768,0.9,49.7960,1401.3245,km
+C,d_max,35481.3,us,ML-KEM-768,0.9,49.7960,1573.5272,km
+C,d_max,39810.7,us,ML-KEM-768,0.9,49.7960,1766.7418,km
+C,d_max,44668.4,us,ML-KEM-768,0.9,49.7960,1983.5321,km
+C,d_max,50118.7,us,ML-KEM-768,0.9,49.7960,2226.7748,km
+C,d_max,56234.1,us,ML-KEM-768,0.9,49.7960,2499.6976,km
+C,d_max,63095.7,us,ML-KEM-768,0.9,49.7960,2805.9221,km
+C,d_max,70794.6,us,ML-KEM-768,0.9,49.7960,3149.5115,km
+C,d_max,79432.8,us,ML-KEM-768,0.9,49.7960,3535.0253,km
+C,d_max,89125.1,us,ML-KEM-768,0.9,49.7960,3967.5788,km
+C,d_max,100000,us,ML-KEM-768,0.9,49.7960,4452.9118,km
+C,d_max,10,us,ML-KEM-1024,0.9,72.1933,-13.9924,km
+C,d_max,11.2202,us,ML-KEM-1024,0.9,72.1933,-13.9379,km
+C,d_max,12.5893,us,ML-KEM-1024,0.9,72.1933,-13.8768,km
+C,d_max,14.1254,us,ML-KEM-1024,0.9,72.1933,-13.8083,km
+C,d_max,15.8489,us,ML-KEM-1024,0.9,72.1933,-13.7313,km
+C,d_max,17.7828,us,ML-KEM-1024,0.9,72.1933,-13.6450,km
+C,d_max,19.9526,us,ML-KEM-1024,0.9,72.1933,-13.5482,km
+C,d_max,22.3872,us,ML-KEM-1024,0.9,72.1933,-13.4395,km
+C,d_max,25.1189,us,ML-KEM-1024,0.9,72.1933,-13.3176,km
+C,d_max,28.1838,us,ML-KEM-1024,0.9,72.1933,-13.1809,km
+C,d_max,31.6228,us,ML-KEM-1024,0.9,72.1933,-13.0274,km
+C,d_max,35.4813,us,ML-KEM-1024,0.9,72.1933,-12.8552,km
+C,d_max,39.8107,us,ML-KEM-1024,0.9,72.1933,-12.6620,km
+C,d_max,44.6684,us,ML-KEM-1024,0.9,72.1933,-12.4452,km
+C,d_max,50.1187,us,ML-KEM-1024,0.9,72.1933,-12.2019,km
+C,d_max,56.2341,us,ML-KEM-1024,0.9,72.1933,-11.9290,km
+C,d_max,63.0957,us,ML-KEM-1024,0.9,72.1933,-11.6228,km
+C,d_max,70.7946,us,ML-KEM-1024,0.9,72.1933,-11.2792,km
+C,d_max,79.4328,us,ML-KEM-1024,0.9,72.1933,-10.8937,km
+C,d_max,89.1251,us,ML-KEM-1024,0.9,72.1933,-10.4611,km
+C,d_max,100,us,ML-KEM-1024,0.9,72.1933,-9.9758,km
+C,d_max,112.202,us,ML-KEM-1024,0.9,72.1933,-9.4312,km
+C,d_max,125.893,us,ML-KEM-1024,0.9,72.1933,-8.8202,km
+C,d_max,141.254,us,ML-KEM-1024,0.9,72.1933,-8.1347,km
+C,d_max,158.489,us,ML-KEM-1024,0.9,72.1933,-7.3655,km
+C,d_max,177.828,us,ML-KEM-1024,0.9,72.1933,-6.5024,km
+C,d_max,199.526,us,ML-KEM-1024,0.9,72.1933,-5.5341,km
+C,d_max,223.872,us,ML-KEM-1024,0.9,72.1933,-4.4475,km
+C,d_max,251.189,us,ML-KEM-1024,0.9,72.1933,-3.2284,km
+C,d_max,281.838,us,ML-KEM-1024,0.9,72.1933,-1.8606,km
+C,d_max,316.228,us,ML-KEM-1024,0.9,72.1933,-0.3258,km
+C,d_max,354.813,us,ML-KEM-1024,0.9,72.1933,1.3962,km
+C,d_max,398.107,us,ML-KEM-1024,0.9,72.1933,3.3283,km
+C,d_max,446.684,us,ML-KEM-1024,0.9,72.1933,5.4963,km
+C,d_max,501.187,us,ML-KEM-1024,0.9,72.1933,7.9287,km
+C,d_max,562.341,us,ML-KEM-1024,0.9,72.1933,10.6579,km
+C,d_max,630.957,us,ML-KEM-1024,0.9,72.1933,13.7202,km
+C,d_max,707.946,us,ML-KEM-1024,0.9,72.1933,17.1560,km
+C,d_max,794.328,us,ML-KEM-1024,0.9,72.1933,21.0112,km
+C,d_max,891.251,us,ML-KEM-1024,0.9,72.1933,25.3367,km
+C,d_max,1000,us,ML-KEM-1024,0.9,72.1933,30.1901,km
+C,d_max,1122.02,us,ML-KEM-1024,0.9,72.1933,35.6356,km
+C,d_max,1258.93,us,ML-KEM-1024,0.9,72.1933,41.7456,km
+C,d_max,1412.54,us,ML-KEM-1024,0.9,72.1933,48.6011,km
+C,d_max,1584.89,us,ML-KEM-1024,0.9,72.1933,56.2931,km
+C,d_max,1778.28,us,ML-KEM-1024,0.9,72.1933,64.9237,km
+C,d_max,1995.26,us,ML-KEM-1024,0.9,72.1933,74.6073,km
+C,d_max,2238.72,us,ML-KEM-1024,0.9,72.1933,85.4726,km
+C,d_max,2511.89,us,ML-KEM-1024,0.9,72.1933,97.6636,km
+C,d_max,2818.38,us,ML-KEM-1024,0.9,72.1933,111.3421,km
+C,d_max,3162.28,us,ML-KEM-1024,0.9,72.1933,126.6897,km
+C,d_max,3548.13,us,ML-KEM-1024,0.9,72.1933,143.9100,km
+C,d_max,3981.07,us,ML-KEM-1024,0.9,72.1933,163.2314,km
+C,d_max,4466.84,us,ML-KEM-1024,0.9,72.1933,184.9105,km
+C,d_max,5011.87,us,ML-KEM-1024,0.9,72.1933,209.2347,km
+C,d_max,5623.41,us,ML-KEM-1024,0.9,72.1933,236.5270,km
+C,d_max,6309.57,us,ML-KEM-1024,0.9,72.1933,267.1495,km
+C,d_max,7079.46,us,ML-KEM-1024,0.9,72.1933,301.5084,km
+C,d_max,7943.28,us,ML-KEM-1024,0.9,72.1933,340.0598,km
+C,d_max,8912.51,us,ML-KEM-1024,0.9,72.1933,383.3151,km
+C,d_max,10000,us,ML-KEM-1024,0.9,72.1933,431.8484,km
+C,d_max,11220.2,us,ML-KEM-1024,0.9,72.1933,486.3037,km
+C,d_max,12589.3,us,ML-KEM-1024,0.9,72.1933,547.4035,km
+C,d_max,14125.4,us,ML-KEM-1024,0.9,72.1933,615.9586,km
+C,d_max,15848.9,us,ML-KEM-1024,0.9,72.1933,692.8787,km
+C,d_max,17782.8,us,ML-KEM-1024,0.9,72.1933,779.1845,km
+C,d_max,19952.6,us,ML-KEM-1024,0.9,72.1933,876.0212,km
+C,d_max,22387.2,us,ML-KEM-1024,0.9,72.1933,984.6737,km
+C,d_max,25118.9,us,ML-KEM-1024,0.9,72.1933,1106.5839,km
+C,d_max,28183.8,us,ML-KEM-1024,0.9,72.1933,1243.3693,km
+C,d_max,31622.8,us,ML-KEM-1024,0.9,72.1933,1396.8451,km
+C,d_max,35481.3,us,ML-KEM-1024,0.9,72.1933,1569.0477,km
+C,d_max,39810.7,us,ML-KEM-1024,0.9,72.1933,1762.2623,km
+C,d_max,44668.4,us,ML-KEM-1024,0.9,72.1933,1979.0526,km
+C,d_max,50118.7,us,ML-KEM-1024,0.9,72.1933,2222.2953,km
+C,d_max,56234.1,us,ML-KEM-1024,0.9,72.1933,2495.2181,km
+C,d_max,63095.7,us,ML-KEM-1024,0.9,72.1933,2801.4426,km
+C,d_max,70794.6,us,ML-KEM-1024,0.9,72.1933,3145.0321,km
+C,d_max,79432.8,us,ML-KEM-1024,0.9,72.1933,3530.5458,km
+C,d_max,89125.1,us,ML-KEM-1024,0.9,72.1933,3963.0993,km
+C,d_max,100000,us,ML-KEM-1024,0.9,72.1933,4448.4324,km
+C,d_max,10,us,FrodoKEM-640,0.9,1135.5920,-226.6721,km
+C,d_max,11.2202,us,FrodoKEM-640,0.9,1135.5920,-226.6177,km
+C,d_max,12.5893,us,FrodoKEM-640,0.9,1135.5920,-226.5566,km
+C,d_max,14.1254,us,FrodoKEM-640,0.9,1135.5920,-226.4880,km
+C,d_max,15.8489,us,FrodoKEM-640,0.9,1135.5920,-226.4111,km
+C,d_max,17.7828,us,FrodoKEM-640,0.9,1135.5920,-226.3248,km
+C,d_max,19.9526,us,FrodoKEM-640,0.9,1135.5920,-226.2279,km
+C,d_max,22.3872,us,FrodoKEM-640,0.9,1135.5920,-226.1193,km
+C,d_max,25.1189,us,FrodoKEM-640,0.9,1135.5920,-225.9974,km
+C,d_max,28.1838,us,FrodoKEM-640,0.9,1135.5920,-225.8606,km
+C,d_max,31.6228,us,FrodoKEM-640,0.9,1135.5920,-225.7071,km
+C,d_max,35.4813,us,FrodoKEM-640,0.9,1135.5920,-225.5349,km
+C,d_max,39.8107,us,FrodoKEM-640,0.9,1135.5920,-225.3417,km
+C,d_max,44.6684,us,FrodoKEM-640,0.9,1135.5920,-225.1249,km
+C,d_max,50.1187,us,FrodoKEM-640,0.9,1135.5920,-224.8817,km
+C,d_max,56.2341,us,FrodoKEM-640,0.9,1135.5920,-224.6087,km
+C,d_max,63.0957,us,FrodoKEM-640,0.9,1135.5920,-224.3025,km
+C,d_max,70.7946,us,FrodoKEM-640,0.9,1135.5920,-223.9589,km
+C,d_max,79.4328,us,FrodoKEM-640,0.9,1135.5920,-223.5734,km
+C,d_max,89.1251,us,FrodoKEM-640,0.9,1135.5920,-223.1409,km
+C,d_max,100,us,FrodoKEM-640,0.9,1135.5920,-222.6555,km
+C,d_max,112.202,us,FrodoKEM-640,0.9,1135.5920,-222.1110,km
+C,d_max,125.893,us,FrodoKEM-640,0.9,1135.5920,-221.5000,km
+C,d_max,141.254,us,FrodoKEM-640,0.9,1135.5920,-220.8144,km
+C,d_max,158.489,us,FrodoKEM-640,0.9,1135.5920,-220.0452,km
+C,d_max,177.828,us,FrodoKEM-640,0.9,1135.5920,-219.1822,km
+C,d_max,199.526,us,FrodoKEM-640,0.9,1135.5920,-218.2138,km
+C,d_max,223.872,us,FrodoKEM-640,0.9,1135.5920,-217.1273,km
+C,d_max,251.189,us,FrodoKEM-640,0.9,1135.5920,-215.9082,km
+C,d_max,281.838,us,FrodoKEM-640,0.9,1135.5920,-214.5403,km
+C,d_max,316.228,us,FrodoKEM-640,0.9,1135.5920,-213.0056,km
+C,d_max,354.813,us,FrodoKEM-640,0.9,1135.5920,-211.2835,km
+C,d_max,398.107,us,FrodoKEM-640,0.9,1135.5920,-209.3514,km
+C,d_max,446.684,us,FrodoKEM-640,0.9,1135.5920,-207.1835,km
+C,d_max,501.187,us,FrodoKEM-640,0.9,1135.5920,-204.7511,km
+C,d_max,562.341,us,FrodoKEM-640,0.9,1135.5920,-202.0218,km
+C,d_max,630.957,us,FrodoKEM-640,0.9,1135.5920,-198.9596,km
+C,d_max,707.946,us,FrodoKEM-640,0.9,1135.5920,-195.5237,km
+C,d_max,794.328,us,FrodoKEM-640,0.9,1135.5920,-191.6686,km
+C,d_max,891.251,us,FrodoKEM-640,0.9,1135.5920,-187.3430,km
+C,d_max,1000,us,FrodoKEM-640,0.9,1135.5920,-182.4897,km
+C,d_max,1122.02,us,FrodoKEM-640,0.9,1135.5920,-177.0442,km
+C,d_max,1258.93,us,FrodoKEM-640,0.9,1135.5920,-170.9342,km
+C,d_max,1412.54,us,FrodoKEM-640,0.9,1135.5920,-164.0787,km
+C,d_max,1584.89,us,FrodoKEM-640,0.9,1135.5920,-156.3867,km
+C,d_max,1778.28,us,FrodoKEM-640,0.9,1135.5920,-147.7561,km
+C,d_max,1995.26,us,FrodoKEM-640,0.9,1135.5920,-138.0724,km
+C,d_max,2238.72,us,FrodoKEM-640,0.9,1135.5920,-127.2072,km
+C,d_max,2511.89,us,FrodoKEM-640,0.9,1135.5920,-115.0161,km
+C,d_max,2818.38,us,FrodoKEM-640,0.9,1135.5920,-101.3376,km
+C,d_max,3162.28,us,FrodoKEM-640,0.9,1135.5920,-85.9900,km
+C,d_max,3548.13,us,FrodoKEM-640,0.9,1135.5920,-68.7698,km
+C,d_max,3981.07,us,FrodoKEM-640,0.9,1135.5920,-49.4483,km
+C,d_max,4466.84,us,FrodoKEM-640,0.9,1135.5920,-27.7693,km
+C,d_max,5011.87,us,FrodoKEM-640,0.9,1135.5920,-3.4450,km
+C,d_max,5623.41,us,FrodoKEM-640,0.9,1135.5920,23.8473,km
+C,d_max,6309.57,us,FrodoKEM-640,0.9,1135.5920,54.4697,km
+C,d_max,7079.46,us,FrodoKEM-640,0.9,1135.5920,88.8287,km
+C,d_max,7943.28,us,FrodoKEM-640,0.9,1135.5920,127.3800,km
+C,d_max,8912.51,us,FrodoKEM-640,0.9,1135.5920,170.6354,km
+C,d_max,10000,us,FrodoKEM-640,0.9,1135.5920,219.1687,km
+C,d_max,11220.2,us,FrodoKEM-640,0.9,1135.5920,273.6240,km
+C,d_max,12589.3,us,FrodoKEM-640,0.9,1135.5920,334.7238,km
+C,d_max,14125.4,us,FrodoKEM-640,0.9,1135.5920,403.2789,km
+C,d_max,15848.9,us,FrodoKEM-640,0.9,1135.5920,480.1990,km
+C,d_max,17782.8,us,FrodoKEM-640,0.9,1135.5920,566.5048,km
+C,d_max,19952.6,us,FrodoKEM-640,0.9,1135.5920,663.3414,km
+C,d_max,22387.2,us,FrodoKEM-640,0.9,1135.5920,771.9940,km
+C,d_max,25118.9,us,FrodoKEM-640,0.9,1135.5920,893.9041,km
+C,d_max,28183.8,us,FrodoKEM-640,0.9,1135.5920,1030.6896,km
+C,d_max,31622.8,us,FrodoKEM-640,0.9,1135.5920,1184.1653,km
+C,d_max,35481.3,us,FrodoKEM-640,0.9,1135.5920,1356.3680,km
+C,d_max,39810.7,us,FrodoKEM-640,0.9,1135.5920,1549.5826,km
+C,d_max,44668.4,us,FrodoKEM-640,0.9,1135.5920,1766.3729,km
+C,d_max,50118.7,us,FrodoKEM-640,0.9,1135.5920,2009.6156,km
+C,d_max,56234.1,us,FrodoKEM-640,0.9,1135.5920,2282.5384,km
+C,d_max,63095.7,us,FrodoKEM-640,0.9,1135.5920,2588.7629,km
+C,d_max,70794.6,us,FrodoKEM-640,0.9,1135.5920,2932.3523,km
+C,d_max,79432.8,us,FrodoKEM-640,0.9,1135.5920,3317.8661,km
+C,d_max,89125.1,us,FrodoKEM-640,0.9,1135.5920,3750.4196,km
+C,d_max,100000,us,FrodoKEM-640,0.9,1135.5920,4235.7526,km
+C,d_max,10,us,FrodoKEM-976,0.9,2110.4507,-421.6439,km
+C,d_max,11.2202,us,FrodoKEM-976,0.9,2110.4507,-421.5894,km
+C,d_max,12.5893,us,FrodoKEM-976,0.9,2110.4507,-421.5283,km
+C,d_max,14.1254,us,FrodoKEM-976,0.9,2110.4507,-421.4597,km
+C,d_max,15.8489,us,FrodoKEM-976,0.9,2110.4507,-421.3828,km
+C,d_max,17.7828,us,FrodoKEM-976,0.9,2110.4507,-421.2965,km
+C,d_max,19.9526,us,FrodoKEM-976,0.9,2110.4507,-421.1997,km
+C,d_max,22.3872,us,FrodoKEM-976,0.9,2110.4507,-421.0910,km
+C,d_max,25.1189,us,FrodoKEM-976,0.9,2110.4507,-420.9691,km
+C,d_max,28.1838,us,FrodoKEM-976,0.9,2110.4507,-420.8323,km
+C,d_max,31.6228,us,FrodoKEM-976,0.9,2110.4507,-420.6789,km
+C,d_max,35.4813,us,FrodoKEM-976,0.9,2110.4507,-420.5067,km
+C,d_max,39.8107,us,FrodoKEM-976,0.9,2110.4507,-420.3134,km
+C,d_max,44.6684,us,FrodoKEM-976,0.9,2110.4507,-420.0966,km
+C,d_max,50.1187,us,FrodoKEM-976,0.9,2110.4507,-419.8534,km
+C,d_max,56.2341,us,FrodoKEM-976,0.9,2110.4507,-419.5805,km
+C,d_max,63.0957,us,FrodoKEM-976,0.9,2110.4507,-419.2743,km
+C,d_max,70.7946,us,FrodoKEM-976,0.9,2110.4507,-418.9307,km
+C,d_max,79.4328,us,FrodoKEM-976,0.9,2110.4507,-418.5452,km
+C,d_max,89.1251,us,FrodoKEM-976,0.9,2110.4507,-418.1126,km
+C,d_max,100,us,FrodoKEM-976,0.9,2110.4507,-417.6273,km
+C,d_max,112.202,us,FrodoKEM-976,0.9,2110.4507,-417.0827,km
+C,d_max,125.893,us,FrodoKEM-976,0.9,2110.4507,-416.4717,km
+C,d_max,141.254,us,FrodoKEM-976,0.9,2110.4507,-415.7862,km
+C,d_max,158.489,us,FrodoKEM-976,0.9,2110.4507,-415.0170,km
+C,d_max,177.828,us,FrodoKEM-976,0.9,2110.4507,-414.1539,km
+C,d_max,199.526,us,FrodoKEM-976,0.9,2110.4507,-413.1855,km
+C,d_max,223.872,us,FrodoKEM-976,0.9,2110.4507,-412.0990,km
+C,d_max,251.189,us,FrodoKEM-976,0.9,2110.4507,-410.8799,km
+C,d_max,281.838,us,FrodoKEM-976,0.9,2110.4507,-409.5121,km
+C,d_max,316.228,us,FrodoKEM-976,0.9,2110.4507,-407.9773,km
+C,d_max,354.813,us,FrodoKEM-976,0.9,2110.4507,-406.2553,km
+C,d_max,398.107,us,FrodoKEM-976,0.9,2110.4507,-404.3231,km
+C,d_max,446.684,us,FrodoKEM-976,0.9,2110.4507,-402.1552,km
+C,d_max,501.187,us,FrodoKEM-976,0.9,2110.4507,-399.7228,km
+C,d_max,562.341,us,FrodoKEM-976,0.9,2110.4507,-396.9936,km
+C,d_max,630.957,us,FrodoKEM-976,0.9,2110.4507,-393.9313,km
+C,d_max,707.946,us,FrodoKEM-976,0.9,2110.4507,-390.4954,km
+C,d_max,794.328,us,FrodoKEM-976,0.9,2110.4507,-386.6403,km
+C,d_max,891.251,us,FrodoKEM-976,0.9,2110.4507,-382.3148,km
+C,d_max,1000,us,FrodoKEM-976,0.9,2110.4507,-377.4614,km
+C,d_max,1122.02,us,FrodoKEM-976,0.9,2110.4507,-372.0159,km
+C,d_max,1258.93,us,FrodoKEM-976,0.9,2110.4507,-365.9059,km
+C,d_max,1412.54,us,FrodoKEM-976,0.9,2110.4507,-359.0504,km
+C,d_max,1584.89,us,FrodoKEM-976,0.9,2110.4507,-351.3584,km
+C,d_max,1778.28,us,FrodoKEM-976,0.9,2110.4507,-342.7278,km
+C,d_max,1995.26,us,FrodoKEM-976,0.9,2110.4507,-333.0442,km
+C,d_max,2238.72,us,FrodoKEM-976,0.9,2110.4507,-322.1789,km
+C,d_max,2511.89,us,FrodoKEM-976,0.9,2110.4507,-309.9879,km
+C,d_max,2818.38,us,FrodoKEM-976,0.9,2110.4507,-296.3093,km
+C,d_max,3162.28,us,FrodoKEM-976,0.9,2110.4507,-280.9618,km
+C,d_max,3548.13,us,FrodoKEM-976,0.9,2110.4507,-263.7415,km
+C,d_max,3981.07,us,FrodoKEM-976,0.9,2110.4507,-244.4200,km
+C,d_max,4466.84,us,FrodoKEM-976,0.9,2110.4507,-222.7410,km
+C,d_max,5011.87,us,FrodoKEM-976,0.9,2110.4507,-198.4167,km
+C,d_max,5623.41,us,FrodoKEM-976,0.9,2110.4507,-171.1245,km
+C,d_max,6309.57,us,FrodoKEM-976,0.9,2110.4507,-140.5020,km
+C,d_max,7079.46,us,FrodoKEM-976,0.9,2110.4507,-106.1431,km
+C,d_max,7943.28,us,FrodoKEM-976,0.9,2110.4507,-67.5917,km
+C,d_max,8912.51,us,FrodoKEM-976,0.9,2110.4507,-24.3363,km
+C,d_max,10000,us,FrodoKEM-976,0.9,2110.4507,24.1970,km
+C,d_max,11220.2,us,FrodoKEM-976,0.9,2110.4507,78.6522,km
+C,d_max,12589.3,us,FrodoKEM-976,0.9,2110.4507,139.7520,km
+C,d_max,14125.4,us,FrodoKEM-976,0.9,2110.4507,208.3071,km
+C,d_max,15848.9,us,FrodoKEM-976,0.9,2110.4507,285.2273,km
+C,d_max,17782.8,us,FrodoKEM-976,0.9,2110.4507,371.5330,km
+C,d_max,19952.6,us,FrodoKEM-976,0.9,2110.4507,468.3697,km
+C,d_max,22387.2,us,FrodoKEM-976,0.9,2110.4507,577.0222,km
+C,d_max,25118.9,us,FrodoKEM-976,0.9,2110.4507,698.9324,km
+C,d_max,28183.8,us,FrodoKEM-976,0.9,2110.4507,835.7178,km
+C,d_max,31622.8,us,FrodoKEM-976,0.9,2110.4507,989.1936,km
+C,d_max,35481.3,us,FrodoKEM-976,0.9,2110.4507,1161.3963,km
+C,d_max,39810.7,us,FrodoKEM-976,0.9,2110.4507,1354.6108,km
+C,d_max,44668.4,us,FrodoKEM-976,0.9,2110.4507,1571.4011,km
+C,d_max,50118.7,us,FrodoKEM-976,0.9,2110.4507,1814.6438,km
+C,d_max,56234.1,us,FrodoKEM-976,0.9,2110.4507,2087.5667,km
+C,d_max,63095.7,us,FrodoKEM-976,0.9,2110.4507,2393.7911,km
+C,d_max,70794.6,us,FrodoKEM-976,0.9,2110.4507,2737.3806,km
+C,d_max,79432.8,us,FrodoKEM-976,0.9,2110.4507,3122.8943,km
+C,d_max,89125.1,us,FrodoKEM-976,0.9,2110.4507,3555.4478,km
+C,d_max,100000,us,FrodoKEM-976,0.9,2110.4507,4040.7809,km
+C,d_max,10,us,FrodoKEM-1344,0.9,3474.8880,-694.5313,km
+C,d_max,11.2202,us,FrodoKEM-1344,0.9,3474.8880,-694.4769,km
+C,d_max,12.5893,us,FrodoKEM-1344,0.9,3474.8880,-694.4158,km
+C,d_max,14.1254,us,FrodoKEM-1344,0.9,3474.8880,-694.3472,km
+C,d_max,15.8489,us,FrodoKEM-1344,0.9,3474.8880,-694.2703,km
+C,d_max,17.7828,us,FrodoKEM-1344,0.9,3474.8880,-694.1840,km
+C,d_max,19.9526,us,FrodoKEM-1344,0.9,3474.8880,-694.0871,km
+C,d_max,22.3872,us,FrodoKEM-1344,0.9,3474.8880,-693.9785,km
+C,d_max,25.1189,us,FrodoKEM-1344,0.9,3474.8880,-693.8566,km
+C,d_max,28.1838,us,FrodoKEM-1344,0.9,3474.8880,-693.7198,km
+C,d_max,31.6228,us,FrodoKEM-1344,0.9,3474.8880,-693.5663,km
+C,d_max,35.4813,us,FrodoKEM-1344,0.9,3474.8880,-693.3941,km
+C,d_max,39.8107,us,FrodoKEM-1344,0.9,3474.8880,-693.2009,km
+C,d_max,44.6684,us,FrodoKEM-1344,0.9,3474.8880,-692.9841,km
+C,d_max,50.1187,us,FrodoKEM-1344,0.9,3474.8880,-692.7409,km
+C,d_max,56.2341,us,FrodoKEM-1344,0.9,3474.8880,-692.4679,km
+C,d_max,63.0957,us,FrodoKEM-1344,0.9,3474.8880,-692.1617,km
+C,d_max,70.7946,us,FrodoKEM-1344,0.9,3474.8880,-691.8181,km
+C,d_max,79.4328,us,FrodoKEM-1344,0.9,3474.8880,-691.4326,km
+C,d_max,89.1251,us,FrodoKEM-1344,0.9,3474.8880,-691.0001,km
+C,d_max,100,us,FrodoKEM-1344,0.9,3474.8880,-690.5147,km
+C,d_max,112.202,us,FrodoKEM-1344,0.9,3474.8880,-689.9702,km
+C,d_max,125.893,us,FrodoKEM-1344,0.9,3474.8880,-689.3592,km
+C,d_max,141.254,us,FrodoKEM-1344,0.9,3474.8880,-688.6736,km
+C,d_max,158.489,us,FrodoKEM-1344,0.9,3474.8880,-687.9044,km
+C,d_max,177.828,us,FrodoKEM-1344,0.9,3474.8880,-687.0414,km
+C,d_max,199.526,us,FrodoKEM-1344,0.9,3474.8880,-686.0730,km
+C,d_max,223.872,us,FrodoKEM-1344,0.9,3474.8880,-684.9865,km
+C,d_max,251.189,us,FrodoKEM-1344,0.9,3474.8880,-683.7674,km
+C,d_max,281.838,us,FrodoKEM-1344,0.9,3474.8880,-682.3995,km
+C,d_max,316.228,us,FrodoKEM-1344,0.9,3474.8880,-680.8648,km
+C,d_max,354.813,us,FrodoKEM-1344,0.9,3474.8880,-679.1427,km
+C,d_max,398.107,us,FrodoKEM-1344,0.9,3474.8880,-677.2106,km
+C,d_max,446.684,us,FrodoKEM-1344,0.9,3474.8880,-675.0427,km
+C,d_max,501.187,us,FrodoKEM-1344,0.9,3474.8880,-672.6103,km
+C,d_max,562.341,us,FrodoKEM-1344,0.9,3474.8880,-669.8810,km
+C,d_max,630.957,us,FrodoKEM-1344,0.9,3474.8880,-666.8188,km
+C,d_max,707.946,us,FrodoKEM-1344,0.9,3474.8880,-663.3829,km
+C,d_max,794.328,us,FrodoKEM-1344,0.9,3474.8880,-659.5278,km
+C,d_max,891.251,us,FrodoKEM-1344,0.9,3474.8880,-655.2022,km
+C,d_max,1000,us,FrodoKEM-1344,0.9,3474.8880,-650.3489,km
+C,d_max,1122.02,us,FrodoKEM-1344,0.9,3474.8880,-644.9034,km
+C,d_max,1258.93,us,FrodoKEM-1344,0.9,3474.8880,-638.7934,km
+C,d_max,1412.54,us,FrodoKEM-1344,0.9,3474.8880,-631.9379,km
+C,d_max,1584.89,us,FrodoKEM-1344,0.9,3474.8880,-624.2459,km
+C,d_max,1778.28,us,FrodoKEM-1344,0.9,3474.8880,-615.6153,km
+C,d_max,1995.26,us,FrodoKEM-1344,0.9,3474.8880,-605.9316,km
+C,d_max,2238.72,us,FrodoKEM-1344,0.9,3474.8880,-595.0664,km
+C,d_max,2511.89,us,FrodoKEM-1344,0.9,3474.8880,-582.8753,km
+C,d_max,2818.38,us,FrodoKEM-1344,0.9,3474.8880,-569.1968,km
+C,d_max,3162.28,us,FrodoKEM-1344,0.9,3474.8880,-553.8492,km
+C,d_max,3548.13,us,FrodoKEM-1344,0.9,3474.8880,-536.6290,km
+C,d_max,3981.07,us,FrodoKEM-1344,0.9,3474.8880,-517.3075,km
+C,d_max,4466.84,us,FrodoKEM-1344,0.9,3474.8880,-495.6285,km
+C,d_max,5011.87,us,FrodoKEM-1344,0.9,3474.8880,-471.3042,km
+C,d_max,5623.41,us,FrodoKEM-1344,0.9,3474.8880,-444.0119,km
+C,d_max,6309.57,us,FrodoKEM-1344,0.9,3474.8880,-413.3895,km
+C,d_max,7079.46,us,FrodoKEM-1344,0.9,3474.8880,-379.0305,km
+C,d_max,7943.28,us,FrodoKEM-1344,0.9,3474.8880,-340.4792,km
+C,d_max,8912.51,us,FrodoKEM-1344,0.9,3474.8880,-297.2238,km
+C,d_max,10000,us,FrodoKEM-1344,0.9,3474.8880,-248.6905,km
+C,d_max,11220.2,us,FrodoKEM-1344,0.9,3474.8880,-194.2352,km
+C,d_max,12589.3,us,FrodoKEM-1344,0.9,3474.8880,-133.1354,km
+C,d_max,14125.4,us,FrodoKEM-1344,0.9,3474.8880,-64.5803,km
+C,d_max,15848.9,us,FrodoKEM-1344,0.9,3474.8880,12.3398,km
+C,d_max,17782.8,us,FrodoKEM-1344,0.9,3474.8880,98.6456,km
+C,d_max,19952.6,us,FrodoKEM-1344,0.9,3474.8880,195.4822,km
+C,d_max,22387.2,us,FrodoKEM-1344,0.9,3474.8880,304.1348,km
+C,d_max,25118.9,us,FrodoKEM-1344,0.9,3474.8880,426.0449,km
+C,d_max,28183.8,us,FrodoKEM-1344,0.9,3474.8880,562.8304,km
+C,d_max,31622.8,us,FrodoKEM-1344,0.9,3474.8880,716.3061,km
+C,d_max,35481.3,us,FrodoKEM-1344,0.9,3474.8880,888.5088,km
+C,d_max,39810.7,us,FrodoKEM-1344,0.9,3474.8880,1081.7234,km
+C,d_max,44668.4,us,FrodoKEM-1344,0.9,3474.8880,1298.5137,km
+C,d_max,50118.7,us,FrodoKEM-1344,0.9,3474.8880,1541.7564,km
+C,d_max,56234.1,us,FrodoKEM-1344,0.9,3474.8880,1814.6792,km
+C,d_max,63095.7,us,FrodoKEM-1344,0.9,3474.8880,2120.9037,km
+C,d_max,70794.6,us,FrodoKEM-1344,0.9,3474.8880,2464.4931,km
+C,d_max,79432.8,us,FrodoKEM-1344,0.9,3474.8880,2850.0069,km
+C,d_max,89125.1,us,FrodoKEM-1344,0.9,3474.8880,3282.5604,km
+C,d_max,100000,us,FrodoKEM-1344,0.9,3474.8880,3767.8934,km
+C,d_max,10,us,no-PQC reference,0.9,0.1080,0.4247,km
+C,d_max,11.2202,us,no-PQC reference,0.9,0.1080,0.4791,km
+C,d_max,12.5893,us,no-PQC reference,0.9,0.1080,0.5402,km
+C,d_max,14.1254,us,no-PQC reference,0.9,0.1080,0.6088,km
+C,d_max,15.8489,us,no-PQC reference,0.9,0.1080,0.6857,km
+C,d_max,17.7828,us,no-PQC reference,0.9,0.1080,0.7720,km
+C,d_max,19.9526,us,no-PQC reference,0.9,0.1080,0.8689,km
+C,d_max,22.3872,us,no-PQC reference,0.9,0.1080,0.9775,km
+C,d_max,25.1189,us,no-PQC reference,0.9,0.1080,1.0994,km
+C,d_max,28.1838,us,no-PQC reference,0.9,0.1080,1.2362,km
+C,d_max,31.6228,us,no-PQC reference,0.9,0.1080,1.3897,km
+C,d_max,35.4813,us,no-PQC reference,0.9,0.1080,1.5619,km
+C,d_max,39.8107,us,no-PQC reference,0.9,0.1080,1.7551,km
+C,d_max,44.6684,us,no-PQC reference,0.9,0.1080,1.9719,km
+C,d_max,50.1187,us,no-PQC reference,0.9,0.1080,2.2151,km
+C,d_max,56.2341,us,no-PQC reference,0.9,0.1080,2.4881,km
+C,d_max,63.0957,us,no-PQC reference,0.9,0.1080,2.7943,km
+C,d_max,70.7946,us,no-PQC reference,0.9,0.1080,3.1379,km
+C,d_max,79.4328,us,no-PQC reference,0.9,0.1080,3.5234,km
+C,d_max,89.1251,us,no-PQC reference,0.9,0.1080,3.9559,km
+C,d_max,100,us,no-PQC reference,0.9,0.1080,4.4413,km
+C,d_max,112.202,us,no-PQC reference,0.9,0.1080,4.9858,km
+C,d_max,125.893,us,no-PQC reference,0.9,0.1080,5.5968,km
+C,d_max,141.254,us,no-PQC reference,0.9,0.1080,6.2824,km
+C,d_max,158.489,us,no-PQC reference,0.9,0.1080,7.0516,km
+C,d_max,177.828,us,no-PQC reference,0.9,0.1080,7.9146,km
+C,d_max,199.526,us,no-PQC reference,0.9,0.1080,8.8830,km
+C,d_max,223.872,us,no-PQC reference,0.9,0.1080,9.9695,km
+C,d_max,251.189,us,no-PQC reference,0.9,0.1080,11.1886,km
+C,d_max,281.838,us,no-PQC reference,0.9,0.1080,12.5565,km
+C,d_max,316.228,us,no-PQC reference,0.9,0.1080,14.0912,km
+C,d_max,354.813,us,no-PQC reference,0.9,0.1080,15.8133,km
+C,d_max,398.107,us,no-PQC reference,0.9,0.1080,17.7454,km
+C,d_max,446.684,us,no-PQC reference,0.9,0.1080,19.9133,km
+C,d_max,501.187,us,no-PQC reference,0.9,0.1080,22.3457,km
+C,d_max,562.341,us,no-PQC reference,0.9,0.1080,25.0750,km
+C,d_max,630.957,us,no-PQC reference,0.9,0.1080,28.1372,km
+C,d_max,707.946,us,no-PQC reference,0.9,0.1080,31.5731,km
+C,d_max,794.328,us,no-PQC reference,0.9,0.1080,35.4282,km
+C,d_max,891.251,us,no-PQC reference,0.9,0.1080,39.7538,km
+C,d_max,1000,us,no-PQC reference,0.9,0.1080,44.6071,km
+C,d_max,1122.02,us,no-PQC reference,0.9,0.1080,50.0526,km
+C,d_max,1258.93,us,no-PQC reference,0.9,0.1080,56.1626,km
+C,d_max,1412.54,us,no-PQC reference,0.9,0.1080,63.0181,km
+C,d_max,1584.89,us,no-PQC reference,0.9,0.1080,70.7101,km
+C,d_max,1778.28,us,no-PQC reference,0.9,0.1080,79.3407,km
+C,d_max,1995.26,us,no-PQC reference,0.9,0.1080,89.0244,km
+C,d_max,2238.72,us,no-PQC reference,0.9,0.1080,99.8896,km
+C,d_max,2511.89,us,no-PQC reference,0.9,0.1080,112.0807,km
+C,d_max,2818.38,us,no-PQC reference,0.9,0.1080,125.7592,km
+C,d_max,3162.28,us,no-PQC reference,0.9,0.1080,141.1068,km
+C,d_max,3548.13,us,no-PQC reference,0.9,0.1080,158.3270,km
+C,d_max,3981.07,us,no-PQC reference,0.9,0.1080,177.6485,km
+C,d_max,4466.84,us,no-PQC reference,0.9,0.1080,199.3275,km
+C,d_max,5011.87,us,no-PQC reference,0.9,0.1080,223.6518,km
+C,d_max,5623.41,us,no-PQC reference,0.9,0.1080,250.9441,km
+C,d_max,6309.57,us,no-PQC reference,0.9,0.1080,281.5665,km
+C,d_max,7079.46,us,no-PQC reference,0.9,0.1080,315.9255,km
+C,d_max,7943.28,us,no-PQC reference,0.9,0.1080,354.4768,km
+C,d_max,8912.51,us,no-PQC reference,0.9,0.1080,397.7322,km
+C,d_max,10000,us,no-PQC reference,0.9,0.1080,446.2655,km
+C,d_max,11220.2,us,no-PQC reference,0.9,0.1080,500.7208,km
+C,d_max,12589.3,us,no-PQC reference,0.9,0.1080,561.8206,km
+C,d_max,14125.4,us,no-PQC reference,0.9,0.1080,630.3757,km
+C,d_max,15848.9,us,no-PQC reference,0.9,0.1080,707.2958,km
+C,d_max,17782.8,us,no-PQC reference,0.9,0.1080,793.6016,km
+C,d_max,19952.6,us,no-PQC reference,0.9,0.1080,890.4382,km
+C,d_max,22387.2,us,no-PQC reference,0.9,0.1080,999.0908,km
+C,d_max,25118.9,us,no-PQC reference,0.9,0.1080,1121.0009,km
+C,d_max,28183.8,us,no-PQC reference,0.9,0.1080,1257.7864,km
+C,d_max,31622.8,us,no-PQC reference,0.9,0.1080,1411.2621,km
+C,d_max,35481.3,us,no-PQC reference,0.9,0.1080,1583.4648,km
+C,d_max,39810.7,us,no-PQC reference,0.9,0.1080,1776.6794,km
+C,d_max,44668.4,us,no-PQC reference,0.9,0.1080,1993.4697,km
+C,d_max,50118.7,us,no-PQC reference,0.9,0.1080,2236.7124,km
+C,d_max,56234.1,us,no-PQC reference,0.9,0.1080,2509.6352,km
+C,d_max,63095.7,us,no-PQC reference,0.9,0.1080,2815.8597,km
+C,d_max,70794.6,us,no-PQC reference,0.9,0.1080,3159.4491,km
+C,d_max,79432.8,us,no-PQC reference,0.9,0.1080,3544.9629,km
+C,d_max,89125.1,us,no-PQC reference,0.9,0.1080,3977.5164,km
+C,d_max,100000,us,no-PQC reference,0.9,0.1080,4462.8494,km
+C,knee,150.4265,us,ML-KEM-512,0.9,33.5667,0,km
+C,knee,223.1568,us,ML-KEM-768,0.9,49.7960,0,km
+C,knee,323.5285,us,ML-KEM-1024,0.9,72.1933,0,km
+C,knee,5089.0648,us,FrodoKEM-640,0.9,1135.5920,0,km
+C,knee,9457.8162,us,FrodoKEM-976,0.9,2110.4507,0,km
+C,knee,15572.4330,us,FrodoKEM-1344,0.9,3474.8880,0,km
+C,d_max_marked,1000,us,ML-KEM-768,0.9,49.7960,34.67,km
+C,d_max_marked,10000,us,ML-KEM-768,0.9,49.7960,436.33,km

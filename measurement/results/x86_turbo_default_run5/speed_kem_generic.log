@@ -1,0 +1,360 @@
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:06:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+ML-KEM-512                           |            |                |                 |            |                           |           
+keygen                               |     647295 |         10.000 |          15.449 |    190.429 |                     38503 |     475308
+encaps                               |     596547 |         10.000 |          16.763 |    204.900 |                     41766 |     511421
+decaps                               |     502823 |         10.000 |          19.888 |    223.245 |                     49571 |     557212
+Ended at 2026-11-03 04:07:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:07:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+ML-KEM-768                           |            |                |                 |            |                           |           
+keygen                               |     396402 |         10.000 |          25.227 |    251.052 |                     62909 |     626618
+encaps                               |     398814 |         10.000 |          25.074 |    250.396 |                     62509 |     624983
+decaps                               |     339159 |         10.000 |          29.485 |    273.680 |                     73538 |     683099
+Ended at 2026-11-03 04:07:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:07:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+ML-KEM-1024                          |            |                |                 |            |                           |           
+keygen                               |     258517 |         10.000 |          38.682 |    310.667 |                     96484 |     775415
+encaps                               |     275121 |         10.000 |          36.348 |    300.662 |                     90642 |     750440
+decaps                               |     234783 |         10.000 |          42.593 |    329.552 |                    106238 |     822552
+Ended at 2026-11-03 04:08:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:08:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-640-AES                     |            |                |                 |            |                           |           
+keygen                               |      43644 |         10.000 |         229.128 |    759.120 |                    571806 |    1894753
+encaps                               |      29512 |         10.000 |         338.846 |    927.439 |                    845661 |    2314864
+decaps                               |      30901 |         10.000 |         323.619 |    910.085 |                    807661 |    2271559
+Ended at 2026-11-03 04:08:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:08:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-976-AES                     |            |                |                 |            |                           |           
+keygen                               |      22171 |         10.000 |         451.055 |   1069.111 |                   1125716 |    2668483
+encaps                               |      14773 |         10.001 |         676.947 |   1325.455 |                   1689524 |    3308149
+decaps                               |      15631 |         10.000 |         639.757 |   1287.766 |                   1596728 |    3214240
+Ended at 2026-11-03 04:09:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:09:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-1344-AES                    |            |                |                 |            |                           |           
+keygen                               |      12416 |         10.001 |         805.462 |   1431.793 |                   2010331 |    3573739
+encaps                               |       8480 |         10.001 |        1179.349 |   1783.772 |                   2943532 |    4452252
+decaps                               |       8864 |         10.001 |        1128.258 |   1738.110 |                   2816020 |    4338295
+Ended at 2026-11-03 04:09:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:09:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-640-SHAKE                   |            |                |                 |            |                           |           
+keygen                               |       6254 |         10.001 |        1599.093 |   2069.921 |                   3991152 |    5166495
+encaps                               |       5875 |         10.000 |        1702.184 |   2153.036 |                   4248532 |    5373951
+decaps                               |       5948 |         10.001 |        1681.450 |   2123.612 |                   4196789 |    5300436
+Ended at 2026-11-03 04:10:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:10:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-976-SHAKE                   |            |                |                 |            |                           |           
+keygen                               |       2750 |         10.001 |        3636.708 |   3089.794 |                   9076953 |    7712063
+encaps                               |       2648 |         10.003 |        3777.460 |   3198.918 |                   9428386 |    7984446
+decaps                               |       2696 |         10.001 |        3709.541 |   3120.765 |                   9258915 |    7789400
+Ended at 2026-11-03 04:10:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:10:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+FrodoKEM-1344-SHAKE                  |            |                |                 |            |                           |           
+keygen                               |       1556 |         10.003 |        6428.404 |   4109.204 |                  16045162 |   10256523
+encaps                               |       1483 |         10.003 |        6745.353 |   4457.193 |                  16836329 |   11125138
+decaps                               |       1495 |         10.003 |        6691.084 |   4507.009 |                  16700821 |   11249582
+Ended at 2026-11-03 04:11:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:11:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-640-AES                    |            |                |                 |            |                           |           
+keygen                               |      43989 |         10.000 |         227.333 |    759.338 |                    567329 |    1895295
+encaps                               |      29994 |         10.000 |         333.411 |    921.692 |                    832098 |    2300521
+decaps                               |      31367 |         10.000 |         318.815 |    900.758 |                    795667 |    2248289
+Ended at 2026-11-03 04:11:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:11:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-976-AES                    |            |                |                 |            |                           |           
+keygen                               |      22256 |         10.000 |         449.323 |   1065.074 |                   1121414 |    2658414
+encaps                               |      14866 |         10.000 |         672.687 |   1312.509 |                   1678929 |    3275991
+decaps                               |      15333 |         10.000 |         652.199 |   1290.043 |                   1627784 |    3219919
+Ended at 2026-11-03 04:12:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:12:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-1344-AES                   |            |                |                 |            |                           |           
+keygen                               |      12262 |         10.000 |         815.556 |   1432.315 |                   2035531 |    3575031
+encaps                               |       8604 |         10.000 |        1162.307 |   1739.802 |                   2901014 |    4342512
+decaps                               |       8880 |         10.001 |        1126.230 |   1716.558 |                   2810943 |    4284506
+Ended at 2026-11-03 04:12:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:12:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-640-SHAKE                  |            |                |                 |            |                           |           
+keygen                               |       6181 |         10.000 |        1617.896 |   2106.230 |                   4038158 |    5257097
+encaps                               |       5850 |         10.001 |        1709.589 |   2116.471 |                   4267024 |    5282705
+decaps                               |       5957 |         10.001 |        1678.879 |   2096.741 |                   4190362 |    5233436
+Ended at 2026-11-03 04:13:22
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:13:22
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-976-SHAKE                  |            |                |                 |            |                           |           
+keygen                               |       2797 |         10.003 |        3576.271 |   2995.187 |                   8926220 |    7475958
+encaps                               |       2651 |         10.003 |        3773.163 |   3203.751 |                   9417693 |    7996541
+decaps                               |       2695 |         10.000 |        3710.604 |   3140.524 |                   9261571 |    7838672
+Ended at 2026-11-03 04:13:52
+Configuration info
+==================
+Target platform:  x86_64-Linux-6.6.87.2-microsoft-standard-WSL2
+Compiler:         gcc (13.3.0)
+Compile options:  [-Wa,--noexecstack;-fomit-frame-pointer;-fdata-sections;-ffunction-sections;-Wl,--gc-sections;-Wbad-function-cast]
+OQS version:      0.16.0 (major: 0, minor: 16, patch: 0)
+Git commit:       unknown
+OpenSSL enabled:  Yes (OpenSSL 3.0.13 30 Jan 2024)
+AES:              OpenSSL
+SHA-2:            OpenSSL
+SHA-3:            C
+OQS build flags:  BUILD_SHARED_LIBS OQS_LIBJADE_BUILD OQS_OPT_TARGET=generic CMAKE_BUILD_TYPE=Release 
+CPU exts compile-time:  SSE SSE2
+
+Speed test
+==========
+Started at 2026-11-03 04:13:52
+Operation                            | Iterations | Total time (s) | Time (us): mean | pop. stdev | CPU cycles: mean          | pop. stdev
+------------------------------------ | ----------:| --------------:| ---------------:| ----------:| -------------------------:| ----------:
+eFrodoKEM-1344-SHAKE                 |            |                |                 |            |                           |           
+keygen                               |       1537 |         10.002 |        6507.454 |   4106.685 |                  16242465 |   10250247
+encaps                               |       1429 |         10.002 |        6999.304 |   4285.810 |                  17469976 |   10697329
+decaps                               |       1482 |         10.006 |        6751.748 |   4308.798 |                  16852186 |   10754714
+Ended at 2026-11-03 04:14:22

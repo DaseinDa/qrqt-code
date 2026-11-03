@@ -1,0 +1,165 @@
+== data checks (alpha = sqrt(0.6), beta = sqrt(0.4), k = 1) ==
+  gamma=0.0  chi_K = 1.0000 / 0.9710 / 0.0815 / 0.0000   F_K = 0.5000 / 0.6000 / 0.9899 / 1.0000  (empty / {1} / {2} / {1,2})
+  gamma=0.1  chi_K = 0.8319 / 0.8081 / 0.0462 / 0.0000   F_K = 0.5500 / 0.5900 / 0.9674 / 0.9759  (empty / {1} / {2} / {1,2})
+  gamma=0.2  chi_K = 0.7168 / 0.6975 / 0.0346 / 0.0000   F_K = 0.6000 / 0.6000 / 0.9494 / 0.9562  (empty / {1} / {2} / {1,2})
+  gamma=0.3  chi_K = 0.6198 / 0.6042 / 0.0271 / 0.0000   F_K = 0.6500 / 0.6500 / 0.9365 / 0.9414  (empty / {1} / {2} / {1,2})
+  gamma=0.5  chi_K = 0.4517 / 0.4420 / 0.0167 / 0.0000   F_K = 0.7500 / 0.7500 / 0.9272 / 0.9291  (empty / {1} / {2} / {1,2})
+  every plotted value == holevo_correct.expected_curves (1e-12); P_K == hc.P_K, P_K >= 0, sum P_K = 1 (1e-12);
+  subsample (11 t values per curve) == P_K-weighted 3-qubit simulation chi_K_sim / F_lam_sim (1e-9);
+  limits: E[chi](0) = chi_empty, F(0) = (1+gamma)/2, E[chi](50) = 0, F(50) = F_{12} (1e-15); chi falls, F rises.
+  burst: E[chi] = e^-kt chi_empty, F = e^-kt F_empty + (1-e^-kt) F_12; correlated mu=0 == independent, mu=1 == burst.
+  quoted values reproduced: chi_empty = 1 / 0.832 / 0.717 / 0.620 bit; F_empty = 0.50 / 0.55 / 0.60 / 0.65;
+    F_12 = 1.000 / 0.976 / 0.956 / 0.941; F_1 = 0.60 / 0.59 / 0.60 / 0.65 (gamma = 0 / 0.1 / 0.2 / 0.3);
+    gamma = 0.5: chi_empty = 0.452 bit, F_empty = 0.75, F_1 = 0.750, F_2 = 0.927, F_12 = 0.929.
+  A independent: F crossings at t = 0.651 (0.0 vs 0.1), 0.750 (0.0 vs 0.2), 0.944 (0.0 vs 0.3), 0.876 (0.1 vs 0.2), 1.155 (0.1 vs 0.3), 1.499 (0.2 vs 0.3); window 0.651-1.499 /k
+  B sequential: F crossings at t = 1.353 (0.0 vs 0.1), 1.582 (0.0 vs 0.2), 1.977 (0.0 vs 0.3), 1.841 (0.1 vs 0.2), 2.330 (0.1 vs 0.3), 2.818 (0.2 vs 0.3); window 1.353-2.818 /k
+  C burst: F crossings at t = 1.124 (0.0 vs 0.1), 1.188 (0.0 vs 0.2), 1.270 (0.0 vs 0.3), 1.261 (0.1 vs 0.2), 1.360 (0.1 vs 0.3), 1.478 (0.2 vs 0.3); window 1.124-1.478 /k
+  D (gamma = 0.5): max spread over mu = 0.00152 bit (chi, < 0.002) and 0.000418 (F, < 0.001); larger mu decays faster.
+  D insets: window t = 0.65-0.67/k contains the largest mu-spread (chi at t = 0.664, F at t = 0.664);
+    chi range 0.2305-0.2385 bit (ticks [0.232, 0.235, 0.238]), F range 0.8349-0.8377 (ticks [0.835, 0.836, 0.837]); at t = 0.66 adjacent curves are >= 0.00041 bit / 0.000113 apart
+    values at t = 0.66, mu = 0 / 0.3 / 0.6 / 0.9: chi = 0.23519 / 0.23479 / 0.23429 / 0.23368 bit; F = 0.836064 / 0.836177 / 0.836315 / 0.836482
+  prototype fig7_independent_prototype.csv (2004 rows): max |dE[chi]| = 5.0e-11, max |dF_lambda| = 5.0e-11 (10-decimal file)
+  prototype fig7_sequential_prototype.csv (2004 rows): max |dE[chi]| = 5.0e-11, max |dF_lambda| = 5.0e-11 (10-decimal file)
+  prototype fig7_burst_prototype.csv (2004 rows): max |dE[chi]| = 5.0e-11, max |dF_lambda| = 5.0e-11 (10-decimal file)
+  prototype fig7_correlated_prototype.csv (2004 rows): max |dE[chi]| = 5.0e-11, max |dF_lambda| = 5.0e-11 (10-decimal file)
+== palette ==
+  gamma = 0 / 0.1 / 0.2 / 0.3 -> ['#0072B2', '#D55E00', '#009E73', '#AA3377']
+  mu    = 0 / 0.3 / 0.6 / 0.9 -> ['#33BBEE', '#AAAA00', '#F781BF', '#332288']
+palette validation (OKLab dE x100):
+  ok   min pair dE =  16.5  (need >= 15)  ('#009E73', '#AAAA00')
+  ok   min pair dE =   9.6  (need >= 8)  ('#33BBEE', '#F781BF')
+  ok   min pair dE =   8.7  (need >= 8)  ('#D55E00', '#AAAA00')
+  ok   min pair dE =   8.6  (need >= 8)  ('#0072B2', '#009E73')
+  ok   #0072B2  L=0.53
+  ok   #D55E00  L=0.62
+  ok   #009E73  L=0.62
+  ok   #AA3377  L=0.52
+  ok   #33BBEE  L=0.74
+  ok   #AAAA00  L=0.71
+  ok   #F781BF  L=0.75
+  ok   #332288  L=0.35
+  => PASS
+  gamma set alone: min dE normal 18.7, protan 12.2, deutan 10.3, tritan 8.6 -> PASS
+  mu set alone: min dE normal 25.1, protan 9.6, deutan 9.4, tritan 13.7 -> PASS
+  cross-set pairs only: min dE normal 16.5 (>= 15), min dE CVD 8.7 (>= 8)
+== main figure ==
+  panel A top: 'legend'                       clear of all curves (nearest point 23.6 pt below/above the box)
+  panel A bottom: 'crossings / $t$ = 0.65–1.50'  clear of all curves (nearest point 35.7 pt below/above the box)
+  panel B top: 'legend'                       clear of all curves (nearest point 19.0 pt below/above the box)
+  panel B bottom: 'crossings / $t$ = 1.35–2.82'  clear of all curves (nearest point 35.4 pt below/above the box)
+  panel C top: 'legend'                       clear of all curves (nearest point 23.6 pt below/above the box)
+  panel C bottom: 'crossings / $t$ = 1.12–1.48'  clear of all curves (nearest point 35.6 pt below/above the box)
+  panel D top: 'legend'                       clear of all curves (nearest point 24.4 pt below/above the box)
+  panel D top: 'four curves coincide / (with' clear of all curves (nearest point 8.5 pt below/above the box)
+  panel D top: 'inset'                        clear of all curves (nearest point 6.5 pt below/above the box)
+  panel D top: 'connector'                    crosses no text box
+  panel D bottom: 'four curves coincide / (with' clear of all curves (nearest point 22.0 pt below/above the box)
+  panel D bottom: 'inset'                        clear of all curves (nearest point 7.4 pt below/above the box)
+  panel D bottom: 'connector'                    crosses no text box
+scifig audit:
+  OK   figure width 18.3 cm (target 18.3)
+  OK   all 113 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 4 curves
+  OK   axes[1]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[2]: 4 curves
+  OK   axes[2]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[3]: 4 curves
+  OK   axes[3]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[4]: 4 curves
+  OK   axes[4]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[5]: 4 curves
+  OK   axes[5]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[6]: 4 curves
+  OK   axes[6]: 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8)
+  OK   axes[7]: 4 curves
+  OK   axes[7]: 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8)
+  => 0 FAIL, 0 WARN
+  main mathtext check: smallest glyph 6.50 pt (need >= 6)
+  main inset audit (top): 4 curves, 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8), labels set, 6 tick labels >= 6.0 pt, no legend -> OK
+  main inset audit (bottom): 4 curves, 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8), labels set, 6 tick labels >= 6.0 pt, no legend -> OK
+saved <local path>\figures_v2\fig7\final\fig7_final.pdf, <local path>\figures_v2\fig7\final\fig7_final.png  (18.3 x 14.0 cm)
+== SI single panel A (independent exponential leakage) ==
+  SI A top: 'legend'                       clear of all curves (nearest point 43.4 pt below/above the box)
+  SI A bottom: 'crossings / $t$ = 0.65–1.50'  clear of all curves (nearest point 50.4 pt below/above the box)
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 25 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 4 curves
+  OK   axes[1]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  => 0 FAIL, 0 WARN
+  SI A mathtext check: smallest glyph 6.50 pt (need >= 6)
+saved <local path>\figures_v2\fig7\final\fig7_panelA.pdf, <local path>\figures_v2\fig7\final\fig7_panelA.png  (8.5 x 7.8 cm)
+== SI single panel B (sequential leakage) ==
+  SI B top: 'legend'                       clear of all curves (nearest point 36.6 pt below/above the box)
+  SI B bottom: 'crossings / $t$ = 1.35–2.82'  clear of all curves (nearest point 50.1 pt below/above the box)
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 25 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 4 curves
+  OK   axes[1]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  => 0 FAIL, 0 WARN
+  SI B mathtext check: smallest glyph 6.50 pt (need >= 6)
+saved <local path>\figures_v2\fig7\final\fig7_panelB.pdf, <local path>\figures_v2\fig7\final\fig7_panelB.png  (8.5 x 7.8 cm)
+== SI single panel C (burst leakage) ==
+  SI C top: 'legend'                       clear of all curves (nearest point 43.5 pt below/above the box)
+  SI C bottom: 'crossings / $t$ = 1.12–1.48'  clear of all curves (nearest point 50.4 pt below/above the box)
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 25 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 4 curves
+  OK   axes[1]: 4 colours, min dE normal 18.7 (>=15), min dE CVD 8.6 (>=8)
+  => 0 FAIL, 0 WARN
+  SI C mathtext check: smallest glyph 6.50 pt (need >= 6)
+saved <local path>\figures_v2\fig7\final\fig7_panelC.pdf, <local path>\figures_v2\fig7\final\fig7_panelC.png  (8.5 x 7.8 cm)
+== SI single panel D (correlated leakage) ==
+  SI D top: 'legend'                       clear of all curves (nearest point 44.5 pt below/above the box)
+  SI D top: 'four curves coincide / (with' clear of all curves (nearest point 13.0 pt below/above the box)
+  SI D top: 'inset'                        clear of all curves (nearest point 11.1 pt below/above the box)
+  SI D top: 'connector'                    crosses no text box
+  SI D bottom: 'four curves coincide / (with' clear of all curves (nearest point 28.2 pt below/above the box)
+  SI D bottom: 'inset'                        clear of all curves (nearest point 9.6 pt below/above the box)
+  SI D bottom: 'connector'                    crosses no text box
+scifig audit:
+  OK   figure width 8.5 cm (target 8.5)
+  OK   all 38 text items >= 6 pt (smallest 6.0 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 4 curves
+  OK   axes[0]: 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8)
+  OK   axes[1]: 4 curves
+  OK   axes[1]: 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8)
+  => 0 FAIL, 0 WARN
+  SI D mathtext check: smallest glyph 6.50 pt (need >= 6)
+  SI D inset audit (top): 4 curves, 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8), labels set, 6 tick labels >= 6.0 pt, no legend -> OK
+  SI D inset audit (bottom): 4 curves, 4 colours, min dE normal 25.1 (>=15), min dE CVD 9.4 (>=8), labels set, 6 tick labels >= 6.0 pt, no legend -> OK
+saved <local path>\figures_v2\fig7\final\fig7_panelD.pdf, <local path>\figures_v2\fig7\final\fig7_panelD.png  (8.5 x 7.8 cm)
+source data written: fig7_final_source_data.csv (9220 rows incl. 1204 inset rows)
+== numbers per curve (t = 0, 1, 5; units of 1/k) ==
+  A independent gamma=0.0 gamma=0.0: E[chi](0)=1.0000 E[chi](1)=0.3801 E[chi](5)=0.0071 | F(0)=0.5000 F(1)=0.8370 F(5)=0.9972 | F_12=1.0000
+  A independent gamma=0.1 gamma=0.1: E[chi](0)=0.8319 E[chi](1)=0.3112 E[chi](5)=0.0058 | F(0)=0.5500 F(1)=0.8266 F(5)=0.9733 | F_12=0.9759
+  A independent gamma=0.2 gamma=0.2: E[chi](0)=0.7168 E[chi](1)=0.2673 E[chi](5)=0.0049 | F(0)=0.6000 F(1)=0.8236 F(5)=0.9537 | F_12=0.9562
+  A independent gamma=0.3 gamma=0.3: E[chi](0)=0.6198 E[chi](1)=0.2307 E[chi](5)=0.0043 | F(0)=0.6500 F(1)=0.8331 F(5)=0.9394 | F_12=0.9414
+  B sequential  gamma=0.0 gamma=0.0: E[chi](0)=1.0000 E[chi](1)=0.7251 E[chi](5)=0.0394 | F(0)=0.5000 F(1)=0.6689 F(5)=0.9832 | F_12=1.0000
+  B sequential  gamma=0.1 gamma=0.1: E[chi](0)=0.8319 E[chi](1)=0.6033 E[chi](5)=0.0328 | F(0)=0.5500 F(1)=0.6773 F(5)=0.9601 | F_12=0.9759
+  B sequential  gamma=0.2 gamma=0.2: E[chi](0)=0.7168 E[chi](1)=0.5203 E[chi](5)=0.0283 | F(0)=0.6000 F(1)=0.6941 F(5)=0.9418 | F_12=0.9562
+  B sequential  gamma=0.3 gamma=0.3: E[chi](0)=0.6198 E[chi](1)=0.4503 E[chi](5)=0.0245 | F(0)=0.6500 F(1)=0.7270 F(5)=0.9296 | F_12=0.9414
+  C burst       gamma=0.0 gamma=0.0: E[chi](0)=1.0000 E[chi](1)=0.3679 E[chi](5)=0.0067 | F(0)=0.5000 F(1)=0.8161 F(5)=0.9966 | F_12=1.0000
+  C burst       gamma=0.1 gamma=0.1: E[chi](0)=0.8319 E[chi](1)=0.3060 E[chi](5)=0.0056 | F(0)=0.5500 F(1)=0.8192 F(5)=0.9731 | F_12=0.9759
+  C burst       gamma=0.2 gamma=0.2: E[chi](0)=0.7168 E[chi](1)=0.2637 E[chi](5)=0.0048 | F(0)=0.6000 F(1)=0.8251 F(5)=0.9538 | F_12=0.9562
+  C burst       gamma=0.3 gamma=0.3: E[chi](0)=0.6198 E[chi](1)=0.2280 E[chi](5)=0.0042 | F(0)=0.6500 F(1)=0.8342 F(5)=0.9394 | F_12=0.9414
+  D correlated  mu=0.0 gamma=0.5: E[chi](0)=0.4517 E[chi](1)=0.1678 E[chi](5)=0.0031 | F(0)=0.7500 F(1)=0.8628 F(5)=0.9279 | F_12=0.9291
+  D correlated  mu=0.3 gamma=0.5: E[chi](0)=0.4517 E[chi](1)=0.1675 E[chi](5)=0.0031 | F(0)=0.7500 F(1)=0.8629 F(5)=0.9279 | F_12=0.9291
+  D correlated  mu=0.6 gamma=0.5: E[chi](0)=0.4517 E[chi](1)=0.1670 E[chi](5)=0.0031 | F(0)=0.7500 F(1)=0.8630 F(5)=0.9279 | F_12=0.9291
+  D correlated  mu=0.9 gamma=0.5: E[chi](0)=0.4517 E[chi](1)=0.1664 E[chi](5)=0.0031 | F(0)=0.7500 F(1)=0.8632 F(5)=0.9279 | F_12=0.9291
+done

@@ -1,0 +1,29 @@
+data checks passed: T_fixed(us) = {'ML-KEM-512': 33.57, 'ML-KEM-768': 49.8, 'ML-KEM-1024': 72.19, 'FrodoKEM-640': 1135.59, 'FrodoKEM-976': 2110.45, 'FrodoKEM-1344': 3474.89, 'no-PQC reference': 0.11} | d_max(1 ms) hard [193.3, 190.0, 185.6] F*=0.9 [37.9, 34.7, 30.2] | d_max(10 ms) ML-KEM-768 hard 1990.0 F*=0.9 436.3 | knees(us) hard {'ML-KEM-512': 33.6, 'ML-KEM-768': 49.8, 'ML-KEM-1024': 72.2, 'FrodoKEM-640': 1135.6, 'FrodoKEM-976': 2110.5, 'FrodoKEM-1344': 3474.9} F*=0.9 {'ML-KEM-512': 150.4, 'ML-KEM-768': 223.2, 'ML-KEM-1024': 323.5, 'FrodoKEM-640': 5089.1, 'FrodoKEM-976': 9457.8, 'FrodoKEM-1344': 15572.4} | max |curve CSV - model| = 6.00e-05 km
+palette validation (OKLab dE x100):
+  ok   min pair dE =  18.5  (need >= 15)  ('#33BBEE', '#009E73')
+  ok   min pair dE =  12.2  (need >= 8)  ('#0072B2', '#AA3377')
+  ok   min pair dE =  10.3  (need >= 8)  ('#AA3377', '#009E73')
+  ok   min pair dE =   8.6  (need >= 8)  ('#0072B2', '#009E73')
+  ok   #33BBEE  L=0.74
+  ok   #0072B2  L=0.53
+  ok   #AA3377  L=0.52
+  ok   #E6AB02  L=0.78
+  ok   #D55E00  L=0.62
+  ok   #009E73  L=0.62
+  => PASS
+mathtext check: smallest glyph (incl. sub/superscripts) = 6.00 pt (need >= 6)
+text-vs-data check: 0 collision(s)
+legend check: 7 entries, 6.99 in wide, outside every panel: yes
+scifig audit:
+  OK   figure width 18.3 cm (target 18.3)
+  OK   all 66 text items >= 6 pt (smallest 6.5 pt)
+  OK   no overlapping text boxes
+  OK   axes[0]: 6 curves
+  OK   axes[0]: 6 colours, min dE normal 18.5 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[1]: 6 curves
+  OK   axes[1]: 6 colours, min dE normal 18.5 (>=15), min dE CVD 8.6 (>=8)
+  OK   axes[2]: 6 curves
+  OK   axes[2]: 6 colours, min dE normal 18.5 (>=15), min dE CVD 8.6 (>=8)
+  => 0 FAIL, 0 WARN
+saved <local path>\figures_v2\fig3\final\fig3_final.pdf, <local path>\figures_v2\fig3\final\fig3_final.png  (18.3 x 7.5 cm)
+done
